@@ -1,0 +1,9 @@
+{
+  "useMarkdownLinks": true,
+  "newFileLocation": "folder",
+  "newFileFolderPath": "raw",
+  "attachmentFolderPath": "raw/assets",
+  "showUnsupportedFiles": false,
+  "defaultViewMode": "source",
+  "promptDelete": true
+}

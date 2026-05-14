@@ -1,0 +1,12 @@
+# Obsidian session state — changes every open, no value in tracking
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/cache
+
+# Python
+*.pyc
+__pycache__/
+.venv/
+
+# macOS
+.DS_Store
