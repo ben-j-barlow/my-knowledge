@@ -22,26 +22,18 @@ WHERE contains(tags, "investing")
 SORT file.name ASC
 ```
 
-**AI Coding pages**
+**Data & AI pages**
 ```dataview
 TABLE summary, tags
 FROM "wiki"
-WHERE contains(tags, "ai-coding")
+WHERE contains(tags, "data-n-ai")
 SORT file.name ASC
 ```
 
-**Data Engineering pages**
+**Cross-topic pages (tagged with both topics)**
 ```dataview
 TABLE summary, tags
 FROM "wiki"
-WHERE contains(tags, "data-engineering")
-SORT file.name ASC
-```
-
-**Cross-topic pages (tagged with 2+ topics)**
-```dataview
-TABLE summary, tags
-FROM "wiki"
-WHERE length(filter(tags, (t) => contains(["investing","ai-coding","data-engineering"], t))) > 1
+WHERE contains(tags, "investing") AND contains(tags, "data-n-ai")
 SORT file.name ASC
 ```

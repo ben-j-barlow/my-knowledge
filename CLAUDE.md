@@ -9,10 +9,9 @@ This is the operating manual for this repository. Read it at the start of every 
 A personal knowledge base covering three research topics:
 
 - **Investing** — valuation frameworks, macro, equity research, notable investors, books, datasets
-- **AI Coding** — LLM APIs, coding agents, prompt engineering, benchmarks, tools, models
-- **Data Engineering** — pipelines, orchestration, storage, streaming, transformation, MLOps
+- **Data & AI** — LLM APIs, coding agents, prompt engineering, benchmarks, data pipelines, orchestration, storage, streaming, transformation, MLOps
 
-These topics overlap deliberately. A page on LLM-powered data pipelines belongs to both `ai-coding` and `data-engineering`. A page on quant strategies using ML belongs to both `investing` and `ai-coding`. Cross-topic synthesis is a feature, not a problem.
+These topics overlap deliberately. A page on quant strategies using ML belongs to both `investing` and `data-n-ai`. Cross-topic synthesis is a feature, not a problem.
 
 ---
 
@@ -33,8 +32,7 @@ raw/
   investing/articles/     # Web clips, blog posts  (YYYY-MM-DD-slug.md)
   investing/papers/       # Research papers, notes
   investing/assets/       # Downloaded images referenced by raw docs
-  ai-coding/...
-  data-engineering/...
+  data-n-ai/...
 
 wiki/
   index.md                # Global catalog — one row per page, with tags
@@ -46,8 +44,7 @@ wiki/
 
 outputs/
   investing/              # Q&A answers, slides, charts
-  ai-coding/
-  data-engineering/
+  data-n-ai/
 ```
 
 ---
@@ -58,8 +55,7 @@ Every wiki page has YAML frontmatter. Tags fall into three categories.
 
 ### Topic tags (≥1 required)
 - `investing`
-- `ai-coding`
-- `data-engineering`
+- `data-n-ai`
 
 Assign all that apply. Cross-topic pages are encouraged.
 
@@ -75,8 +71,8 @@ Add freely as the wiki grows. Examples: `valuation`, `llm`, `rag`, `agents`, `et
 ### Example frontmatter
 ```yaml
 ---
-tags: [ai-coding, data-engineering, concept, rag, vector-databases]
-sources: [raw/ai-coding/articles/2026-05-01-rag-overview.md]
+tags: [data-n-ai, concept, rag, vector-databases]
+sources: [raw/data-n-ai/articles/2026-05-01-rag-overview.md]
 updated: 2026-05-14
 ---
 ```
@@ -179,7 +175,7 @@ Each entry in `wiki/log.md` starts with a consistent prefix for easy grepping:
 
 ```
 ## [YYYY-MM-DD] ingest | investing | Buffett 2024 Annual Letter
-## [YYYY-MM-DD] query | ai-coding, data-engineering | How do RAG pipelines work at scale?
+## [YYYY-MM-DD] query | data-n-ai | How do RAG pipelines work at scale?
 ## [YYYY-MM-DD] lint | all | health-check
 ```
 
