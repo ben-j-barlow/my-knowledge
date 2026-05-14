@@ -14,3 +14,4 @@ grep "^## \[" wiki/log.md | grep "ingest"       # all ingests
 ---
 
 ## [2026-05-14] init | all | Knowledge base initialized
+## [2026-05-14] ingest | data-n-ai | AI for the Real World: A Conversation with Yann LeCun
