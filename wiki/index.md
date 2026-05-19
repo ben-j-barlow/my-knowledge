@@ -37,6 +37,17 @@ To filter by topic in Obsidian, use a Dataview query (see bottom of this file).
 | [Source: SK Hynix Near $1T](sources/sk-hynix-near-trillion.md) | SK Hynix ~$948B market cap, 9x in 2 years; "structural counterparty to AI"; memory bandwidth = binding constraint for inference | investing, data-n-ai, source, hbm |
 | [Source: SK Hynix ATH + Co-Financing](sources/sk-hynix-cofinancing.md) | Microsoft/Google/Amazon offering to co-finance ASML EUV machines at SK Hynix; Q1 operating margin 72%; M15X timeline pulled forward | investing, data-n-ai, source, hbm |
 | [Source: Eos Energy Q1 2026](sources/eos-energy-q1-2026.md) | Eos Energy Q1 revenue +445%; Cerberus Capital JV with $100M and 2 GWh supply deal — bankability milestone | investing, source, energy-storage |
+| [Agentic Inference](concepts/agentic-inference.md) | Distinct workload profile: long context overflows HBM into DRAM, CPU active for every tool call, 10–50x compute vs human sessions; no purpose-built hardware yet | data-n-ai, concept, agents, ai-infra |
+| [Event-Driven Architecture](concepts/event-driven-architecture.md) | Decoupled producers/consumers via durable event logs; topics, partitions, consumer groups, schema registry, DLQ; when to use (and when not to) | data-n-ai, concept, streaming, etl |
+| [Data Ingestion](concepts/data-ingestion.md) | Three approaches: managed connectors, event streaming, custom pipelines; tradeoffs, hidden costs, decision framework | data-n-ai, concept, etl, pipelines |
+| [Kafka](entities/kafka.md) | Apache Kafka: dominant open-source event streaming platform; durable partitioned log; self-hosted is a full-time job — Confluent is almost always the right call | data-n-ai, entity, streaming |
+| [Confluent](entities/confluent.md) | Managed Kafka (Confluent Cloud) plus Schema Registry; throughput-based pricing; founded by Kafka's original creators | data-n-ai, entity, streaming |
+| [Apache Arrow](entities/apache-arrow.md) | Zero-copy in-memory columnar interchange layer; embedded in DuckDB, Polars, Spark, Snowflake; Arrow IPC, Flight, ADBC | data-n-ai, entity, etl |
+| [Fivetran](entities/fivetran.md) | Polished managed connector service; row-based pricing; "set it and forget it" for standard SaaS sources | data-n-ai, entity, etl |
+| [Airbyte](entities/airbyte.md) | Open-source managed connectors; self-hosted or Airbyte Cloud; cheaper than Fivetran, variable quality on marketplace connectors | data-n-ai, entity, etl |
+| [Source: AI Economics Part 2](sources/ai-economics-part2.md) | Training vs human inference vs agentic inference hardware profiles; second HBM supercycle; CXL 3.0; Nvidia moat (GPU + NVLink + CUDA) | data-n-ai, source, agents, hbm |
+| [Source: Apache Arrow as Data Interchange](sources/apache-arrow-data-interchange.md) | Arrow as zero-copy interchange layer beneath DuckDB, Polars, Spark; eliminates serialization cost at every pipeline hop | data-n-ai, source, etl |
+| [Source: Modern Data Stack — Data Ingestion](sources/modern-data-stack-ingestion.md) | Three ingestion approaches; Fivetran vs Airbyte; when to use Kafka; hidden costs; decision framework | data-n-ai, source, etl, streaming |
 
 ---
 

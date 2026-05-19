@@ -35,7 +35,11 @@ Current coverage spans two threads:
 
 **Agentic patterns:** Iterative repair loops are an emerging practical pattern for agentic maintenance tasks — closed-loop workflows where an agent reviews an artifact, repairs it, validates the result, and feeds failures back as input to the next pass. The key insight is that separating review / repair / validate with structured JSON handoffs makes agent output auditable and trustworthy, not just impressive.
 
-Subtopics being tracked: `llm`, `world-models`, `robotics`, `agents`, `prompt-engineering`
+**Agentic inference as a distinct workload:** Agentic AI stresses all four hardware components simultaneously (CPU, GPU, HBM, DRAM) in ways neither training nor human inference do. Long context overflows HBM into DRAM; every tool call creates a CPU-GPU-DRAM handoff cycle; sessions run 10–50x longer than human inference. No purpose-built hardware exists yet — this is driving the second HBM supercycle.
+
+**Data pipelines and ingestion:** Three ingestion approaches covered — managed connectors (Fivetran, Airbyte), event streaming (Kafka, Confluent), and custom pipelines. Core tension: operational simplicity vs. latency requirements vs. team size. Most teams over-engineer for latency they don't need. Apache Arrow is the emerging zero-copy interchange standard adopted beneath DuckDB, Polars, Spark, and Snowflake.
+
+Subtopics being tracked: `llm`, `world-models`, `robotics`, `agents`, `ai-infra`, `etl`, `pipelines`, `streaming`
 
 ---
 
@@ -49,6 +53,8 @@ Subtopics being tracked: `llm`, `world-models`, `robotics`, `agents`, `prompt-en
 | Hyperscaler capex → semiconductor supply chain | investing + data-n-ai | Big Tech's $725B 2026 capex must exit through HBM, CoWoS, and EUV. The AI infrastructure buildout (data-n-ai) is the demand signal for the semiconductor supply chain investment thesis (investing). |
 | Nebius Group as AI cloud infrastructure play | investing + data-n-ai | GPU cluster operators like Nebius are the customers of the HBM/TSMC stack and the infrastructure layer below LLM APIs. |
 | Tesla Optimus + inference-as-a-service | investing + data-n-ai | Piper Sandler labels Optimus and "inference-as-a-service" as thesis-defining for Tesla — connecting robotics/embodied AI (data-n-ai) to equity valuation (investing). |
+| Agentic inference → second HBM supercycle | investing + data-n-ai | The agentic inference workload profile (long context, HBM overflow, sustained compute) is driving a second HBM demand wave independent of training scaling. The HBM shortage thesis (investing: SK Hynix, Samsung) is partly grounded in the same workload shift that drives agentic AI infrastructure investment. |
+| Kafka / EDA in data pipelines → AI inference infrastructure | data-n-ai | Event-driven architectures feed operational data into the warehouses and vector stores that LLM applications query at inference time. The data ingestion layer (Kafka, Fivetran) is the upstream supply chain for the AI feature store and RAG pipeline. |
 
 ---
 
