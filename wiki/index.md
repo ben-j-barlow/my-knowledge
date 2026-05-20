@@ -61,6 +61,11 @@ To filter by topic in Obsidian, use a Dataview query (see bottom of this file).
 | [Source: Lakehouse Statistics and Query Planning](sources/lakehouse-statistics-query-planning.md) | Structural vs statistical metadata; sketch types; Iceberg/Delta optional-stats problem; FloeDB Floecat/FloeScan solution | data-n-ai, source, etl, pipelines |
 | [Source: AI Org Operating Model](sources/ai-org-operating-model.md) | Eric Weber: technical × operating stacks multiply; operating transformation 6 components; manager-as-router dissolving | data-n-ai, source, agents |
 | [Source: Spark Join Strategies](sources/spark-join-strategies.md) | Three join strategies; Spark sort/merge default is wrong for most workloads; Photon 2–20x faster; query hints; 10MB threshold problem | data-n-ai, source, etl, pipelines |
+| [Equity Duration](concepts/equity-duration.md) | How much of a stock's value is in future vs current cash flows; longer duration = greater sensitivity to rising discount rates | investing, concept, valuation, macro, equities |
+| [Equity Risk Premium](concepts/equity-risk-premium.md) | Earnings yield minus risk-free rate; S&P near zero and Nasdaq/Mag 7 negative as of May 2026 | investing, concept, valuation, macro, equities |
+| [US-China Tech Rivalry](concepts/us-china-tech-rivalry.md) | Structural US-China competition across semiconductors, AI, rare earths, Taiwan; Trump-Xi May 2026 summit was cosmetic; structural risks unresolved | investing, concept, macro, geopolitics, semiconductors |
+| [Nvidia](entities/nvidia.md) | Dominant AI GPU maker; CUDA + NVLink + hardware moat; archetype long-duration growth stock; primary customer of TSMC and SK Hynix HBM | investing, data-n-ai, entity, semiconductors, ai-infra |
+| [Source: Treasury Yields Are Testing The AI Equity Rally](sources/treasury-yields-testing-ai-equity-rally.md) | Agar Capital: rising yields compress ERP to near-zero/negative for AI equities; SOX at 25x vs 19x historical; semiconductor vulnerability to discount rate | investing, source, macro, equities, valuation, semiconductors, geopolitics |
 
 ---
 

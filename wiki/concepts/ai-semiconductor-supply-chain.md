@@ -1,6 +1,6 @@
 ---
 tags: [investing, data-n-ai, concept, semiconductors, ai-infra, macro]
-sources: ["raw/investing/articles/SK Hynix is about $50bn away from being a trillion-dollar company.md", "raw/investing/articles/Samsung Begins HBM4 Shipments as SK Hynix Lags and a 50,000-Worker Strike in Five Days Threatens the AI Chip Supply.md", "raw/investing/articles/SK Hynix Shares Hit All-Time High as Tech Giants Offer to Co-Finance New Chip Plants.md", "raw/investing/articles/Buy TSMC stock as 'recent concerns are overdone' BofA.md"]
+sources: ["raw/investing/articles/SK Hynix is about $50bn away from being a trillion-dollar company.md", "raw/investing/articles/Samsung Begins HBM4 Shipments as SK Hynix Lags and a 50,000-Worker Strike in Five Days Threatens the AI Chip Supply.md", "raw/investing/articles/SK Hynix Shares Hit All-Time High as Tech Giants Offer to Co-Finance New Chip Plants.md", "raw/investing/articles/Buy TSMC stock as 'recent concerns are overdone' BofA.md", "raw/investing/articles/2026-05-17-treasury-yields-testing-ai-equity-rally.md"]
 updated: 2026-05-19
 ---
 
@@ -50,12 +50,16 @@ Microsoft, Google, and Amazon are offering to co-finance ASML EUV machines at SK
 | EUV lithography | ASML | Monopoly |
 | TC bonders (HBM packaging) | HANMI Semiconductor | #1 global |
 
+## Valuation Context (May 2026)
+
+The Philadelphia Semiconductor Index (SOX) trades at ~25x projected earnings versus a 10-year historical average of ~19x. Justifying this premium simultaneously requires: high growth rates, flawless execution, and stable interest rates. With the 30-year Treasury above 5%, the third condition is not met. Semiconductor names are also among the longest-duration equities in the market — most of their value is in projected future cash flows, making them structurally sensitive to discount rate increases. See [Equity Duration](equity-duration.md) and [Equity Risk Premium](equity-risk-premium.md).
+
 ## Investment Implications
 
 - Companies anywhere in this stack with supply constrained by AI demand are structural beneficiaries, not cyclical
 - Pick-and-shovel positions: HANMI (TC bonders), ASML (EUV), TSMC (packaging + logic)
 - Pure-play memory exposure: SK Hynix, Samsung, Micron
-- Key risks: geopolitical disruption (Korea, Taiwan), labor action (Samsung strike risk), technology transition stumbles (HBM4E yield ramp)
+- Key risks: geopolitical disruption (Korea, Taiwan), labor action (Samsung strike risk), technology transition stumbles (HBM4E yield ramp), rising Treasury yields compressing long-duration multiples
 
 ## Cross-Topic Note
 
@@ -65,8 +69,12 @@ This supply chain is the physical infrastructure that the data-n-ai compute stac
 
 - [HBM](hbm.md)
 - [Advanced Packaging](advanced-packaging.md)
+- [Equity Duration](equity-duration.md)
+- [Equity Risk Premium](equity-risk-premium.md)
+- [US-China Tech Rivalry](us-china-tech-rivalry.md)
 - [TSMC](../entities/tsmc.md)
 - [SK Hynix](../entities/sk-hynix.md)
 - [Samsung Electronics](../entities/samsung-electronics.md)
 - [HANMI Semiconductor](../entities/hanmi-semiconductor.md)
 - [Nebius Group](../entities/nebius-group.md)
+- [Nvidia](../entities/nvidia.md)

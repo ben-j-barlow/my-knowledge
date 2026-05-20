@@ -32,3 +32,4 @@ grep "^## \[" wiki/log.md | grep "ingest"       # all ingests
 ## [2026-05-20] ingest | data-n-ai | Lakehouse Statistics and Why Query Engines Get Lost
 ## [2026-05-20] ingest | data-n-ai | We're Missing Data: The Other Half of AI Transformation (Eric Weber)
 ## [2026-05-20] ingest | data-n-ai | Why Spark Joins Are Expensive — and What to Do About It
+## [2026-05-20] ingest | investing | Treasury Yields Are Testing The AI Equity Rally (Agar Capital)

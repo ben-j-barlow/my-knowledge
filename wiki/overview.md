@@ -25,7 +25,9 @@ Current coverage is concentrated in the AI infrastructure trade and adjacent sec
 
 **Energy storage:** Eos Energy (zinc BESS) passed a key bankability test: Cerberus Capital committed $100M and a 2 GWh supply deal via Frontier Power USA. Q1 revenue +445%. Technology differentiator: zinc chemistry vs. lithium-ion for long-duration storage.
 
-Subtopics tracked: `semiconductors`, `hbm`, `foundry`, `advanced-packaging`, `equities`, `ev`, `robotics`, `space`, `energy-storage`, `quantum-computing`, `ai-infra`
+**Macro / rates risk to AI equities:** The 30-year Treasury crossed 5% and the 10-year is at ~4.6% as of May 2026, compressing the equity risk premium for the S&P 500 to near zero and into negative territory for the Nasdaq 100 and Mag 7. AI and semiconductor stocks are disproportionately exposed because they are the longest-duration equities in the market — most of their value is in projected future cash flows, making them mechanically sensitive to discount rate increases even when fundamentals remain strong. The SOX is at 25x projected earnings vs. a 10-year average of ~19x. The Trump-Xi summit (May 2026) failed to resolve any structural issue (Taiwan, rare earths, semiconductor export controls, Hormuz/Iran) — geopolitical risk premium persists.
+
+Subtopics tracked: `semiconductors`, `hbm`, `foundry`, `advanced-packaging`, `equities`, `ev`, `robotics`, `space`, `energy-storage`, `quantum-computing`, `ai-infra`, `macro`, `geopolitics`, `valuation`
 
 ### Data & AI
 
@@ -61,6 +63,7 @@ Subtopics being tracked: `llm`, `world-models`, `robotics`, `agents`, `ai-infra`
 | Tesla Optimus + inference-as-a-service | investing + data-n-ai | Piper Sandler labels Optimus and "inference-as-a-service" as thesis-defining for Tesla — connecting robotics/embodied AI (data-n-ai) to equity valuation (investing). |
 | Agentic inference → second HBM supercycle | investing + data-n-ai | The agentic inference workload profile (long context, HBM overflow, sustained compute) is driving a second HBM demand wave independent of training scaling. The HBM shortage thesis (investing: SK Hynix, Samsung) is partly grounded in the same workload shift that drives agentic AI infrastructure investment. |
 | Kafka / EDA in data pipelines → AI inference infrastructure | data-n-ai | Event-driven architectures feed operational data into the warehouses and vector stores that LLM applications query at inference time. The data ingestion layer (Kafka, Fivetran) is the upstream supply chain for the AI feature store and RAG pipeline. |
+| AI infrastructure enthusiasm → equity duration risk | investing + data-n-ai | The AI infrastructure buildout (data-n-ai) is the demand signal for semiconductor capex (investing), but the same enthusiasm has pushed AI equities into long-duration territory — most of their value is in future AI-driven cash flows. Rising Treasury yields compress these valuations mechanically, independent of whether AI execution delivers. The better the AI story, the longer the duration, and the more exposed to rate moves. |
 
 ---
 
