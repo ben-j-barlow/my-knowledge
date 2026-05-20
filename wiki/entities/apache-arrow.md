@@ -1,7 +1,7 @@
 ---
 tags: [data-n-ai, entity, etl, pipelines]
 sources: [raw/data-n-ai/articles/Apache Arrow as Data Interchange.md]
-updated: 2026-05-19
+updated: 2026-05-20
 ---
 
 # Apache Arrow
@@ -33,13 +33,15 @@ Arrow uses a columnar layout (values for a single column stored contiguously) ra
 | Tool | Integration |
 |------|------------|
 | Apache Spark | `DataFrame.toArrow()` in PySpark |
-| DuckDB | Native Arrow export |
+| DuckDB | Deep native integration: queries Arrow-backed DataFrames directly via replacement scans (no copy); zero-copy read path when memory layouts align |
 | Polars | Internal memory format conforms to Arrow spec |
 | Snowflake | ADBC (Arrow Database Connectivity) driver |
 | PostgreSQL | Arrow Flight SQL adapter |
 | Daft | Built on Arrow |
 
 Arrow inserts itself beneath the user interface level — most users never interact with it directly. It's an invisible efficiency layer that tools opt into.
+
+DuckDB's integration is the most complete: it can query a Python Arrow or Pandas DataFrame in-place via **replacement scans** — the DataFrame appears as a virtual table with no serialization. When the underlying memory layout already matches Arrow's columnar format, the read is genuinely zero-copy.
 
 ## Key Specifications
 
@@ -49,5 +51,7 @@ Arrow inserts itself beneath the user interface level — most users never inter
 
 ## See Also
 
+- [DuckDB](duckdb.md)
 - [Data Ingestion](../concepts/data-ingestion.md)
 - [Source: Apache Arrow as Data Interchange](../sources/apache-arrow-data-interchange.md)
+- [Source: DuckDB Internals Part 1](../sources/duckdb-internals-part1.md)

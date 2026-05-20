@@ -1,7 +1,7 @@
 ---
 tags: [data-n-ai, entity, etl, pipelines]
 sources: [raw/data-n-ai/articles/The Modern Data Stack is Overcomplicated Data Ingestion.md]
-updated: 2026-05-19
+updated: 2026-05-20
 ---
 
 # Fivetran
@@ -30,8 +30,14 @@ Row-based model — you pay per row synced. Predictable early on, but becomes di
 | Flexibility | Constrained to what Fivetran builds | Extensible; build custom connectors |
 | Right for | Teams that want zero maintenance | Teams with engineering bandwidth |
 
+## DuckDB Inside Fivetran
+
+Fivetran uses [DuckDB](duckdb.md) as the embedded engine inside its **Managed Data Lake Service** for merging and compaction operations — lake file merging is handled by DuckDB rather than requiring a separate Spark cluster.
+
 ## See Also
 
 - [Airbyte](airbyte.md)
+- [DuckDB](duckdb.md)
 - [Data Ingestion](../concepts/data-ingestion.md)
 - [Source: Modern Data Stack — Data Ingestion](../sources/modern-data-stack-ingestion.md)
+- [Source: DuckDB Internals Part 1](../sources/duckdb-internals-part1.md)

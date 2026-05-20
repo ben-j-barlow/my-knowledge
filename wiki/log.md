@@ -27,3 +27,8 @@ grep "^## \[" wiki/log.md | grep "ingest"       # all ingests
 ## [2026-05-19] ingest | data-n-ai | AI Economics Part 2 (@sriramkri) — training vs inference vs agentic inference hardware profiles
 ## [2026-05-19] ingest | data-n-ai | Apache Arrow as Data Interchange
 ## [2026-05-19] ingest | data-n-ai | The Modern Data Stack is Overcomplicated: Data Ingestion
+## [2026-05-20] ingest | data-n-ai | Halodoc Self-Healing Data Pipelines
+## [2026-05-20] ingest | data-n-ai | DuckDB Internals: Why is DuckDB Fast? (Part 1)
+## [2026-05-20] ingest | data-n-ai | Lakehouse Statistics and Why Query Engines Get Lost
+## [2026-05-20] ingest | data-n-ai | We're Missing Data: The Other Half of AI Transformation (Eric Weber)
+## [2026-05-20] ingest | data-n-ai | Why Spark Joins Are Expensive — and What to Do About It

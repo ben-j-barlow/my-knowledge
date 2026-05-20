@@ -1,6 +1,6 @@
 ---
 tags: [investing, data-n-ai, synthesis]
-updated: 2026-05-14
+updated: 2026-05-20
 ---
 
 # Overview
@@ -39,7 +39,13 @@ Current coverage spans two threads:
 
 **Data pipelines and ingestion:** Three ingestion approaches covered — managed connectors (Fivetran, Airbyte), event streaming (Kafka, Confluent), and custom pipelines. Core tension: operational simplicity vs. latency requirements vs. team size. Most teams over-engineer for latency they don't need. Apache Arrow is the emerging zero-copy interchange standard adopted beneath DuckDB, Polars, Spark, and Snowflake.
 
-Subtopics being tracked: `llm`, `world-models`, `robotics`, `agents`, `ai-infra`, `etl`, `pipelines`, `streaming`
+**Query engines and lakehouse statistics:** DuckDB is the dominant single-node analytical engine — in-process, no server, 33-pass optimizer, zone maps. Apache Spark remains the distributed standard; Databricks Photon is consistently 2–20x faster than vanilla Spark for join-heavy workloads. The structural problem in lakehouses: statistical metadata is optional in both Iceberg and Delta Lake and frequently absent — query planners fall back to guesses, producing wrong join orders, memory spilling, and queries that never complete. FloeDB (Floecat) is attempting to fix this at the open-source layer.
+
+**Self-healing pipelines:** Six-layer pattern (Halodoc case study) for autonomous recovery without manual intervention: CDC auto-recovery, source-vs-lake consistency, mini-batch processing, smart memory scaling, warehouse lock management, cascading dependency recovery. Design principle: alert first, act second; fix foundation before downstream.
+
+**AI org operating model:** Eric Weber's two-stack model — technical stack (well-funded, gets budget) × operating stack (drifts, nobody funds it). They multiply, not add. Three emerging IC job shapes: AI output curators, algorithm/primitive writers, end-to-end orchestrators. Manager-as-router model dissolving; manager-as-coach replacing it.
+
+Subtopics being tracked: `llm`, `world-models`, `robotics`, `agents`, `ai-infra`, `etl`, `pipelines`, `streaming`, `query-optimization`, `lakehouse`
 
 ---
 

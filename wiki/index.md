@@ -48,6 +48,19 @@ To filter by topic in Obsidian, use a Dataview query (see bottom of this file).
 | [Source: AI Economics Part 2](sources/ai-economics-part2.md) | Training vs human inference vs agentic inference hardware profiles; second HBM supercycle; CXL 3.0; Nvidia moat (GPU + NVLink + CUDA) | data-n-ai, source, agents, hbm |
 | [Source: Apache Arrow as Data Interchange](sources/apache-arrow-data-interchange.md) | Arrow as zero-copy interchange layer beneath DuckDB, Polars, Spark; eliminates serialization cost at every pipeline hop | data-n-ai, source, etl |
 | [Source: Modern Data Stack — Data Ingestion](sources/modern-data-stack-ingestion.md) | Three ingestion approaches; Fivetran vs Airbyte; when to use Kafka; hidden costs; decision framework | data-n-ai, source, etl, streaming |
+| [Self-Healing Pipelines](concepts/self-healing-pipelines.md) | 6-layer pattern for autonomous data pipeline recovery: CDC, consistency checks, mini-batch, smart memory scaling, warehouse lock management, cascading recovery | data-n-ai, concept, etl, pipelines |
+| [Query Optimization](concepts/query-optimization.md) | Distributed join strategies (broadcast, shuffle hash, sort/merge); filter pushdown; join order; zone map skipping; statistics dependency | data-n-ai, concept, etl, pipelines |
+| [Lakehouse Statistics](concepts/lakehouse-statistics.md) | Structural vs statistical metadata; probabilistic sketches (HLL, Theta, KLL, Bloom filters); everything-optional problem in Iceberg/Delta → planners guess → bad plans | data-n-ai, concept, etl, pipelines |
+| [AI Org Operating Model](concepts/ai-org-operating-model.md) | Technical × operating stacks multiply (not add); operating components: manager-as-coach, career architecture, team rebalancing, data-product partnership | data-n-ai, concept, agents |
+| [DuckDB](entities/duckdb.md) | In-process analytical SQL database; no server/TCP; 33-pass optimizer; zone maps; pipeline execution; deep Arrow integration; row groups of 122,880 rows | data-n-ai, entity, etl, pipelines |
+| [Apache Spark](entities/apache-spark.md) | Distributed batch/streaming processing; join strategy selection most consequential perf variable; 10MB broadcast threshold too conservative; AQE | data-n-ai, entity, etl, pipelines |
+| [Databricks](entities/databricks.md) | Cloud data/AI platform on Spark; Photon prefers shuffle hash + adaptive join selection; Delta Lake; Unity Catalog; Liquid Clustering | data-n-ai, entity, etl, pipelines |
+| [FloeDB](entities/floedb.md) | Query engine startup; Floecat (open-source) fixes lakehouse statistical metadata; FloeScan in development; publishes Database Doctor blog | data-n-ai, entity, etl, pipelines |
+| [Source: Halodoc Self-Healing Pipelines](sources/halodoc-self-healing-pipelines.md) | 6-layer autonomous recovery: CDC, lake consistency, mini-batch, smart memory, warehouse locks, cascading dependency; 3-gate eligibility check | data-n-ai, source, etl, pipelines |
+| [Source: DuckDB Internals Part 1](sources/duckdb-internals-part1.md) | Why DuckDB is fast: in-process, zone maps, 33-pass optimizer, pipeline execution; Arrow/Parquet integration; ecosystem adopters | data-n-ai, source, etl, pipelines |
+| [Source: Lakehouse Statistics and Query Planning](sources/lakehouse-statistics-query-planning.md) | Structural vs statistical metadata; sketch types; Iceberg/Delta optional-stats problem; FloeDB Floecat/FloeScan solution | data-n-ai, source, etl, pipelines |
+| [Source: AI Org Operating Model](sources/ai-org-operating-model.md) | Eric Weber: technical × operating stacks multiply; operating transformation 6 components; manager-as-router dissolving | data-n-ai, source, agents |
+| [Source: Spark Join Strategies](sources/spark-join-strategies.md) | Three join strategies; Spark sort/merge default is wrong for most workloads; Photon 2–20x faster; query hints; 10MB threshold problem | data-n-ai, source, etl, pipelines |
 
 ---
 
