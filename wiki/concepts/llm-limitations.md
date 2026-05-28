@@ -34,7 +34,17 @@ Chain-of-thought prompting is described as "a very, very inefficient way of coer
 
 Humans attribute intelligence to things that express themselves fluently in language. LLMs exploit this bias. Fluency is not understanding.
 
+## Premature Convergence in Open-Ended Tasks
+
+Even without planning limitations, LLMs running autonomously on open-ended tasks converge prematurely on a fixed framing. The agent stabilises its interpretation early, then treats subsequent data as confirmatory evidence rather than continuing to explore.
+
+This is distinct from the world-model problem — it shows up in tasks that are purely linguistic (qualitative analysis, exploratory research, strategic synthesis). The underlying cause: agents optimise for coherence and stable objectives. Open-ended tasks have *evolving* evaluation criteria — the right answer depends on context the agent can't fully specify upfront. Without human steering at the direction level, the agent produces fluent but shallow outputs.
+
+See [Human-in-the-Loop](human-in-the-loop.md) and [Grounded Theory](grounded-theory.md) for the experimental evidence.
+
 ## See Also
 
 - [World Models](world-models.md)
+- [Human-in-the-Loop](human-in-the-loop.md)
+- [Grounded Theory](grounded-theory.md)
 - [Yann LeCun](../entities/yann-lecun.md)

@@ -45,7 +45,17 @@ The pattern applies wherever agent output can be measured with trustworthy feedb
 - Support knowledge (test against current product behaviour)
 - Protocol optimization (validate against domain rules)
 
+## Limits: When Structured Loops Aren't Enough
+
+Iterative repair loops assume the acceptance criteria are **stable and verifiable** — run the tests, check the schema, compare against a rubric. This assumption breaks for open-ended tasks where the criteria themselves evolve as the work progresses (qualitative analysis, creative direction, exploratory research).
+
+In those cases, the loop produces technically correct but directionally wrong output — the agent converges on a plausible framing early and iterates within it. Human steering at the *direction* level (not the artefact level) is needed before the loop locks in. See [Human-in-the-Loop](human-in-the-loop.md).
+
+For tasks where the criteria are stable but the agent stops too early, the [Ralph Loop](ralph-loop.md) addresses this by making external tests the only valid stop condition.
+
 ## Related Pages
 
 - [Source: Build Iterative Repair Loops with Codex](../sources/codex-iterative-repair-loops.md)
+- [Human-in-the-Loop](human-in-the-loop.md)
+- [Ralph Loop](ralph-loop.md)
 - [Codex](../entities/codex.md)

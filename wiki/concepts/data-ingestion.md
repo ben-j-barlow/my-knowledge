@@ -65,12 +65,26 @@ Most real platforms use all three:
 
 > "Start from the simplest option that meets your actual requirements. You can always extend this. The cost of building wrong at the start is cheaper than over-engineering."
 
+## Incremental Loads for Determinism
+
+Full batch loads are non-deterministic when they include LLM-based processing — every re-run produces different output. Converting to incremental daily loads scopes the non-determinism problem:
+
+- A re-run only re-introduces non-determinism into the **last day's** data
+- Presumably you're re-running that day because something went wrong — a degree of non-determinism is acceptable in that case
+- Incremental loads are also cheaper: each job operates on a fraction of total data
+
+**Trade-off:** Incremental jobs require explicit state management — tracking what has run, managing incremental checkpoints. The engineering overhead is higher than a full load. This is a pre-existing concern independent of AI.
+
+> "Move from full batch data processing to incremental batch data processing to help eschew some non-determinism." — Chris Riccomini
+
 ## See Also
 
 - [Event-Driven Architecture](event-driven-architecture.md)
+- [Self-Healing Pipelines](self-healing-pipelines.md)
 - [Kafka](../entities/kafka.md)
 - [Confluent](../entities/confluent.md)
 - [Fivetran](../entities/fivetran.md)
 - [Airbyte](../entities/airbyte.md)
 - [Apache Arrow](../entities/apache-arrow.md)
 - [Source: Modern Data Stack — Data Ingestion](../sources/modern-data-stack-ingestion.md)
+- [Source: Plan Mode All the Time](../sources/2026-05-21-plan-mode-substrait-de-role.md)

@@ -35,7 +35,7 @@ Current coverage spans two threads:
 
 **LLM limitations and world models:** LLMs are commercially valuable but architecturally incapable of predicting action consequences — which Yann LeCun argues disqualifies them for general intelligence. World models (JEPA) are the proposed alternative, learning abstract state representations enabling planning and embodiment.
 
-**Agentic patterns:** Iterative repair loops are an emerging practical pattern for agentic maintenance tasks — closed-loop workflows where an agent reviews an artifact, repairs it, validates the result, and feeds failures back as input to the next pass. The key insight is that separating review / repair / validate with structured JSON handoffs makes agent output auditable and trustworthy, not just impressive.
+**Agentic patterns:** Iterative repair loops work well when acceptance criteria are stable and verifiable. Two newer patterns address the cases they don't cover: the **Ralph Loop** (bash loop that gates on external tests — the agent cannot self-declare done) handles premature task abandonment; **human-in-the-loop at the direction level** handles tasks where the evaluation criteria evolve (qualitative analysis, exploratory research, strategy). The key finding from the qualitative analysis experiments: memo/direction feedback (tell the agent where to steer) outperforms artifact-level code review both in efficiency and in the quality of the resulting analysis. Independent multi-agent coding followed by one round of human reconciliation feedback is the strongest setup found so far.
 
 **Agentic inference as a distinct workload:** Agentic AI stresses all four hardware components simultaneously (CPU, GPU, HBM, DRAM) in ways neither training nor human inference do. Long context overflows HBM into DRAM; every tool call creates a CPU-GPU-DRAM handoff cycle; sessions run 10–50x longer than human inference. No purpose-built hardware exists yet — this is driving the second HBM supercycle.
 
@@ -45,9 +45,11 @@ Current coverage spans two threads:
 
 **Self-healing pipelines:** Six-layer pattern (Halodoc case study) for autonomous recovery without manual intervention: CDC auto-recovery, source-vs-lake consistency, mini-batch processing, smart memory scaling, warehouse lock management, cascading dependency recovery. Design principle: alert first, act second; fix foundation before downstream.
 
-**AI org operating model:** Eric Weber's two-stack model — technical stack (well-funded, gets budget) × operating stack (drifts, nobody funds it). They multiply, not add. Three emerging IC job shapes: AI output curators, algorithm/primitive writers, end-to-end orchestrators. Manager-as-router model dissolving; manager-as-coach replacing it.
+**AI org operating model:** Eric Weber's two-stack model — technical stack (well-funded, gets budget) × operating stack (drifts, nobody funds it). They multiply, not add. Three emerging IC job shapes: AI output curators, algorithm/primitive writers, end-to-end orchestrators. Manager-as-router model dissolving; manager-as-coach replacing it. Chris Riccomini's complementary thesis: "data engineer" as a distinct title will dissolve into a unified data role covering DE + ML + analytics.
 
-Subtopics being tracked: `llm`, `world-models`, `robotics`, `agents`, `ai-infra`, `etl`, `pipelines`, `streaming`, `query-optimization`, `lakehouse`
+**AI and data engineering workflows:** Chris Riccomini's practitioner framework: (1) plan mode all the time — never flip to implementation without iteratively probing the plan to exhaustion; (2) Ralph Loop for autonomous execution — external test gates, not the agent, decide when work is done; (3) quality gates — define, measure, enforce; (4) Substrait over SQL for LLM-generated queries — physical + logical operators, fewer tokens, client-side optimization; (5) incremental loads over full batch loads to scope non-determinism risk. Language choice is shifting to agent ergonomics: smallest, cheapest LLM output wins over human ergonomic preferences.
+
+Subtopics being tracked: `llm`, `world-models`, `robotics`, `agents`, `ai-infra`, `etl`, `pipelines`, `streaming`, `query-optimization`, `lakehouse`, `prompt-engineering`
 
 ---
 

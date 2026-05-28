@@ -65,7 +65,15 @@ Without this investment, stakeholders quietly conclude the team is less valuable
 
 The shift sounds small. It is actually a redesign of how the team relates to the rest of the company.
 
+## Role Convergence: The End of "Data Engineer"
+
+Chris Riccomini's complementary thesis: the over-specialisation of the data role (data engineer / data scientist / ML engineer / analytics engineer as separate titles) is a liability that AI is now dissolving. AI can handle the grunt work of each — inspecting failed pipelines, writing SQL, training models — making the distinctions less meaningful.
+
+The predicted consolidation: a unified "data" role covering data engineering, analytics, and ML/AI. This aligns with Eric Weber's career architecture changes above — the three new job shapes (curators, primitive writers, orchestrators) cut across the old title boundaries. See [Source: Plan Mode All the Time](../sources/2026-05-21-plan-mode-substrait-de-role.md).
+
 ## See Also
 
 - [Source: We're Missing Data — The Other Half of AI Transformation](../sources/ai-org-operating-model.md)
+- [Source: Plan Mode All the Time](../sources/2026-05-21-plan-mode-substrait-de-role.md)
+- [Chris Riccomini](../entities/chris-riccomini.md)
 - [Iterative Repair Loops](iterative-repair-loops.md)

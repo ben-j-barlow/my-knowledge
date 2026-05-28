@@ -81,8 +81,19 @@ Statistics feed every major optimizer decision: join order (cardinality), join s
 
 In lakehouses (Iceberg, Delta Lake), statistical metadata is largely optional and often not populated. This is the primary reason lakehouse query engines frequently produce suboptimal plans. See [Lakehouse Statistics](lakehouse-statistics.md).
 
+## Substrait: LLM-Friendly Query Representation
+
+SQL is purely logical — it specifies *what* to compute, not *how*. Substrait extends this with physical operators (merge join, hash join, specific scan strategies), making it possible to express a complete execution plan, not just a logical query.
+
+This matters for LLM-generated queries in two ways:
+1. **Token efficiency:** A structured binary serialization of a plan is more compact than equivalent SQL text.
+2. **Client-side optimization:** An LLM that can express physical operators can perform query optimization itself and pass the physical plan directly to the database — bypassing the engine's own optimizer for that query.
+
+See [Substrait](substrait.md).
+
 ## See Also
 
+- [Substrait](substrait.md)
 - [Lakehouse Statistics](lakehouse-statistics.md)
 - [DuckDB](../entities/duckdb.md)
 - [Apache Spark](../entities/apache-spark.md)

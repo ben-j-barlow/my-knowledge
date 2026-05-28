@@ -33,3 +33,5 @@ grep "^## \[" wiki/log.md | grep "ingest"       # all ingests
 ## [2026-05-20] ingest | data-n-ai | We're Missing Data: The Other Half of AI Transformation (Eric Weber)
 ## [2026-05-20] ingest | data-n-ai | Why Spark Joins Are Expensive — and What to Do About It
 ## [2026-05-20] ingest | investing | Treasury Yields Are Testing The AI Equity Rally (Agar Capital)
+## [2026-05-28] ingest | data-n-ai | Exploring Agent-Assisted Qualitative Analysis
+## [2026-05-28] ingest | data-n-ai | Plan Mode All the Time, Substrait over SQL, and the End of the DE Role ft. Chris Riccomini
