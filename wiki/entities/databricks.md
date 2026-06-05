@@ -1,7 +1,7 @@
 ---
 tags: [data-n-ai, entity, etl, pipelines]
-sources: [raw/data-n-ai/articles/Why Spark joins are expensive - and what to do about it.md]
-updated: 2026-05-20
+sources: ["raw/data-n-ai/articles/Why Spark joins are expensive - and what to do about it.md", "raw/data-n-ai/articles/Debunking 8 data layout myths why Liquid Clustering outperforms partitioning.md"]
+updated: 2026-06-05
 ---
 
 # Databricks
@@ -29,7 +29,20 @@ Note: Delta Lake stats are stored separately from Iceberg's Puffin files — cro
 
 ## Liquid Clustering
 
-Advanced data clustering strategy that organizes data to improve range statistics and data skipping effectiveness. Alternative to static partition schemes that degrade over time as data patterns change.
+Databricks' modern data-layout strategy and the proposed replacement for Hive-style partitioning. Clustering keys are treated as an *input the engine uses* to organise files (not baked into the directory structure), so keys can change at any time and cardinality isn't a constraint. GA in 2024. See [Data Layout](../concepts/data-layout.md) for the full partitioning-vs-clustering comparison.
+
+Key properties:
+- **No small-file problem / no cardinality limit** — always targets good file sizes; supports multi-dimensional clustering (e.g. time *and* identifier columns at once, replacing partition+Z-Order).
+- **Incremental clustering** (including at write time) → lower write amplification, no periodic full rewrites the way `OPTIMIZE ZORDER BY` requires.
+- **Row-level concurrency** — two writers updating different rows in the same file don't conflict, removing the need to partition just to separate writers ([deep dive](https://www.databricks.com/blog/deep-dive-how-row-level-concurrency-works-out-box)).
+- **Write-side optimisation** — output is standard Parquet + min/max stats in Delta/Iceberg, so any compatible reader (OSS Spark, DuckDB) benefits, not just Databricks.
+- **Automatic Liquid Clustering** — with UC managed tables + Predictive Optimization, the system selects clustering keys from observed query patterns.
+
+Related features: `REPLACE USING` / `REPLACE ON` for selective overwrites on any layout/compute; **co-clustered joins** (Private Preview) that skip the shuffle on Liquid-to-Liquid joins (~51% faster, 87% less shuffle); in-place **Liquid Conversion** of partitioned tables (Private Preview).
+
+## Predictive Optimization
+
+Managed background optimisation for Unity Catalog managed tables — runs OPTIMIZE/clustering/vacuum automatically. Pairs with Automatic Liquid Clustering to keep layout optimal without manual tuning.
 
 ## Unity Catalog
 
@@ -38,6 +51,8 @@ Data governance layer: centralised metadata, lineage, access control across work
 ## See Also
 
 - [Apache Spark](apache-spark.md)
+- [Data Layout](../concepts/data-layout.md)
 - [Query Optimization](../concepts/query-optimization.md)
 - [Lakehouse Statistics](../concepts/lakehouse-statistics.md)
 - [Source: Spark Join Strategies](../sources/spark-join-strategies.md)
+- [Source: Debunking 8 Data Layout Myths (Liquid Clustering)](../sources/2026-06-01-liquid-clustering-vs-partitioning.md)

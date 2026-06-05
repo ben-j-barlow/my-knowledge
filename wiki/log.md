@@ -35,3 +35,8 @@ grep "^## \[" wiki/log.md | grep "ingest"       # all ingests
 ## [2026-05-20] ingest | investing | Treasury Yields Are Testing The AI Equity Rally (Agar Capital)
 ## [2026-05-28] ingest | data-n-ai | Exploring Agent-Assisted Qualitative Analysis
 ## [2026-05-28] ingest | data-n-ai | Plan Mode All the Time, Substrait over SQL, and the End of the DE Role ft. Chris Riccomini
+## [2026-06-05] ingest | data-n-ai | A Good AGENTS.md Is a Model Upgrade. A Bad One Is Worse Than No Docs at All. (Augment Code)
+## [2026-06-05] ingest | data-n-ai | How to Build Your AGENTS.md (2026) (Augment Code)
+## [2026-06-05] ingest | investing | Kimi 2.6 Agent Swarm + Polymarket Weather Markets (@polydao)
+## [2026-06-05] query | data-n-ai | How to write a good AGENTS.md — reusable guide + template
+## [2026-06-05] ingest | data-n-ai | Debunking 8 Data Layout Myths — Why Liquid Clustering Outperforms Partitioning (Databricks)

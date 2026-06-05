@@ -71,6 +71,8 @@ Zone map effectiveness depends on data ordering:
 - Sorted / naturally ordered columns → narrow min-max spans → highly effective skipping
 - Randomly scattered values → wide spans → skipping rarely helps
 
+This is exactly what **data layout** strategies optimise for: the goal of partitioning, Z-Ordering, and Liquid Clustering is to make per-file min/max ranges as narrow as possible so more files can be skipped. Note that on Delta/Iceberg, pruning is always file-level against transaction-log stats — there is no directory-level pruning, even with partitioning. See [Data Layout](data-layout.md).
+
 Equivalent techniques: Snowflake "micro-partition pruning", BigQuery "block pruning", ClickHouse `minmax` indexes.
 
 For granular skipping beyond min/max: Bloom filters (definitely not present), Frequent Items sketches (detect skew), quantile sketches (estimate predicate selectivity). See [Lakehouse Statistics](lakehouse-statistics.md).
@@ -95,6 +97,7 @@ See [Substrait](substrait.md).
 
 - [Substrait](substrait.md)
 - [Lakehouse Statistics](lakehouse-statistics.md)
+- [Data Layout](data-layout.md)
 - [DuckDB](../entities/duckdb.md)
 - [Apache Spark](../entities/apache-spark.md)
 - [Databricks](../entities/databricks.md)

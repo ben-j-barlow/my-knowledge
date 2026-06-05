@@ -82,9 +82,14 @@ Statistical metadata is the input that makes join ordering, join strategy select
 - **Floecat** (open-source): guarantees accurate statistical metadata for Delta Lake and Iceberg, compatible with open standards
 - **FloeScan** (in development): extends coverage
 
+## Relationship to Data Layout
+
+Range (min/max) stats are only useful if data is physically organised so that each file's range is *narrow*. That organisation is the job of [data layout](data-layout.md) (partitioning, Z-Ordering, Liquid Clustering). A corollary worth stating explicitly: on Delta/Iceberg, file pruning is *always* driven by these transaction-log stats at file granularity — partitioning provides no separate directory-pruning shortcut. Layout quality therefore reduces to clustering quality, which is exactly what these statistics measure.
+
 ## See Also
 
 - [Query Optimization](query-optimization.md)
+- [Data Layout](data-layout.md)
 - [DuckDB](../entities/duckdb.md)
 - [Apache Spark](../entities/apache-spark.md)
 - [Databricks](../entities/databricks.md)
