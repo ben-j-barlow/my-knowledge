@@ -53,9 +53,15 @@ In those cases, the loop produces technically correct but directionally wrong ou
 
 For tasks where the criteria are stable but the agent stops too early, the [Ralph Loop](ralph-loop.md) addresses this by making external tests the only valid stop condition.
 
+## In production: adversarial review as a repair loop
+
+Anthropic's [agentic analytics](agentic-analytics.md) stack applies this pattern to SQL: every query is looped through an **adversarial-review sub-agent** that aggressively challenges the underlying assumptions before the answer is delivered (blocking findings must be fixed and re-reviewed — the agent may not self-certify). Measured cost/benefit on their eval set: **+6% accuracy, +32% tokens, +72% latency** — a concrete data point on the price of a verification loop. Notably they tried swapping the reviewer for a cheaper model and it lost most of the accuracy for no real speedup, a reminder that the *judge* quality is what makes the loop work.
+
 ## Related Pages
 
 - [Source: Build Iterative Repair Loops with Codex](../sources/codex-iterative-repair-loops.md)
+- [Agentic Analytics](agentic-analytics.md) — adversarial SQL review with measured cost/benefit
+- [Claude Skills](claude-skills.md) — the skill that orchestrates the review loop
 - [Human-in-the-Loop](human-in-the-loop.md)
 - [Ralph Loop](ralph-loop.md)
 - [Codex](../entities/codex.md)

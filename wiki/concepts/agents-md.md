@@ -111,13 +111,15 @@ project/
 - **Keep it ~100–150 lines.** Progressive disclosure, not comprehensive coverage.
 - **The "Non-Obvious Patterns" section is where the file earns its keep.** Counterintuitive decisions with mechanism explanations generalize the agent to novel situations.
 - **Treat it like code:** version-control it, review changes, and prune rules that no longer correspond to observed failures.
-- **Drift is the unsolved problem.** Vendors (Augment's Intent/Context Engine) propose "living specs" that agents update as they work, but at the manual-file level the answer is discipline and aggressive trimming.
+- **Drift is the unsolved problem.** Vendors (Augment's Intent/Context Engine) propose "living specs" that agents update as they work, but at the manual-file level the answer is discipline and aggressive trimming. *Anthropic's analytics team did partly solve it* for their analogous [skills](claude-skills.md): colocate the doc with the model it describes in one repo, and add a **CI/code-review hook that fails any model PR not touching its skill file** — ~90% of their data-model PRs now update the doc in the same diff. (See [Claude Skills](claude-skills.md) for the comparison.)
 
 This is one instance of the broader [Ralph Loop](ralph-loop.md) / [Human-in-the-Loop](human-in-the-loop.md) theme: agents do best when the human encodes *direction and constraints* up front, not when they bury the agent in exhaustive reference material.
 
 ## Related Pages
 
 - [Context Engineering](context-engineering.md) — the broader discipline; ETH Zurich cost/benefit study lives here
+- [Claude Skills](claude-skills.md) — the analytics analogue: procedural, on-demand, drift solved with a CI hook
+- [Agentic Analytics](agentic-analytics.md)
 - [Augment Code](../entities/augment-code.md) — publisher of both source studies
 - [Ralph Loop](ralph-loop.md)
 - [Human-in-the-Loop](human-in-the-loop.md)

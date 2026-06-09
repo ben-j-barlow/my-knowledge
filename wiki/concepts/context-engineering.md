@@ -37,6 +37,10 @@ Two conclusions that challenge common practice:
 1. **Auto-generated context files hurt.** In 5 of 8 settings they reduced success rates, added 2.45–3.92 steps per task, and raised cost 20–23%. They are *redundant with documentation the agent already reads independently* — duplicating it adds cost without signal. (A follow-up that first stripped all other repo docs found LLM-generated files then helped by +2.7%, confirming the redundancy mechanism.)
 2. **Human-written files help, but modestly** (~4 points) — and still incur the token overhead. Worth it because the overhead is the same either way; only human curation buys the upside.
 
+### Independent confirmation: Anthropic's analytics null result
+
+Anthropic's internal [agentic analytics](agentic-analytics.md) team reproduced the same mechanism on a different surface. They gave their agent grep access to **thousands** of prior SQL files and verified in transcripts it read them before every answer — accuracy moved **<1 point.** The answer was present in the corpus ~80% of the time on questions it got wrong, but "answer present" did not predict "now correct." Conclusion: the bottleneck is **structure** (mapping a question to the right entity), **not access** to prior work — the warehouse analogue of "auto-generated context files are redundant." A corollary they hit independently: **auto-generating the [semantic layer](semantic-layer.md) was net-negative** (it encoded the ambiguities it was meant to remove), so they **generate documentation with the LLM but let a human own the definition** — the same generate-docs-not-definitions split AGENTS.md reaches for hand-authored files.
+
 ### The cost in dollars
 
 At Claude Sonnet 4.6 pricing (~50K input / 5K output baseline task), the ~20% overhead works out to roughly **$45 / 1K tasks, $450 / 10K, $4,500 / 100K per month.** **Prompt caching is the primary mitigation** — cache reads are ~90% cheaper than standard input pricing, which is why caching is non-negotiable for any production agent loop.
@@ -63,10 +67,14 @@ Context engineering is the connective tissue under several patterns already in t
 - [Ralph Loop](ralph-loop.md) — re-prompting with a clean context each iteration is itself a context-management strategy (avoids accumulating rot across attempts).
 - [Human-in-the-Loop](human-in-the-loop.md) — direction-level feedback is high-signal-per-token compared to artifact-level review.
 - [Agentic Inference](agentic-inference.md) — long agent contexts overflow HBM into DRAM; context length is a hardware cost, not just a quality one.
+- [Agentic Analytics](agentic-analytics.md) / [Claude Skills](claude-skills.md) — the warehouse version: metadata-as-product makes a warehouse "legible" the way code is; the structure-not-access null result reproduces the ETH Zurich finding; skills solve drift with a CI hook rather than leaving it unsolved.
 
 ## Related Pages
 
 - [AGENTS.md](agents-md.md)
+- [Agentic Analytics](agentic-analytics.md)
+- [Claude Skills](claude-skills.md)
+- [Semantic Layer](semantic-layer.md)
 - [Substrait](substrait.md)
 - [Ralph Loop](ralph-loop.md)
 - [Human-in-the-Loop](human-in-the-loop.md)

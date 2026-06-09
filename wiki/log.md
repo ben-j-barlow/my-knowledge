@@ -40,3 +40,4 @@ grep "^## \[" wiki/log.md | grep "ingest"       # all ingests
 ## [2026-06-05] ingest | investing | Kimi 2.6 Agent Swarm + Polymarket Weather Markets (@polydao)
 ## [2026-06-05] query | data-n-ai | How to write a good AGENTS.md — reusable guide + template
 ## [2026-06-05] ingest | data-n-ai | Debunking 8 Data Layout Myths — Why Liquid Clustering Outperforms Partitioning (Databricks)
+## [2026-06-09] ingest | data-n-ai | How Anthropic Enables Self-Service Data Analytics with Claude
