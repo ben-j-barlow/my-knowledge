@@ -41,3 +41,5 @@ grep "^## \[" wiki/log.md | grep "ingest"       # all ingests
 ## [2026-06-05] query | data-n-ai | How to write a good AGENTS.md — reusable guide + template
 ## [2026-06-05] ingest | data-n-ai | Debunking 8 Data Layout Myths — Why Liquid Clustering Outperforms Partitioning (Databricks)
 ## [2026-06-09] ingest | data-n-ai | How Anthropic Enables Self-Service Data Analytics with Claude
+## [2026-07-21] ingest | data-n-ai | Code That Runs Is Not Code That's Correct — 4 Ways to Trust an AI-Written Data Pipeline (MotherDuck)
+## [2026-07-21] ingest | data-n-ai | Where AI Agents Belong in Data Engineering — The Correctness Layer (Simon Späti)
