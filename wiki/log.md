@@ -43,3 +43,8 @@ grep "^## \[" wiki/log.md | grep "ingest"       # all ingests
 ## [2026-06-09] ingest | data-n-ai | How Anthropic Enables Self-Service Data Analytics with Claude
 ## [2026-07-21] ingest | data-n-ai | Code That Runs Is Not Code That's Correct — 4 Ways to Trust an AI-Written Data Pipeline (MotherDuck)
 ## [2026-07-21] ingest | data-n-ai | Where AI Agents Belong in Data Engineering — The Correctness Layer (Simon Späti)
+## [2026-07-23] ingest | data-n-ai | Write-Ahead Intent Log — a Foundation for Efficient CDC at Scale (DoorDash)
+## [2026-07-23] ingest | data-n-ai | Data Quality Traffic Lights (Nordnet)
+## [2026-07-23] ingest | data-n-ai | Why We Moved from Hive-Style Data Lakes to Apache Iceberg (Naidu Rongali)
+## [2026-07-23] ingest | data-n-ai | DuckDB's Agent Moment (Jordan Tigani, MotherDuck)
+## [2026-07-23] ingest | data-n-ai | 7 Barriers Between Data Teams and Self-Healing Architecture (Hugo Lu)
