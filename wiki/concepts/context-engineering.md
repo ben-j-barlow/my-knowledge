@@ -65,6 +65,7 @@ Context engineering is the connective tissue under several patterns already in t
 - [AGENTS.md](agents-md.md) — the most-studied context-engineering surface.
 - [Substrait](substrait.md) — Chris Riccomini's "cost-as-tokens" argument is context engineering applied to query interfaces: choose the representation that produces the smallest, cheapest LLM output.
 - [Ralph Loop](ralph-loop.md) — re-prompting with a clean context each iteration is itself a context-management strategy (avoids accumulating rot across attempts).
+- [Session Continuity](session-continuity.md) — the across-session sibling discipline: what survives when the window resets between sessions, not just what's in it during one. "Context anxiety" (rushed-finish behavior near the context limit) links the two directly.
 - [Human-in-the-Loop](human-in-the-loop.md) — direction-level feedback is high-signal-per-token compared to artifact-level review.
 - [Agentic Inference](agentic-inference.md) — long agent contexts overflow HBM into DRAM; context length is a hardware cost, not just a quality one.
 - [Agentic Analytics](agentic-analytics.md) / [Claude Skills](claude-skills.md) — the warehouse version: metadata-as-product makes a warehouse "legible" the way code is; the structure-not-access null result reproduces the ETH Zurich finding; skills solve drift with a CI hook rather than leaving it unsolved.
@@ -77,6 +78,7 @@ Context engineering is the connective tissue under several patterns already in t
 - [Semantic Layer](semantic-layer.md)
 - [Substrait](substrait.md)
 - [Ralph Loop](ralph-loop.md)
+- [Session Continuity](session-continuity.md)
 - [Human-in-the-Loop](human-in-the-loop.md)
 - [Agentic Inference](agentic-inference.md)
 - [Augment Code](../entities/augment-code.md)

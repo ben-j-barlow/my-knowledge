@@ -90,6 +90,7 @@ Caveat: about half of all search-result hits in the traces came from grep/semant
 4. **Testing rules** — exact commands for complex build systems.
 5. **"Don't touch" zones / permission boundaries** — a three-tier `✅ Always / ⚠️ Ask First / 🚫 Never` hierarchy. "Never commit secrets" was the single most common helpful constraint across 2,500+ repos.
 6. **Non-standard tooling** — highest ROI for tools underrepresented in training data.
+7. **Clock-in / clock-out routine** — for tasks that span sessions, a numbered session-start step (read the progress/decision log, run checks, resume from "next steps") and session-end step (update the log, run checks, commit) is exactly the kind of non-inferable procedure this file exists for. See [Session Continuity](session-continuity.md) for the full pattern (PROGRESS.md, DECISIONS.md, git checkpoints) that this routine hands off between.
 
 ## Modular organization
 
@@ -122,6 +123,7 @@ This is one instance of the broader [Ralph Loop](ralph-loop.md) / [Human-in-the-
 - [Agentic Analytics](agentic-analytics.md)
 - [Augment Code](../entities/augment-code.md) — publisher of both source studies
 - [Ralph Loop](ralph-loop.md)
+- [Session Continuity](session-continuity.md) — the clock-in/clock-out routine and PROGRESS.md/DECISIONS.md pattern for tasks that span sessions
 - [Human-in-the-Loop](human-in-the-loop.md)
 - [AI Org Operating Model](ai-org-operating-model.md)
 - [Source: A Good AGENTS.md Is a Model Upgrade](../sources/2026-04-23-good-agents-md-model-upgrade.md)

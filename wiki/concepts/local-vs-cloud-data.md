@@ -3,7 +3,6 @@ tags: [data-n-ai, concept, etl, pipelines, agents]
 sources: [wiki/sources/motherduck-trustworthy-ai-pipelines.md]
 updated: 2026-07-21
 ---
-
 # Local vs. Cloud Data: Tradeoffs
 
 Whether to work with data locally (in-process, no network) or in the cloud (remote database, warehouse) is a fundamental tradeoff in data engineering and agent-driven pipelines. Neither is uniformly better; the choice depends on workload, latency requirements, team size, and cost.

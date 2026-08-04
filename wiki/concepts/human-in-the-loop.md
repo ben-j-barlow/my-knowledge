@@ -48,12 +48,14 @@ One productive pattern: two independent agents process the same corpus separatel
 ## Relationship to Other Patterns
 
 - **Iterative repair loops:** Closed-loop pattern for tasks with *stable* acceptance criteria (run tests, check output format). HITL is implicit in the stop condition ("remaining issue requires human judgment") but the loop itself runs without humans. For tasks with *evolving* criteria, HITL needs to be built into the loop at the direction level.
-- **Ralph Loop:** Autonomous iteration via external test gates. Addresses a different failure mode (agents declaring themselves done prematurely) rather than premature convergence on a wrong framing.
+- **Ralph Loop:** Autonomous iteration via external test gates. Addresses a different failure mode ([premature completion declaration](premature-completion-declaration.md)) rather than premature convergence on a wrong framing.
+- **Premature Completion Declaration:** The multi-agent HITL pattern here (two independent agents + a reconciliation step) is the human-in-the-loop cousin of that page's worker/checker separation — both replace a single agent's self-report with an independent second opinion on the same output; the difference is whether the second opinion comes from a human or a dedicated evaluator agent.
 
 ## Related Pages
 
 - [Grounded Theory](grounded-theory.md)
 - [Iterative Repair Loops](iterative-repair-loops.md)
 - [Ralph Loop](ralph-loop.md)
+- [Premature Completion Declaration](premature-completion-declaration.md)
 - [LLM Limitations](llm-limitations.md)
 - [Source: Agent-Assisted Qualitative Analysis](../sources/2026-05-21-agent-assisted-qualitative-analysis.md)

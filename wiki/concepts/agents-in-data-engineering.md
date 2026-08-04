@@ -3,7 +3,6 @@ tags: [data-n-ai, concept, agents, etl, pipelines, prompt-engineering]
 sources: [wiki/sources/motherduck-trustworthy-ai-pipelines.md, wiki/sources/spati-correctness-layer-agents.md]
 updated: 2026-07-21
 ---
-
 # Agents in Data Engineering
 
 The use of AI agents to generate, validate, and maintain data pipelines. Data engineering is amenable to agentic workflows because:

@@ -48,9 +48,19 @@ The loop is only as good as its exit criterion. Three steps:
 2. **Measure** it (tooling: coverage reports, schema validators)
 3. **Enforce** thresholds (CLAUDE.md rules + git hooks — the harness runs these, not the model)
 
+## Feature Lists as the Concrete State Structure
+
+[Feature Lists](feature-lists.md) give the Ralph Loop's exit criterion a concrete, machine-readable form: each feature's `passing` state is set only by a successful verification-command run, never by the agent's own judgment — the same "external gate decides done" principle, expressed as data rather than as a bash loop. The loop is the control flow; the feature list is the state it reads and writes each iteration.
+
+## Relationship to Premature Completion Declaration
+
+The Ralph Loop and [Premature Completion Declaration](premature-completion-declaration.md) attack the same root cause — agents are systematically overconfident about their own completion state — from different angles. The Ralph Loop removes the agent's ability to *stop*: only external test results end the loop. Premature-completion-declaration prevention removes the agent's ability to *claim*: a layered termination check (syntax → runtime → system-level) and an independent evaluator must both sign off before "done" is accepted, whether or not the agent is still iterating.
+
 ## Related Pages
 
 - [Iterative Repair Loops](iterative-repair-loops.md)
+- [Feature Lists](feature-lists.md)
+- [Premature Completion Declaration](premature-completion-declaration.md)
 - [Human-in-the-Loop](human-in-the-loop.md)
 - [Chris Riccomini](../entities/chris-riccomini.md)
 - [Source: Plan Mode All the Time](../sources/2026-05-21-plan-mode-substrait-de-role.md)

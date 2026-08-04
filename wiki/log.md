@@ -48,3 +48,6 @@ grep "^## \[" wiki/log.md | grep "ingest"       # all ingests
 ## [2026-07-23] ingest | data-n-ai | Why We Moved from Hive-Style Data Lakes to Apache Iceberg (Naidu Rongali)
 ## [2026-07-23] ingest | data-n-ai | DuckDB's Agent Moment (Jordan Tigani, MotherDuck)
 ## [2026-07-23] ingest | data-n-ai | 7 Barriers Between Data Teams and Self-Healing Architecture (Hugo Lu)
+## [2026-08-04] ingest | data-n-ai | Lecture 05: Keeping Context Alive Across Sessions (Learn Harness Engineering)
+## [2026-08-04] ingest | data-n-ai | Lecture 08: Use Feature Lists to Constrain What the Agent Does (Learn Harness Engineering)
+## [2026-08-04] ingest | data-n-ai | Lecture 9: Preventing Agents from Declaring Victory Too Early (Learn Harness Engineering)
