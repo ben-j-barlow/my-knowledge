@@ -51,3 +51,7 @@ grep "^## \[" wiki/log.md | grep "ingest"       # all ingests
 ## [2026-08-04] ingest | data-n-ai | Lecture 05: Keeping Context Alive Across Sessions (Learn Harness Engineering)
 ## [2026-08-04] ingest | data-n-ai | Lecture 08: Use Feature Lists to Constrain What the Agent Does (Learn Harness Engineering)
 ## [2026-08-04] ingest | data-n-ai | Lecture 9: Preventing Agents from Declaring Victory Too Early (Learn Harness Engineering)
+## [2026-09-11] ingest | data-n-ai | Lecture 07: Draw Clear Task Boundaries for Agents (Learn Harness Engineering)
+## [2026-09-11] ingest | data-n-ai | Lecture 11: Making the Agent's Runtime Observable (Learn Harness Engineering)
+## [2026-09-11] ingest | data-n-ai | DuckDB Just Put a $400K/Year Skill on Your Laptop (DataExpert)
+## [2026-09-11] ingest | data-n-ai | WikiSkill: Compiling Agent Experience into Persistent Knowledge for Skill Evolution (Google Research)

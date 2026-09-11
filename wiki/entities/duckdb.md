@@ -1,7 +1,7 @@
 ---
-tags: [data-n-ai, entity, etl, pipelines]
-sources: ["raw/data-n-ai/articles/DuckDB Internals Why is DuckDB Fast?.md"]
-updated: 2026-05-20
+tags: [data-n-ai, entity, etl, pipelines, lakehouse]
+sources: ["raw/data-n-ai/articles/DuckDB Internals Why is DuckDB Fast?.md", "raw/data-n-ai/articles/2026-09-11-duckdb-400k-skill.md"]
+updated: 2026-09-11
 ---
 
 # DuckDB
@@ -40,15 +40,25 @@ DuckDB eliminates this entirely. Results live in the same process memory. No enc
 | Rill | Open-source BI built on DuckDB |
 | Greybeam | Multi-engine routing layer |
 
+## Iceberg Write Support (v1.5.3, May 2026)
+
+Before v1.5.3, DuckDB could *read* [Apache Iceberg](../concepts/apache-iceberg.md) tables but not write them — every Iceberg write workflow still required a Spark cluster (96% of Iceberg users ran Spark as their write engine circa early 2026). v1.5.3 shipped `MERGE INTO`, `ALTER TABLE`, partition transforms, and Iceberg V3 format support, collapsing that requirement into a 30MB binary. Combined with **DuckLake** (April 2026) — which embeds the Iceberg catalog in SQLite/Postgres instead of a distributed catalog service — this closed the last gap in running a full local lakehouse (DuckDB + Iceberg + dbt Core) without any cloud infrastructure. AWS acquired the DuckLabs team in August 2026.
+
+Known limitation: DuckDB still enforces single-writer semantics — concurrent multi-process writes serialize or fail. The "Quack protocol" and DuckLake both have fixes in progress but neither is fully stable as of the source's writing (Sept 2026).
+
 ## Trade-offs
 
 - **Single-node**: does not distribute across a cluster; for datasets that exceed a single machine's resources, Spark or a cloud warehouse is needed
 - **OLAP, not OLTP**: optimized for analytical scans, aggregations, joins — not high-throughput point reads/writes
+- **Single-writer**: no stable concurrent-write story yet (see above)
 
 ## See Also
 
 - [Apache Arrow](apache-arrow.md)
+- [Apache Iceberg](../concepts/apache-iceberg.md)
 - [Query Optimization](../concepts/query-optimization.md)
 - [Lakehouse Statistics](../concepts/lakehouse-statistics.md)
 - [Apache Spark](apache-spark.md)
+- [DuckDB for Agents](../concepts/duckdb-for-agents.md)
 - [Source: DuckDB Internals Part 1](../sources/duckdb-internals-part1.md)
+- [Source: DuckDB Just Put a $400K/Year Skill on Your Laptop](../sources/duckdb-400k-skill.md)

@@ -1,7 +1,7 @@
 ---
 tags: [data-n-ai, concept, etl, pipelines, lakehouse]
-sources: [wiki/sources/hive-to-iceberg-migration.md]
-updated: 2026-07-23
+sources: [wiki/sources/hive-to-iceberg-migration.md, wiki/sources/duckdb-400k-skill.md]
+updated: 2026-09-11
 ---
 
 # Apache Iceberg
@@ -57,8 +57,17 @@ Iceberg introduces metadata maintenance responsibilities:
 - AWS Glue maintenance: scheduled compaction/expiration
 - S3 Tables: fully managed, lowest effort
 
+## 2026 Adoption Notes
+
+- **Apache Polaris** — a free, self-hostable REST catalog — graduated to a top-level Apache project in February 2026, removing "which catalog" as a blocker for local/self-managed Iceberg work.
+- A Ryft survey of 252 senior data leaders (early 2026) found Iceberg had moved from "emerging option" to core enterprise data-platform infrastructure.
+- **[DuckDB](../entities/duckdb.md) shipped Iceberg write support in v1.5.3** (May 2026) — `MERGE INTO`, `ALTER TABLE`, partition transforms, Iceberg V3 — ending the prior requirement that all Iceberg writes go through a Spark cluster. See [Source: DuckDB Just Put a $400K/Year Skill on Your Laptop](../sources/duckdb-400k-skill.md).
+- Real-world operational failure modes cited alongside the above: manifest explosion (query planning 0.5s at 30 manifests → 4s+ at 300, before compaction) and small-file accumulation — both invisible at laptop scale, both live risks at production scale.
+
 ## See Also
 
 - [[Hive-Style Data Lake Limitations]] — problems Iceberg solves
 - [[Data Layout]] — partitioning tradeoffs across formats
 - [[Change Data Capture]] — Iceberg enables CDC-heavy pipelines
+- [DuckDB](../entities/duckdb.md) — now a viable local Iceberg write engine
+- [Source: DuckDB Just Put a $400K/Year Skill on Your Laptop](../sources/duckdb-400k-skill.md)

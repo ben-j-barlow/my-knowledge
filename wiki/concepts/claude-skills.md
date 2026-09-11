@@ -1,7 +1,7 @@
 ---
 tags: [data-n-ai, concept, agents, prompt-engineering]
-sources: ["raw/data-n-ai/articles/How Anthropic enables self-service data analytics with Claude.md"]
-updated: 2026-06-09
+sources: ["raw/data-n-ai/articles/How Anthropic enables self-service data analytics with Claude.md", "raw/data-n-ai/articles/2026-09-11-wikiskill-agent-skill-evolution.md"]
+updated: 2026-09-11
 ---
 
 # Claude Skills
@@ -70,6 +70,16 @@ Both are markdown context for agents, both live by progressive disclosure and re
 
 ---
 
+## Automated Skill Evolution (WikiSkill)
+
+Anthropic's approach above is **human-maintained**: engineers write skills, and a CI hook keeps them from drifting out of sync with the code. Google Research's WikiSkill (2026) proposes the fully-automated counterpart — a framework that discovers and refines skills itself, with a structural twist that validates the maintenance strategy above from a different angle.
+
+WikiSkill inserts a **persistent wiki layer between raw execution traces and the evolving skills**: a `raw/` layer of immutable execution traces, a `wiki/` layer of structured, compounding patterns (an evolution log plus an audit trail of every proposed skill diff and its accept/reject outcome), and a `skills/` layer of the active procedural skills actually injected into the agent's prompt. An ablation isolates the wiki's contribution precisely: giving the skill-proposing agent access to this persistent wiki raised average benchmark score by +15 points over an otherwise-identical setup with no persistent knowledge layer at all — recurring failure modes that a single iteration's traces can't resolve get resolved once the pattern has been seen and recorded across several iterations.
+
+One result reframes what "skill quality" even means: skills evolved by one model **transferred to and sometimes outperformed** the skills a different model evolved for itself (e.g. a 9B model reached 50.5% on a spreadsheet benchmark using a 27B model's skills, vs. 33.6% with its own). The paper's conclusion — *skill discovery and skill execution are distinct capabilities* — cuts against the assumption that an agent's own experience is the best source of its own procedural knowledge.
+
+The design rule that most directly echoes this knowledge base's own architecture: the **inference/execution agent is deliberately denied wiki access during training rollouts** — only the maintenance and skill-proposal agents read it. Letting the executing agent shortcut through the wiki directly (rather than through skills) made its traces *less* informative for skill development. This is the automated-loop analogue of "LLM reads raw/, never writes it" and "the wiki is LLM-owned curated knowledge, not a dumping ground the working agent free-associates into."
+
 ## Related Pages
 
 - [Agentic Analytics](agentic-analytics.md) — the 21%→95% result in context
@@ -78,4 +88,6 @@ Both are markdown context for agents, both live by progressive disclosure and re
 - [Context Engineering](context-engineering.md) — progressive disclosure, drift, structure-not-access
 - [Iterative Repair Loops](iterative-repair-loops.md) — the adversarial-review sub-agent loop
 - [Anthropic](../entities/anthropic.md)
+- [Session Continuity](session-continuity.md) — the same persistent-knowledge-layer pattern applied to skill evolution instead of task handoff
 - [Source: How Anthropic Enables Self-Service Data Analytics with Claude](../sources/2026-06-03-anthropic-self-service-analytics.md)
+- [Source: WikiSkill — Compiling Agent Experience into Persistent Knowledge for Skill Evolution](../sources/wikiskill-agent-skill-evolution.md)

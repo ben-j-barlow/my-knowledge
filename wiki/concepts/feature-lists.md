@@ -1,7 +1,7 @@
 ---
 tags: [data-n-ai, concept, agents, prompt-engineering, testing]
-sources: [wiki/sources/lecture-08-feature-lists.md]
-updated: 2026-08-04
+sources: [wiki/sources/lecture-08-feature-lists.md, wiki/sources/lecture-07-task-boundaries.md]
+updated: 2026-09-11
 ---
 
 # Feature Lists (Harness Primitives)
@@ -63,6 +63,20 @@ Each item should be scoped to "completable in one session":
 
 Illustrative 10-feature e-commerce case: memo-based tracking left a new session needing ~20 minutes to infer state (and led it to re-implement completed work); a structured feature list let a new session read state in ~3 minutes and resume directly from the first non-`passing` item. Reported result: **+45% feature completion rate, zero duplicate implementations** versus free-form tracking.
 
+## WIP=1: Constraining How Many Items Are `active`
+
+A feature list defines *what* "done" means; it doesn't by itself stop an agent from marking several items `active` at once and diluting effort across all of them. **Overreach** — activating more work than a session can finish — and **under-finish** — the completed fraction of activated work falling below threshold — are the same failure viewed from opposite ends: overreach dilutes attention, dilution causes under-finish, and the half-finished code left behind raises complexity, which drives more overreach next round.
+
+The fix, borrowed from Kanban, is a **WIP limit of 1**: only one item may be `active` at a time; the next `not_started` item may only be picked after the current one reaches `passing`. This isn't a stylistic preference — Anthropic measured a **37% higher completion rate** for agents using a WIP=1-equivalent "small next step" strategy over broad, multi-task prompts, and lines of code generated correlates *negatively* with features actually completed (more code, fewer finished features). A controlled 8-feature case study found unconstrained mode hit 20% end-to-end pass rate (3/8 features done after 3 sessions) versus WIP=1's 100% pass rate on touched work (7/8 done after 4 sessions) — **87.5% vs 37.5% completion**, with WIP=1 also producing less total code.
+
+Three primitives extend the state machine to enforce this:
+
+- **Scope Surface** — the feature list reframed as a DAG: each item is a node, dependencies are edges, and only four states exist (`not_started / active / blocked / passing`). This is the same structure as the Triple Structure above, described at the level the scheduler reasons about.
+- **Completion Pressure** — the harness force, implemented as the WIP limit plus pass-state gating, that keeps the agent from starting item N+1 before item N is `passing`. It's the mechanism, not the metric.
+- **Verified Completion Rate (VCR)** — `verified tasks / activated tasks`. The harness should block new activations whenever VCR < 1.0, making "how many things are half-done right now" an explicit, monitored number instead of an invisible accumulation.
+
+In `AGENTS.md`/`CLAUDE.md` terms this is a one-line work rule: *"Work on one feature at a time; don't start the next until the current one passes end-to-end verification; don't 'also refactor' something else while implementing it."*
+
 ---
 
 ## Relationship to Other Patterns
@@ -81,3 +95,4 @@ Illustrative 10-feature e-commerce case: memo-based tracking left a new session 
 - [AGENTS.md](agents-md.md)
 - [Premature Completion Declaration](premature-completion-declaration.md)
 - [Source: Lecture 08 — Use Feature Lists to Constrain What the Agent Does](../sources/lecture-08-feature-lists.md)
+- [Source: Lecture 07 — Draw Clear Task Boundaries for Agents](../sources/lecture-07-task-boundaries.md)
