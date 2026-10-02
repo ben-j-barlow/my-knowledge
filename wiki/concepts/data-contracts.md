@@ -1,7 +1,7 @@
 ---
 tags: [data-n-ai, concept, pipelines, testing, agents]
-sources: [wiki/sources/motherduck-trustworthy-ai-pipelines.md]
-updated: 2026-07-21
+sources: [wiki/sources/motherduck-trustworthy-ai-pipelines.md, wiki/sources/harness-engineering-agentic-data-engineering.md]
+updated: 2026-10-02
 ---
 
 # Data Contracts
@@ -70,3 +70,4 @@ A single forgotten `/10` on the unit conversion will put every reading far outsi
 - [[agents-in-data-engineering]] — contracts are the specification language for agent-written pipelines
 - [[correctness-layer]] — contracts are the boundary between probabilistic agent design and deterministic validation
 - [Feature Lists](feature-lists.md) — the general-purpose harness version of the same idea: an executable spec (contract / verification command) gates a state transition (publish / passing) that the agent cannot grant itself
+- [Harness Engineering](harness-engineering.md) — contracts as the concrete form of sign-off gates 2 (context complete) and 5 (results validated)

@@ -9,7 +9,8 @@ tags:
 sources:
   - wiki/sources/motherduck-trustworthy-ai-pipelines.md
   - wiki/sources/spati-correctness-layer-agents.md
-updated: 2026-07-21
+  - wiki/sources/harness-engineering-agentic-data-engineering.md
+updated: 2026-10-02
 ---
 # Agents in Data Engineering
 
@@ -103,6 +104,10 @@ Package the workflow (data inspection, contracting, WAP, testing) as a reusable 
 | Duplicates leak through | Quality flags or dedup rules missed | Data inspection discovers Q_FLAG; contract encodes dedup rule; test case on duplicates |
 | Stale assumptions | Pipeline works today, breaks when data changes | Contracts encode assumptions (units, ranges, rates); audit gates catch drift |
 
+## Harness Engineering Framing
+
+[Harness Engineering](harness-engineering.md) names the same three-level progression from the governance side rather than the tooling side, as three adoption stages: **Collaborative Assistance → Controlled Execution → Governed Autonomy**. It also supplies a checklist — the **seven sign-off gates** (intent, context, plan, execution, results, failures, audit all verifiable) — for deciding *when* a pipeline is mature enough to move up a level, rather than relying on tooling maturity alone. Its risk-tiered human-in-the-loop table (Low/Medium/High/Critical) is a more granular version of discipline 3's publish gate: not every action needs the same amount of human oversight, only the ones that cross a risk boundary.
+
 ## Cross-Topic Connection
 
 Data engineering agents feed the [[agentic-analytics]] and [[semantic-layer]] layers. Clean, trustworthy data pipelines are the foundation for agent-written analytics on top.
@@ -112,6 +117,7 @@ Data engineering agents feed the [[agentic-analytics]] and [[semantic-layer]] la
 - [[data-contracts]] — the spec language for agent DE
 - [[write-audit-publish]] — the safety gate for agent DE
 - [[correctness-layer]] — the architecture for mission-critical DE
+- [[harness-engineering]] — the governance-side framing of this same maturity progression
 - [[claude-skills]] — the persistence mechanism
 - [[agentic-analytics]] — the downstream use case
 - [[local-vs-cloud-data]] — the tradeoff in where agent verification happens

@@ -1,7 +1,7 @@
 ---
 tags: [data-n-ai, concept, etl, pipelines, agents]
-sources: ["raw/data-n-ai/articles/How Anthropic enables self-service data analytics with Claude.md"]
-updated: 2026-06-09
+sources: ["raw/data-n-ai/articles/How Anthropic enables self-service data analytics with Claude.md", "wiki/sources/harness-engineering-agentic-data-engineering.md"]
+updated: 2026-10-02
 ---
 
 # Semantic Layer
@@ -45,10 +45,16 @@ Agents reliably invent excuses to skip the semantic layer and drop to raw SQL �
 
 ---
 
+## Beyond Analytics: a Harness Layer
+
+[Harness Engineering](harness-engineering.md) generalizes this concept beyond analytics as **L3: Semantic & Knowledge** — business rules, metadata, lineage, metrics, glossary, data contracts, and execution memory that any agent (not just an analytics agent) must consult before L4's control plane lets it act. Anthropic's "try the semantic layer first" rule is a specific instance of a general one: the agent is never supposed to reach L1 (raw execution) without passing through L3 first.
+
 ## Related Pages
 
 - [Agentic Analytics](agentic-analytics.md) — the stack this anchors
 - [Claude Skills](claude-skills.md) — route the agent here first
 - [Context Engineering](context-engineering.md) — curate, don't auto-generate
 - [Substrait](substrait.md) — a complementary lower-level query representation for LLMs
+- [Harness Engineering](harness-engineering.md) — generalizes this as the L3 Semantic & Knowledge layer
 - [Source: How Anthropic Enables Self-Service Data Analytics with Claude](../sources/2026-06-03-anthropic-self-service-analytics.md)
+- [Source: Rebuilding Data Engineering with Harness Engineering](../sources/harness-engineering-agentic-data-engineering.md)

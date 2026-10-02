@@ -1,7 +1,7 @@
 ---
 tags: [data-n-ai, concept, pipelines, testing, etl]
-sources: [wiki/sources/motherduck-trustworthy-ai-pipelines.md]
-updated: 2026-07-21
+sources: [wiki/sources/motherduck-trustworthy-ai-pipelines.md, wiki/sources/harness-engineering-agentic-data-engineering.md]
+updated: 2026-10-02
 ---
 
 # Write-Audit-Publish (WAP)
@@ -77,8 +77,13 @@ assert count(rows) < MAX_EXPECTED  # not runaway growth
 assert all(foreign_key in upstream_table)
 ```
 
+## As a Sign-Off Gate
+
+[Harness Engineering](harness-engineering.md)'s seven sign-off gates name the Audit phase as **gate 5 (results can be validated)** and the retry/rollback logic a failed audit should trigger as **gate 6 (failures can be recovered)** — the article flags gate 5 as one of the two most commonly skipped in real pipelines, which matches WAP's whole reason for existing: a pipeline that runs without erroring is not evidence it's correct.
+
 ## Related Concepts
 
 - [[data-contracts]] — the specification being audited
 - [[agents-in-data-engineering]] — WAP is the canonical safe deployment for agent-written pipelines
 - [[self-healing-pipelines]] — cascading recovery; WAP is the first gate
+- [[harness-engineering]] — WAP as an implementation of sign-off gates 5 and 6

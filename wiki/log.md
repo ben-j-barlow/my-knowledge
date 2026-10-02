@@ -55,3 +55,7 @@ grep "^## \[" wiki/log.md | grep "ingest"       # all ingests
 ## [2026-09-11] ingest | data-n-ai | Lecture 11: Making the Agent's Runtime Observable (Learn Harness Engineering)
 ## [2026-09-11] ingest | data-n-ai | DuckDB Just Put a $400K/Year Skill on Your Laptop (DataExpert)
 ## [2026-09-11] ingest | data-n-ai | WikiSkill: Compiling Agent Experience into Persistent Knowledge for Skill Evolution (Google Research)
+## [2026-09-14] query | data-n-ai | Where should agent-facing concept docs live relative to per-table notes in a data catalog?
+## [2026-10-02] ingest | data-n-ai | Rebuilding Data Engineering with Harness Engineering (HackerNoon, Nie Lifeng)
+## [2026-10-02] ingest | data-n-ai | RRSI: Regularized Recursive Self-Improvement of Agent Harnesses (Google, arXiv:2609.24972)
+## [2026-10-02] ingest | data-n-ai | How We Engineer Safer Agents (Perplexity)

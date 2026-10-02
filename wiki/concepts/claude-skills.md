@@ -1,7 +1,7 @@
 ---
 tags: [data-n-ai, concept, agents, prompt-engineering]
-sources: ["raw/data-n-ai/articles/How Anthropic enables self-service data analytics with Claude.md", "raw/data-n-ai/articles/2026-09-11-wikiskill-agent-skill-evolution.md"]
-updated: 2026-09-11
+sources: ["raw/data-n-ai/articles/How Anthropic enables self-service data analytics with Claude.md", "raw/data-n-ai/articles/2026-09-11-wikiskill-agent-skill-evolution.md", "wiki/sources/harness-engineering-agentic-data-engineering.md", "wiki/sources/rrsi-regularized-recursive-self-improvement.md"]
+updated: 2026-10-02
 ---
 
 # Claude Skills
@@ -56,6 +56,10 @@ The same skill *must* give the same answer in Slack, the IDE, a dashboard tool, 
 
 ---
 
+## Skill vs Prompt vs Tool API
+
+[Harness Engineering](harness-engineering.md) supplies a third axis beyond the AGENTS.md comparison below: a **Prompt** shapes how an agent responds; a **Tool API** exposes a raw operation and leaves failure handling to the caller; a **Skill** is the structured unit — Input, Context, Policy, Execution, Validation, Rollback, Output — that determines whether an action can execute *safely*. Anthropic's knowledge/unbook skill pairs qualify as Skills in this stricter sense precisely because they carry context-injection behavior (route to the semantic layer, apply adversarial review) and not just instructions a model could ignore.
+
 ## Skills vs AGENTS.md
 
 Both are markdown context for agents, both live by progressive disclosure and reference docs, both die from drift. The differences:
@@ -80,6 +84,8 @@ One result reframes what "skill quality" even means: skills evolved by one model
 
 The design rule that most directly echoes this knowledge base's own architecture: the **inference/execution agent is deliberately denied wiki access during training rollouts** — only the maintenance and skill-proposal agents read it. Letting the executing agent shortcut through the wiki directly (rather than through skills) made its traces *less* informative for skill development. This is the automated-loop analogue of "LLM reads raw/, never writes it" and "the wiki is LLM-owned curated knowledge, not a dumping ground the working agent free-associates into."
 
+[Harness Evolution](harness-evolution.md)'s RRSI result generalizes the risk this pairing (and the drift-fix CI hook above) is implicitly guarding against: unconstrained self-evolution of agent scaffolding — skills, prompts, or the whole harness — reliably overfits to whatever feedback set produced it unless something plays the role of a regularizer (a human-owned CI gate here; leakage screening + a noise floor + cost-aware acceptance in RRSI).
+
 ## Related Pages
 
 - [Agentic Analytics](agentic-analytics.md) — the 21%→95% result in context
@@ -89,5 +95,9 @@ The design rule that most directly echoes this knowledge base's own architecture
 - [Iterative Repair Loops](iterative-repair-loops.md) — the adversarial-review sub-agent loop
 - [Anthropic](../entities/anthropic.md)
 - [Session Continuity](session-continuity.md) — the same persistent-knowledge-layer pattern applied to skill evolution instead of task handoff
+- [Harness Engineering](harness-engineering.md) — Skill vs Prompt vs Tool API, and Skills as the Harness's unit of controlled capability
+- [Harness Evolution](harness-evolution.md) — the general, regularized account of why unconstrained skill/harness self-evolution overfits
 - [Source: How Anthropic Enables Self-Service Data Analytics with Claude](../sources/2026-06-03-anthropic-self-service-analytics.md)
 - [Source: WikiSkill — Compiling Agent Experience into Persistent Knowledge for Skill Evolution](../sources/wikiskill-agent-skill-evolution.md)
+- [Source: Rebuilding Data Engineering with Harness Engineering](../sources/harness-engineering-agentic-data-engineering.md)
+- [Source: RRSI — Regularized Recursive Self-Improvement of Agent Harnesses](../sources/rrsi-regularized-recursive-self-improvement.md)

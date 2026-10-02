@@ -1,7 +1,7 @@
 ---
 tags: [data-n-ai, concept, agents, etl, pipelines]
-sources: [wiki/sources/spati-correctness-layer-agents.md]
-updated: 2026-07-21
+sources: [wiki/sources/spati-correctness-layer-agents.md, wiki/sources/harness-engineering-agentic-data-engineering.md]
+updated: 2026-10-02
 ---
 
 # Correctness Layer
@@ -81,9 +81,15 @@ Building a deterministic core is expensive (Rust infrastructure, AST handling, b
 
 Data engineering tooling (dbt, SQL linting, query optimization) is a natural place to build correctness layers because the problem space is bounded (SQL, schemas, DAGs) and the cost of being wrong is high (silent data corruption).
 
+## Four Correctness Levels (Harness Engineering framing)
+
+A complementary, finer-grained cut on "wrong-but-plausible" comes from [Harness Engineering](harness-engineering.md): **Syntactic → Execution → Data → Business**. SQL can pass all three lower levels — it parses, it runs, the rows look sane — and still be wrong at the Business level because it used the wrong definition of a metric (e.g. "Revenue" = order amount vs. paid vs. recognised vs. net). The Altimate deterministic core above mainly guards Syntactic/Execution correctness; [Data Contracts](data-contracts.md) and a governed [Semantic Layer](semantic-layer.md) are what guard the Data and Business levels, which no amount of AST parsing can catch on its own.
+
 ## Related Concepts
 
 - [[data-contracts]] — the spec being validated by the correctness layer
 - [[write-audit-publish]] — the contract assertions are part of the correctness gate
 - [[agents-in-data-engineering]] — the pattern for safely deploying agent-written DE code
+- [[harness-engineering]] — the broader L1(Runtime)/L2(Harness) framing this architecture is one instance of
+- [Agent Security: Defense-in-Depth](agent-security-defense-in-depth.md) — the same probabilistic-agent/deterministic-gate split, applied to blocking unauthorized actions instead of validating output correctness
 - [[blast-radius]] (not yet in wiki) — practical application: lineage proves impact before change
