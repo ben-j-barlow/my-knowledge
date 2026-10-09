@@ -1,7 +1,7 @@
 ---
 tags: [data-n-ai, entity, agents, llm]
-sources: ["raw/data-n-ai/articles/How Anthropic enables self-service data analytics with Claude.md"]
-updated: 2026-06-09
+sources: ["raw/data-n-ai/articles/How Anthropic enables self-service data analytics with Claude.md", "raw/data-n-ai/articles/Audit your Agent files.md"]
+updated: 2026-10-09
 ---
 
 # Anthropic
@@ -27,6 +27,8 @@ See [Source: How Anthropic Enables Self-Service Data Analytics with Claude](../s
 
 - **MCP (Model Context Protocol)** — Anthropic's open standard for serving tools/resources to agents; in the analytics stack, skills are served to hosted surfaces over MCP. In December 2025 Anthropic **donated MCP to the Agentic AI Foundation** (Linux Foundation), alongside OpenAI donating `AGENTS.md` and Block donating Goose. (See [AGENTS.md](../concepts/agents-md.md).)
 - **Claude Code** — the agentic coding CLI whose **skills** mechanism (on-demand markdown folders) is the procedural backbone of the analytics system.
+- **`/doctor` and `/memory`** — Claude Code's in-session configuration audit (unused skills/plugins/MCP servers relative to context cost, slow hooks, duplicated `CLAUDE.md` guidance) and memory review; distinct from the shell command `claude doctor`, which only prints installation diagnostics. See [Agent Configuration Audit](../concepts/agent-configuration-audit.md).
+- **System-prompt reduction** — in "The new rules of context engineering," Anthropic reports removing more than 80% of Claude Code's system prompt for its Claude 5 generation models with no measurable loss on internal coding evals (as cited by Addy Osmani; evals not public).
 - **Context guidance** — Anthropic's published guidance on graceful context degradation (agents preserving architectural decisions while discarding redundant tool outputs) is cited in [Context Engineering](../concepts/context-engineering.md).
 
 ---
@@ -48,5 +50,7 @@ See [Source: How Anthropic Enables Self-Service Data Analytics with Claude](../s
 - [Semantic Layer](../concepts/semantic-layer.md)
 - [AGENTS.md](../concepts/agents-md.md) — Anthropic donated MCP to the same foundation as AGENTS.md
 - [Context Engineering](../concepts/context-engineering.md)
+- [Agent Configuration Audit](../concepts/agent-configuration-audit.md)
 - [OpenAI](openai.md) — the comparison point for Codex / AGENTS.md
 - [Source: How Anthropic Enables Self-Service Data Analytics with Claude](../sources/2026-06-03-anthropic-self-service-analytics.md)
+- [Source: Audit Your Agent Files](../sources/2026-08-27-audit-your-agent-files.md)

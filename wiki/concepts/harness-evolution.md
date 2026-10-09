@@ -1,7 +1,7 @@
 ---
 tags: [data-n-ai, concept, agents, prompt-engineering, harness-engineering]
 sources: ["wiki/sources/rrsi-regularized-recursive-self-improvement.md"]
-updated: 2026-10-02
+updated: 2026-10-09
 ---
 
 # Harness Evolution (Recursive Self-Improvement at the Agent-System Level)
@@ -45,5 +45,6 @@ This is the sharpest instance yet of a pattern that recurs across several *unrel
 - [Claude Skills](claude-skills.md) — Anthropic's skill-drift fix (CI hook + colocation) is a human-driven analogue of RRSI's leakage screening + pruning
 - [AGENTS.md](agents-md.md) / [Context Engineering](context-engineering.md) — the coding-agent-context instance of the same auto-generation overfitting risk
 - [Semantic Layer](semantic-layer.md) — the analytics instance (auto-generated definitions net-negative)
+- [Agent Configuration Audit](agent-configuration-audit.md) — the by-hand version of structural pruning: remove a skill or rule, rerun a real task, keep it only if it still earns a gain
 - [Feature Lists](feature-lists.md) / [Premature Completion Declaration](premature-completion-declaration.md) — external, non-self-granted gates deciding "done"/"accepted," the same shape as RRSI's noise floor and leakage critic deciding "accepted"
 - [Source: RRSI — Regularized Recursive Self-Improvement of Agent Harnesses](../sources/rrsi-regularized-recursive-self-improvement.md)

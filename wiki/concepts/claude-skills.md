@@ -1,7 +1,7 @@
 ---
 tags: [data-n-ai, concept, agents, prompt-engineering]
-sources: ["raw/data-n-ai/articles/How Anthropic enables self-service data analytics with Claude.md", "raw/data-n-ai/articles/2026-09-11-wikiskill-agent-skill-evolution.md", "wiki/sources/harness-engineering-agentic-data-engineering.md", "wiki/sources/rrsi-regularized-recursive-self-improvement.md"]
-updated: 2026-10-02
+sources: ["raw/data-n-ai/articles/How Anthropic enables self-service data analytics with Claude.md", "raw/data-n-ai/articles/2026-09-11-wikiskill-agent-skill-evolution.md", "wiki/sources/harness-engineering-agentic-data-engineering.md", "wiki/sources/rrsi-regularized-recursive-self-improvement.md", "raw/data-n-ai/articles/Audit your Agent files.md"]
+updated: 2026-10-09
 ---
 
 # Claude Skills
@@ -47,6 +47,18 @@ Skill docs describe a data model that changes daily, so **without active mainten
 - **Prune** scaffolding as models improve and old failure modes stop applying.
 
 This is the same **drift / colocation** problem named in [AGENTS.md](agents-md.md) and [Context Engineering](context-engineering.md) — except skills solve it with tooling (the hook + same-repo colocation) rather than leaving it as the "unsolved problem" that AGENTS.md docs cite.
+
+---
+
+## What a skill costs, and when to prune
+
+A common claim — every installed skill dumps its body into every prompt — is wrong. Only skill **names and descriptions** are always loaded, inside a listing budget that defaults to 1% of the context window (descriptions are shortened first when over budget). The **body** loads on invocation and stays for the rest of that session.
+
+So the cost of an unused skill is confusion rather than tokens: longer lists make the model pick worse, overlapping skills trigger unpredictably (which of six anti-slop skills wins?), and everything installed is something you now maintain. Skills accumulate fast when experimenting with community packs (one reported audit went 250 → 25). The periodic fix — `/doctor`, then testing a real task with no local skills — is on [Agent Configuration Audit](agent-configuration-audit.md).
+
+### Generic vs personalized skills
+
+A 2026 study (arXiv:2608.10319; 206 sessions, 13 developers, LLM-based developer simulator) distilled each developer's interaction history into a personal skill. It performed about as well as a skill borrowed from *another* developer, and a pooled generic skill beat both. Personalization looked better only when the same preference recurred across similar tasks. Practical reading: start from a strong generic skill, add personal rules gradually, and favour concrete task-specific examples over stylistic preferences. This is the human-side counterpart of the WikiSkill transfer result below — in both, where a skill came from matters less than expected. Team- and org-level skills (compliance rules, internal tooling quirks, review process) are where enterprises report compounding value, though that evidence is anecdotal.
 
 ---
 
@@ -97,7 +109,9 @@ The design rule that most directly echoes this knowledge base's own architecture
 - [Session Continuity](session-continuity.md) — the same persistent-knowledge-layer pattern applied to skill evolution instead of task handoff
 - [Harness Engineering](harness-engineering.md) — Skill vs Prompt vs Tool API, and Skills as the Harness's unit of controlled capability
 - [Harness Evolution](harness-evolution.md) — the general, regularized account of why unconstrained skill/harness self-evolution overfits
+- [Agent Configuration Audit](agent-configuration-audit.md) — pruning installed skills; what an unused skill actually costs
 - [Source: How Anthropic Enables Self-Service Data Analytics with Claude](../sources/2026-06-03-anthropic-self-service-analytics.md)
 - [Source: WikiSkill — Compiling Agent Experience into Persistent Knowledge for Skill Evolution](../sources/wikiskill-agent-skill-evolution.md)
 - [Source: Rebuilding Data Engineering with Harness Engineering](../sources/harness-engineering-agentic-data-engineering.md)
 - [Source: RRSI — Regularized Recursive Self-Improvement of Agent Harnesses](../sources/rrsi-regularized-recursive-self-improvement.md)
+- [Source: Audit Your Agent Files](../sources/2026-08-27-audit-your-agent-files.md)

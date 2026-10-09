@@ -1,7 +1,7 @@
 ---
 tags: [data-n-ai, concept, agents, prompt-engineering, llm]
-sources: ["raw/data-n-ai/articles/How to Build Your AGENTS.md (2026) The Context File That Makes AI Coding Agents Actually Work.md", "raw/data-n-ai/articles/A good AGENTS.md is a model upgrade. A bad one is worse than no docs at all..md"]
-updated: 2026-06-05
+sources: ["raw/data-n-ai/articles/How to Build Your AGENTS.md (2026) The Context File That Makes AI Coding Agents Actually Work.md", "raw/data-n-ai/articles/A good AGENTS.md is a model upgrade. A bad one is worse than no docs at all..md", "raw/data-n-ai/articles/Audit your Agent files.md"]
+updated: 2026-10-09
 ---
 
 # Context Engineering
@@ -41,6 +41,10 @@ Two conclusions that challenge common practice:
 
 Anthropic's internal [agentic analytics](agentic-analytics.md) team reproduced the same mechanism on a different surface. They gave their agent grep access to **thousands** of prior SQL files and verified in transcripts it read them before every answer — accuracy moved **<1 point.** The answer was present in the corpus ~80% of the time on questions it got wrong, but "answer present" did not predict "now correct." Conclusion: the bottleneck is **structure** (mapping a question to the right entity), **not access** to prior work — the warehouse analogue of "auto-generated context files are redundant." A corollary they hit independently: **auto-generating the [semantic layer](semantic-layer.md) was net-negative** (it encoded the ambiguities it was meant to remove), so they **generate documentation with the LLM but let a human own the definition** — the same generate-docs-not-definitions split AGENTS.md reaches for hand-authored files.
 
+### A later null result on correctness
+
+A 2026 study of Claude Code and Codex (arXiv:2607.27250; 288 runs, 17 real tasks) found context files made **no clear difference to correctness** — they changed how agents worked (e.g. targeted tests instead of a slow full suite), not how often they succeeded. Read with the ETH Zurich ~4 points and Augment's much larger vendor-benchmark gains, the size of the benefit is contested; the efficiency effect is not. See [AGENTS.md](agents-md.md#does-it-actually-help-the-evidence-conflicts).
+
 ### The cost in dollars
 
 At Claude Sonnet 4.6 pricing (~50K input / 5K output baseline task), the ~20% overhead works out to roughly **$45 / 1K tasks, $450 / 10K, $4,500 / 100K per month.** **Prompt caching is the primary mitigation** — cache reads are ~90% cheaper than standard input pricing, which is why caching is non-negotiable for any production agent loop.
@@ -54,6 +58,8 @@ At Claude Sonnet 4.6 pricing (~50K input / 5K output baseline task), the ~20% ov
 - **Manage discovery, not just authorship.** Agents reliably read `AGENTS.md` (100%) and its references (>90%); orphan `_docs/` are read <10% of the time. Placement determines whether content is ever seen.
 - **Respond to observed failure, not speculation.** Rules added speculatively bloat the window; rules added in response to a real failure carry signal.
 - **Caching changes the calculus.** Stable context (system prompts, AGENTS.md) should be cache-friendly so the 20% overhead is paid once, not per call.
+- **Instruction value expires.** Context written to compensate for an older model becomes dead weight as models and harnesses improve: Anthropic reports cutting more than 80% of Claude Code's system prompt for its Claude 5 generation models with no measurable loss on internal coding evals (private evals, one harness — a direction, not a target). The practice that follows is a periodic [Agent Configuration Audit](agent-configuration-audit.md).
+- **Prose is a weak carrier; source and enforcement are strong ones.** Prose summaries of code answered 4/45 behavioural questions vs 27/45 from the source (arXiv:2607.09691), and on long policy handbooks the best of 30 model configurations hit a 36.2% strict pass rate. Point the agent at real code, and put must-hold rules in tests, hooks, or permissions.
 - **Drift is the maintenance frontier.** Static context goes stale silently. Emerging answers: semantic code indexes (Augment's Context Engine), and "living specs" that agents update as they work ([Augment Code](../entities/augment-code.md)'s Intent).
 
 ---
@@ -68,6 +74,7 @@ Context engineering is the connective tissue under several patterns already in t
 - [Session Continuity](session-continuity.md) — the across-session sibling discipline: what survives when the window resets between sessions, not just what's in it during one. "Context anxiety" (rushed-finish behavior near the context limit) links the two directly.
 - [Human-in-the-Loop](human-in-the-loop.md) — direction-level feedback is high-signal-per-token compared to artifact-level review.
 - [Agentic Inference](agentic-inference.md) — long agent contexts overflow HBM into DRAM; context length is a hardware cost, not just a quality one.
+- [Agent Configuration Audit](agent-configuration-audit.md) — the subtraction half of the discipline: configuration accumulates by ratchet and has to be periodically made to earn its place.
 - [Agentic Analytics](agentic-analytics.md) / [Claude Skills](claude-skills.md) — the warehouse version: metadata-as-product makes a warehouse "legible" the way code is; the structure-not-access null result reproduces the ETH Zurich finding; skills solve drift with a CI hook rather than leaving it unsolved.
 
 ## Related Pages
@@ -75,6 +82,7 @@ Context engineering is the connective tissue under several patterns already in t
 - [AGENTS.md](agents-md.md)
 - [Agentic Analytics](agentic-analytics.md)
 - [Claude Skills](claude-skills.md)
+- [Agent Configuration Audit](agent-configuration-audit.md)
 - [Semantic Layer](semantic-layer.md)
 - [Substrait](substrait.md)
 - [Ralph Loop](ralph-loop.md)
@@ -83,3 +91,4 @@ Context engineering is the connective tissue under several patterns already in t
 - [Agentic Inference](agentic-inference.md)
 - [Augment Code](../entities/augment-code.md)
 - [Source: How to Build Your AGENTS.md (2026)](../sources/2026-04-01-how-to-build-agents-md.md)
+- [Source: Audit Your Agent Files](../sources/2026-08-27-audit-your-agent-files.md)

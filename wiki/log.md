@@ -59,3 +59,5 @@ grep "^## \[" wiki/log.md | grep "ingest"       # all ingests
 ## [2026-10-02] ingest | data-n-ai | Rebuilding Data Engineering with Harness Engineering (HackerNoon, Nie Lifeng)
 ## [2026-10-02] ingest | data-n-ai | RRSI: Regularized Recursive Self-Improvement of Agent Harnesses (Google, arXiv:2609.24972)
 ## [2026-10-02] ingest | data-n-ai | How We Engineer Safer Agents (Perplexity)
+## [2026-10-02] query | data-n-ai | Shareable PDF: agent-driven approaches and their benefits over a typical Modern Data Stack
+## [2026-10-09] ingest | data-n-ai | Audit your Agent files (Addy Osmani)

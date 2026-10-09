@@ -1,7 +1,7 @@
 ---
 tags: [data-n-ai, concept, agents, prompt-engineering]
-sources: ["raw/data-n-ai/articles/A good AGENTS.md is a model upgrade. A bad one is worse than no docs at all..md", "raw/data-n-ai/articles/How to Build Your AGENTS.md (2026) The Context File That Makes AI Coding Agents Actually Work.md"]
-updated: 2026-06-05
+sources: ["raw/data-n-ai/articles/A good AGENTS.md is a model upgrade. A bad one is worse than no docs at all..md", "raw/data-n-ai/articles/How to Build Your AGENTS.md (2026) The Context File That Makes AI Coding Agents Actually Work.md", "raw/data-n-ai/articles/Audit your Agent files.md"]
+updated: 2026-10-09
 ---
 
 # AGENTS.md
@@ -58,9 +58,9 @@ Augment Code ran every task twice — with and without the file — and compared
 ## Failure modes
 
 - **The overexploration trap (context rot).** The most common failure. Two triggers: (1) **too much architecture overview** — the agent reads a dozen doc files (~80K tokens) to "understand the architecture" before a two-line config change, then ships an incomplete fix (completeness −25%); (2) **excessive warnings** — 30+ "don'ts" make the agent check every rule for relevance and explore code it never needed to touch (PR took 2× as long, 20% less complete). Fix: concise, isolated architecture descriptions focused on the *what* not the *why*; core gotchas in the main file, the rest in references.
-- **Bloat.** Every agent mistake tempts a new rule; rules are rarely removed. The file accumulates contradictory patches. More rules ≠ better performance. Rules should respond to *observed* failure, not be generated speculatively.
+- **Bloat.** Every agent mistake tempts a new rule; rules are rarely removed. The file accumulates contradictory patches. More rules ≠ better performance. Rules should respond to *observed* failure, not be generated speculatively. A 100-repo study (arXiv:2606.15828) measured how widespread this is: lint-related leakage in 62% of agent files, context bloat in 42%, skill leakage in 35%. The ratchet mechanism and the fix are on [Agent Configuration Audit](agent-configuration-audit.md).
 - **New patterns break old documentation.** If you're introducing an architecture that doesn't exist yet (e.g. WebSockets in a REST+polling codebase), the file steers the agent wrong. The fix isn't a better `AGENTS.md` — it's spec-driven development for net-new work.
-- **Stale structural references actively mislead.** Docs describing repo structure become liabilities as the code changes. Drift is the central maintenance problem — and there's no automated staleness detector.
+- **Stale structural references actively mislead.** Docs describing repo structure become liabilities as the code changes. Drift is the central maintenance problem. There is still no detector for *wrong* content; Claude Code's `/doctor` now flags *duplicated* guidance and always-loaded content the agent could read from the repo (see [Agent Configuration Audit](agent-configuration-audit.md)).
 - **Silent rule dropout in long sessions.** The "lost in the middle" phenomenon. Keep files short, put critical rules early, start new sessions for new tasks.
 - **The surrounding-docs problem.** A focused 150-line file sitting on top of 500K of surrounding specs won't save the agent — it finds and reads the sprawl anyway. *Fix the documentation environment, not just the entry point.*
 
@@ -106,12 +106,29 @@ project/
 
 ---
 
+## Does it actually help? The evidence conflicts
+
+Three studies in this wiki now disagree on the size of the effect:
+
+| Study | Setup | Effect on correctness |
+|---|---|---|
+| Augment Code AuggieBench | Vendor benchmark, with/without file, vs golden PRs | Best files ≈ Haiku→Opus jump; worst files worse than none |
+| ETH Zurich (arXiv:2602.11988) | SWE-bench Lite + AGENTbench | Human-written ~+4 points; auto-generated negative |
+| arXiv:2607.27250 (via Osmani) | 288 runs, 17 real tasks, Claude Code + Codex | **No clear gain** |
+
+What all three support: a context file reliably changes *how* the agent works. In the 288-run study, a guide that flagged a slow test suite made Claude run targeted tests and waste less time — without making it any better at implementing the feature; near misses came down to implementation judgment that more prose would not have fixed. So the defensible claim is **workflow efficiency and convention adherence, not raw task success**, and the large Augment gains should be read as specific to the patterns above (procedural workflows, decision tables) on Augment's own benchmark.
+
+A related result explains why architecture summaries in particular don't pay: prose summaries of code answered 4 of 45 behavioural questions where the source itself answered 27 (arXiv:2607.09691). **Point the agent at real code, not descriptions of it.**
+
+---
+
 ## Bottom line
 
 - **Hand-write it; never auto-generate-and-commit.** LLM-generated files give negative returns (worse performance at higher cost); human-curated files give ~4 points of improvement. See [Context Engineering](context-engineering.md) for the underlying ETH Zurich numbers.
 - **Keep it ~100–150 lines.** Progressive disclosure, not comprehensive coverage.
 - **The "Non-Obvious Patterns" section is where the file earns its keep.** Counterintuitive decisions with mechanism explanations generalize the agent to novel situations.
-- **Treat it like code:** version-control it, review changes, and prune rules that no longer correspond to observed failures.
+- **Treat it like code:** version-control it, review changes, and prune rules that no longer correspond to observed failures. Instruction value expires as models and harnesses improve — run a periodic [audit](agent-configuration-audit.md) (archive → `/doctor` → remove → test without → decide).
+- **If a rule must always hold, don't leave it as prose.** Encode it as a test, hook, or permission.
 - **Drift is the unsolved problem.** Vendors (Augment's Intent/Context Engine) propose "living specs" that agents update as they work, but at the manual-file level the answer is discipline and aggressive trimming. *Anthropic's analytics team did partly solve it* for their analogous [skills](claude-skills.md): colocate the doc with the model it describes in one repo, and add a **CI/code-review hook that fails any model PR not touching its skill file** — ~90% of their data-model PRs now update the doc in the same diff. (See [Claude Skills](claude-skills.md) for the comparison.)
 
 This is one instance of the broader [Ralph Loop](ralph-loop.md) / [Human-in-the-Loop](human-in-the-loop.md) theme: agents do best when the human encodes *direction and constraints* up front, not when they bury the agent in exhaustive reference material.
@@ -120,6 +137,7 @@ This is one instance of the broader [Ralph Loop](ralph-loop.md) / [Human-in-the-
 
 - [Context Engineering](context-engineering.md) — the broader discipline; ETH Zurich cost/benefit study lives here
 - [Claude Skills](claude-skills.md) — the analytics analogue: procedural, on-demand, drift solved with a CI hook
+- [Agent Configuration Audit](agent-configuration-audit.md) — when to delete: the ratchet, the audit loop, and the conflicting evidence on whether context files help
 - [Agentic Analytics](agentic-analytics.md)
 - [Augment Code](../entities/augment-code.md) — publisher of both source studies
 - [Ralph Loop](ralph-loop.md)
@@ -128,3 +146,4 @@ This is one instance of the broader [Ralph Loop](ralph-loop.md) / [Human-in-the-
 - [AI Org Operating Model](ai-org-operating-model.md)
 - [Source: A Good AGENTS.md Is a Model Upgrade](../sources/2026-04-23-good-agents-md-model-upgrade.md)
 - [Source: How to Build Your AGENTS.md (2026)](../sources/2026-04-01-how-to-build-agents-md.md)
+- [Source: Audit Your Agent Files](../sources/2026-08-27-audit-your-agent-files.md)
