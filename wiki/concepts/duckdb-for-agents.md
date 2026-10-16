@@ -64,8 +64,13 @@ Contrast with: "brew install bigquery" (impossible). Distributed systems add fri
 
 **Solution**: Iceberg integration. Same data accessible to both DuckDB (interactive) and Spark (batch). Agents choose based on data size/compute needed.
 
+## DuckDB CLI as the Agent Interface
+
+Hoyt Emerson's workflow: Claude Code in a terminal driving the DuckDB CLI over local Parquet/CSV and a production DuckLake (Postgres catalog + S3), with no MCP and no Python scripts. Agents know DuckDB's CLI well, loop quickly on SQL and error output, and authorize via DuckDB's persistent secrets manager so they never read credentials. Parallel agents each get their own in-memory DuckDB; use Parquet/CSV or a Postgres-catalog DuckLake because a DuckDB file allows one connection. Full reasons in [CLI Tools for Agents](cli-tools-for-agents.md); see [Source: My DuckDB + AI Workflow](../sources/2026-09-13-duckdb-ai-workflow.md).
+
 ## See Also
 
+- [CLI Tools for Agents](cli-tools-for-agents.md)
 - [[Local vs. Cloud Data]] — detailed architecture tradeoff analysis
 - [[Agents in Data Engineering]] — broader agent integration patterns
 - [[MotherDuck]] — cloud warehouse on DuckDB with multi-tenancy, auth, backups

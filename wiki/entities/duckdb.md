@@ -46,6 +46,10 @@ Before v1.5.3, DuckDB could *read* [Apache Iceberg](../concepts/apache-iceberg.m
 
 Known limitation: DuckDB still enforces single-writer semantics — concurrent multi-process writes serialize or fail. The "Quack protocol" and DuckLake both have fixes in progress but neither is fully stable as of the source's writing (Sept 2026).
 
+## DuckDB CLI with Agents
+
+The DuckDB CLI is a favored agent tool: agents understand it well, iterate quickly on SQL and errors, avoid generated Python (where hallucinations are likelier), and use the persistent secrets manager so credentials never reach the agent. A single DuckDB file allows one connection, so parallel agents should read Parquet/CSV or a DuckLake with a Postgres catalog. See [CLI Tools for Agents](../concepts/cli-tools-for-agents.md).
+
 ## Trade-offs
 
 - **Single-node**: does not distribute across a cluster; for datasets that exceed a single machine's resources, Spark or a cloud warehouse is needed
@@ -62,3 +66,5 @@ Known limitation: DuckDB still enforces single-writer semantics — concurrent m
 - [DuckDB for Agents](../concepts/duckdb-for-agents.md)
 - [Source: DuckDB Internals Part 1](../sources/duckdb-internals-part1.md)
 - [Source: DuckDB Just Put a $400K/Year Skill on Your Laptop](../sources/duckdb-400k-skill.md)
+- [CLI Tools for Agents](../concepts/cli-tools-for-agents.md)
+- [Source: My DuckDB + AI Workflow](../sources/2026-09-13-duckdb-ai-workflow.md)

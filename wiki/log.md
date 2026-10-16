@@ -62,3 +62,4 @@ grep "^## \[" wiki/log.md | grep "ingest"       # all ingests
 ## [2026-10-02] query | data-n-ai | Shareable PDF: agent-driven approaches and their benefits over a typical Modern Data Stack
 ## [2026-10-09] ingest | data-n-ai | Audit your Agent files (Addy Osmani)
 ## [2026-10-09] query | data-n-ai | Guide: Enabling Longer Running Agentic Development for Data Ingestion
+## [2026-10-16] ingest | data-n-ai | My DuckDB + AI Workflow (Hoyt Emerson)

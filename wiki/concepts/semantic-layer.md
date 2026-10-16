@@ -49,6 +49,10 @@ Agents reliably invent excuses to skip the semantic layer and drop to raw SQL �
 
 [Harness Engineering](harness-engineering.md) generalizes this concept beyond analytics as **L3: Semantic & Knowledge** — business rules, metadata, lineage, metrics, glossary, data contracts, and execution memory that any agent (not just an analytics agent) must consult before L4's control plane lets it act. Anthropic's "try the semantic layer first" rule is a specific instance of a general one: the agent is never supposed to reach L1 (raw execution) without passing through L3 first.
 
+## Counterpoint: Small Scale
+
+Hoyt Emerson reports semantic layers add only marginal gains when agents query clean gold-layer tables via the DuckDB CLI ([source](../sources/2026-09-13-duckdb-ai-workflow.md)); the value shows at enterprise scale with many ambiguous entities.
+
 ## Related Pages
 
 - [Agentic Analytics](agentic-analytics.md) — the stack this anchors
