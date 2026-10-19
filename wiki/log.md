@@ -63,3 +63,5 @@ grep "^## \[" wiki/log.md | grep "ingest"       # all ingests
 ## [2026-10-09] ingest | data-n-ai | Audit your Agent files (Addy Osmani)
 ## [2026-10-09] query | data-n-ai | Guide: Enabling Longer Running Agentic Development for Data Ingestion
 ## [2026-10-16] ingest | data-n-ai | My DuckDB + AI Workflow (Hoyt Emerson)
+## [2026-10-17] ingest | data-n-ai | Tech Review: DuckLake - From Parquet to Powerhouse (Hoyt Emerson)
+## [2026-10-17] ingest | data-n-ai | DuckLake in Production: Maintenance Strategy (Hoyt Emerson)

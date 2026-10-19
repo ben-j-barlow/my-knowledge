@@ -1,7 +1,7 @@
 ---
 tags: [data-n-ai, entity, etl, pipelines, lakehouse]
 sources: ["raw/data-n-ai/articles/DuckDB Internals Why is DuckDB Fast?.md", "raw/data-n-ai/articles/2026-09-11-duckdb-400k-skill.md"]
-updated: 2026-09-11
+updated: 2026-10-17
 ---
 
 # DuckDB
@@ -42,7 +42,7 @@ DuckDB eliminates this entirely. Results live in the same process memory. No enc
 
 ## Iceberg Write Support (v1.5.3, May 2026)
 
-Before v1.5.3, DuckDB could *read* [Apache Iceberg](../concepts/apache-iceberg.md) tables but not write them — every Iceberg write workflow still required a Spark cluster (96% of Iceberg users ran Spark as their write engine circa early 2026). v1.5.3 shipped `MERGE INTO`, `ALTER TABLE`, partition transforms, and Iceberg V3 format support, collapsing that requirement into a 30MB binary. Combined with **DuckLake** (April 2026) — which embeds the Iceberg catalog in SQLite/Postgres instead of a distributed catalog service — this closed the last gap in running a full local lakehouse (DuckDB + Iceberg + dbt Core) without any cloud infrastructure. AWS acquired the DuckLabs team in August 2026.
+Before v1.5.3, DuckDB could *read* [Apache Iceberg](../concepts/apache-iceberg.md) tables but not write them — every Iceberg write workflow still required a Spark cluster (96% of Iceberg users ran Spark as their write engine circa early 2026). v1.5.3 shipped `MERGE INTO`, `ALTER TABLE`, partition transforms, and Iceberg V3 format support, collapsing that requirement into a 30MB binary. Combined with [**DuckLake**](../concepts/ducklake.md) (dated April 2026 here, but a review of it exists from Oct 2025 — see that page) — which embeds the Iceberg catalog in SQLite/Postgres instead of a distributed catalog service — this closed the last gap in running a full local lakehouse (DuckDB + Iceberg + dbt Core) without any cloud infrastructure. AWS acquired the DuckLabs team in August 2026.
 
 Known limitation: DuckDB still enforces single-writer semantics — concurrent multi-process writes serialize or fail. The "Quack protocol" and DuckLake both have fixes in progress but neither is fully stable as of the source's writing (Sept 2026).
 
@@ -67,4 +67,7 @@ The DuckDB CLI is a favored agent tool: agents understand it well, iterate quick
 - [Source: DuckDB Internals Part 1](../sources/duckdb-internals-part1.md)
 - [Source: DuckDB Just Put a $400K/Year Skill on Your Laptop](../sources/duckdb-400k-skill.md)
 - [CLI Tools for Agents](../concepts/cli-tools-for-agents.md)
+- [DuckLake](../concepts/ducklake.md)
+- [Source: DuckLake Tech Review](../sources/2025-10-10-ducklake-tech-review.md)
+- [Source: DuckLake in Production: Maintenance Strategy](../sources/2026-10-06-ducklake-maintenance-strategy.md)
 - [Source: My DuckDB + AI Workflow](../sources/2026-09-13-duckdb-ai-workflow.md)

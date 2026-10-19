@@ -1,7 +1,7 @@
 ---
 tags: [data-n-ai, concept, etl, pipelines, lakehouse]
 sources: [wiki/sources/hive-to-iceberg-migration.md, wiki/sources/duckdb-400k-skill.md]
-updated: 2026-09-11
+updated: 2026-10-17
 ---
 
 # Apache Iceberg
@@ -71,3 +71,4 @@ Iceberg introduces metadata maintenance responsibilities:
 - [[Change Data Capture]] — Iceberg enables CDC-heavy pipelines
 - [DuckDB](../entities/duckdb.md) — now a viable local Iceberg write engine
 - [Source: DuckDB Just Put a $400K/Year Skill on Your Laptop](../sources/duckdb-400k-skill.md)
+- [DuckLake](ducklake.md) — alternative that keeps metadata in a SQL database instead of files
