@@ -65,3 +65,20 @@ grep "^## \[" wiki/log.md | grep "ingest"       # all ingests
 ## [2026-10-16] ingest | data-n-ai | My DuckDB + AI Workflow (Hoyt Emerson)
 ## [2026-10-17] ingest | data-n-ai | Tech Review: DuckLake - From Parquet to Powerhouse (Hoyt Emerson)
 ## [2026-10-17] ingest | data-n-ai | DuckLake in Production: Maintenance Strategy (Hoyt Emerson)
+## [2026-10-20] query | data-n-ai | How can agents be optimised to explore data by building DuckDB CLIs for the agent to call as tools?
+
+## [2026-10-21] query | data-n-ai | Guide: everything an agent needs to build a DuckLake from scratch, and how it is read for dashboards
+
+## [2026-10-28] ingest | data-n-ai | DuckDB Snapshots, Time Travel and Writable Branches (Tobias Müller)
+
+## [2026-10-28] ingest | data-n-ai | Announcing DuckDB 2.0.0 LTS "Cinnamon Teal" (DuckDB team)
+
+## [2026-10-28] ingest | data-n-ai | Why DuckDB 2.0 is faster (MotherDuck)
+
+## [2026-10-28] ingest | data-n-ai | The Self-Organizing Data Stack (Ananth Packkildurai)
+
+## [2026-10-28] ingest | data-n-ai | Parsing JSON at Tens of Gigabytes per Second… in Python (Daniel Lemire)
+
+## [2026-10-28] ingest | data-n-ai | A File Format Claims to Be 100x Faster Than Parquet (Vu Trinh)
+
+## [2026-10-28] ingest | data-n-ai | Lance v2: A New Columnar Container Format (LanceDB)

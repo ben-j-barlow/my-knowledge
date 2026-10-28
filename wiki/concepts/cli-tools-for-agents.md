@@ -32,6 +32,14 @@ All reasons given in [Source: My DuckDB + AI Workflow](../sources/2026-09-13-duc
 - A CLI sanity check by the human is still part of the loop; production pipelines still need [Write-Audit-Publish](write-audit-publish.md) and [Data Contracts](data-contracts.md).
 - Credential isolation is a convenience, not a substitute for enforcement below the agent ([Agent Security](agent-security-defense-in-depth.md)).
 
+## Building Your Own
+
+Wrapping DuckDB in a purpose-built CLI (verbs for orient/profile/drill/verify, bounded output, actionable errors, tool-enforced read-only) is worked through in [Guide: Optimising Agents for Data Exploration with DuckDB CLIs](../../outputs/data-n-ai/2026-10-20-duckdb-clis-for-agent-data-exploration.md). That design guidance is synthesis, not source-backed evidence.
+
+## Vendor Agent Mode (DuckDB 2.0)
+
+DuckDB 2.0's CLI detects agent callers and switches to compact Markdown tables, explicit truncation notices, early stopping of runaway queries, JSON errors and up-front cost estimates; −59% output read by the model on TPC-H (vendor figure). It implements several of the principles above natively; `-no-agent` turns it off. See [DuckDB 2.0](duckdb-2-0.md).
+
 ## See Also
 
 - [DuckDB](../entities/duckdb.md) · [DuckDB for Agents](duckdb-for-agents.md)

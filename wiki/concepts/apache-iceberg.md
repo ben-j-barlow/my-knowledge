@@ -72,3 +72,5 @@ Iceberg introduces metadata maintenance responsibilities:
 - [DuckDB](../entities/duckdb.md) — now a viable local Iceberg write engine
 - [Source: DuckDB Just Put a $400K/Year Skill on Your Laptop](../sources/duckdb-400k-skill.md)
 - [DuckLake](ducklake.md) — alternative that keeps metadata in a SQL database instead of files
+- [Data Versioning and Branching](data-versioning-and-branching.md) — Iceberg branches/tags compared with DuckDB-native versioning
+- [DuckDB 2.0](duckdb-2-0.md) — Iceberg extension adds REST-catalog ATTACH options; aiming for feature completeness

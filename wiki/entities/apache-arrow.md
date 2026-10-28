@@ -55,3 +55,5 @@ DuckDB's integration is the most complete: it can query a Python Arrow or Pandas
 - [Data Ingestion](../concepts/data-ingestion.md)
 - [Source: Apache Arrow as Data Interchange](../sources/apache-arrow-data-interchange.md)
 - [Source: DuckDB Internals Part 1](../sources/duckdb-internals-part1.md)
+
+- See also: [Lance](lance.md) — uses the Arrow type system for its reference readers/writers.

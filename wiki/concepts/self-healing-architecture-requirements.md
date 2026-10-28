@@ -91,3 +91,4 @@ Result: human operators only intervene for non-technical decisions.
 - [[Agents in Data Engineering]] — maturity levels and operational disciplines
 - [[Write-Audit-Publish]] — safety gate for agent-written data
 - [[Data Contracts]] — formalize what "healthy" means
+- [Self-Organizing Data Stack](self-organizing-data-stack.md) — engine-owned repair, atomic versioned activation, pinning and replay

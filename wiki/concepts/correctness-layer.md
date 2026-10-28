@@ -93,3 +93,4 @@ A complementary, finer-grained cut on "wrong-but-plausible" comes from [Harness 
 - [[harness-engineering]] — the broader L1(Runtime)/L2(Harness) framing this architecture is one instance of
 - [Agent Security: Defense-in-Depth](agent-security-defense-in-depth.md) — the same probabilistic-agent/deterministic-gate split, applied to blocking unauthorized actions instead of validating output correctness
 - [[blast-radius]] (not yet in wiki) — practical application: lineage proves impact before change
+- [Self-Organizing Data Stack](self-organizing-data-stack.md) — adversarial verification at the graph level: never let an agent grade its own work

@@ -62,3 +62,4 @@ Hoyt Emerson reports semantic layers add only marginal gains when agents query c
 - [Harness Engineering](harness-engineering.md) — generalizes this as the L3 Semantic & Knowledge layer
 - [Source: How Anthropic Enables Self-Service Data Analytics with Claude](../sources/2026-06-03-anthropic-self-service-analytics.md)
 - [Source: Rebuilding Data Engineering with Harness Engineering](../sources/harness-engineering-agentic-data-engineering.md)
+- [Self-Organizing Data Stack](self-organizing-data-stack.md) — the semantic layer is a prerequisite for an engine that reorganises the graph itself; missing meaning escalates to a human rather than being guessed

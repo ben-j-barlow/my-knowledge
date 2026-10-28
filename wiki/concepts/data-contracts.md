@@ -71,3 +71,4 @@ A single forgotten `/10` on the unit conversion will put every reading far outsi
 - [[correctness-layer]] — contracts are the boundary between probabilistic agent design and deterministic validation
 - [Feature Lists](feature-lists.md) — the general-purpose harness version of the same idea: an executable spec (contract / verification command) gates a state transition (publish / passing) that the agent cannot grant itself
 - [Harness Engineering](harness-engineering.md) — contracts as the concrete form of sign-off gates 2 (context complete) and 5 (results validated)
+- [Self-Organizing Data Stack](self-organizing-data-stack.md) — contracts generalised into consumer commitments an orchestration engine enforces on every graph change

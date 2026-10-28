@@ -44,7 +44,11 @@ DuckDB eliminates this entirely. Results live in the same process memory. No enc
 
 Before v1.5.3, DuckDB could *read* [Apache Iceberg](../concepts/apache-iceberg.md) tables but not write them — every Iceberg write workflow still required a Spark cluster (96% of Iceberg users ran Spark as their write engine circa early 2026). v1.5.3 shipped `MERGE INTO`, `ALTER TABLE`, partition transforms, and Iceberg V3 format support, collapsing that requirement into a 30MB binary. Combined with [**DuckLake**](../concepts/ducklake.md) (dated April 2026 here, but a review of it exists from Oct 2025 — see that page) — which embeds the Iceberg catalog in SQLite/Postgres instead of a distributed catalog service — this closed the last gap in running a full local lakehouse (DuckDB + Iceberg + dbt Core) without any cloud infrastructure. AWS acquired the DuckLabs team in August 2026.
 
-Known limitation: DuckDB still enforces single-writer semantics — concurrent multi-process writes serialize or fail. The "Quack protocol" and DuckLake both have fixes in progress but neither is fully stable as of the source's writing (Sept 2026).
+Known limitation: DuckDB still enforces single-writer semantics — concurrent multi-process writes serialize or fail. The "Quack protocol" and DuckLake both had fixes in progress as of the source's writing (Sept 2026). **Update (Oct 2026):** Quack shipped polished in [DuckDB 2.0](../concepts/duckdb-2-0.md) (client-server, `CONNECT`) — whether it fully resolves multi-writer use is unverified.
+
+## DuckDB 2.0 (Oct 2026)
+
+LTS release with async I/O, first-class VARIANT, CLI agent mode, triggers, PEG parser and a storage-format change (2.0 files unreadable by older versions). See [DuckDB 2.0](../concepts/duckdb-2-0.md).
 
 ## DuckDB CLI with Agents
 
@@ -71,3 +75,9 @@ The DuckDB CLI is a favored agent tool: agents understand it well, iterate quick
 - [Source: DuckLake Tech Review](../sources/2025-10-10-ducklake-tech-review.md)
 - [Source: DuckLake in Production: Maintenance Strategy](../sources/2026-10-06-ducklake-maintenance-strategy.md)
 - [Source: My DuckDB + AI Workflow](../sources/2026-09-13-duckdb-ai-workflow.md)
+- [duckdb-differential](duckdb-differential.md) — community extension for snapshots, branches and clones of native DuckDB files
+- [Tobias Müller](tobias-mueller.md) — blogs extensively on DuckDB (tobilg.com)
+- [Data Versioning and Branching](../concepts/data-versioning-and-branching.md)
+- [DuckDB 2.0](../concepts/duckdb-2-0.md) · [MotherDuck](motherduck.md)
+- [Source: DuckDB 2.0 Release](../sources/2026-10-21-duckdb-2-0-release.md)
+- [Source: Why DuckDB 2.0 Is Faster](../sources/2026-09-10-why-duckdb-2-is-faster.md)
