@@ -1,6 +1,6 @@
 ---
 tags: [data-n-ai, entity, etl, pipelines]
-sources: ["raw/data-n-ai/articles/Why Spark joins are expensive - and what to do about it.md", "raw/data-n-ai/articles/Debunking 8 data layout myths why Liquid Clustering outperforms partitioning.md"]
+sources: ["raw/data-n-ai/articles/2026-05-14-why-spark-joins-are-expensive-and-what-to-do-about-it.md", "raw/data-n-ai/articles/2026-06-01-debunking-8-data-layout-myths-why-liquid-clustering-outperforms.md"]
 updated: 2026-06-05
 ---
 

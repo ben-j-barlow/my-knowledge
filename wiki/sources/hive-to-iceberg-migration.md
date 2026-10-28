@@ -1,6 +1,6 @@
 ---
 tags: [data-n-ai, source, etl, pipelines, lakehouse]
-sources: [raw/data-n-ai/articles/Why We Moved from Hive-Style Data Lakes to Apache Iceberg?.md]
+sources: [raw/data-n-ai/articles/2026-06-11-why-we-moved-from-hive-style-data-lakes-to-apache-iceberg.md]
 updated: 2026-07-23
 ---
 

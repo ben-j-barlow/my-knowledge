@@ -1,6 +1,6 @@
 ---
 tags: [data-n-ai, entity, agents, prompt-engineering]
-sources: ["raw/data-n-ai/articles/Audit your Agent files.md"]
+sources: ["raw/data-n-ai/articles/2026-08-27-audit-your-agent-files.md"]
 updated: 2026-10-09
 ---
 

@@ -1,6 +1,6 @@
 ---
 tags: [data-n-ai, concept, agents]
-sources: ["raw/data-n-ai/articles/We're Missing Data The Other Half of AI Transformation.md"]
+sources: ["raw/data-n-ai/articles/2026-05-03-were-missing-data-the-other-half-of-ai-transformation.md"]
 updated: 2026-05-20
 ---
 

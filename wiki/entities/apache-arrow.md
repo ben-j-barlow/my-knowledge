@@ -1,6 +1,6 @@
 ---
 tags: [data-n-ai, entity, etl, pipelines]
-sources: [raw/data-n-ai/articles/Apache Arrow as Data Interchange.md]
+sources: [raw/data-n-ai/articles/2026-05-15-apache-arrow-as-data-interchange.md]
 updated: 2026-05-20
 ---
 

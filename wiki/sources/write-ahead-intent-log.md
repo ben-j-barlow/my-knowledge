@@ -1,6 +1,6 @@
 ---
 tags: [data-n-ai, source, streaming, pipelines, cdc]
-sources: [raw/data-n-ai/articles/Write-Ahead Intent Log a Foundation for Efficient CDC at Scale.md]
+sources: [raw/data-n-ai/articles/2026-06-18-write-ahead-intent-log-a-foundation-for-efficient-cdc-at-scale.md]
 updated: 2026-07-23
 ---
 

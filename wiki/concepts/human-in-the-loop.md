@@ -1,6 +1,6 @@
 ---
 tags: [data-n-ai, concept, agents, prompt-engineering]
-sources: ["raw/data-n-ai/articles/Exploring Agent-Assisted Qualitative Analysis.md"]
+sources: ["raw/data-n-ai/articles/2026-05-21-exploring-agent-assisted-qualitative-analysis.md"]
 updated: 2026-05-28
 ---
 

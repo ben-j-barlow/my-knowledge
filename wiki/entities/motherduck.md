@@ -1,6 +1,6 @@
 ---
 tags: [data-n-ai, entity, etl, analytics]
-sources: ["raw/data-n-ai/articles/Why DuckDB 2.0 is faster.md"]
+sources: ["raw/data-n-ai/articles/2026-09-10-why-duckdb-2-0-is-faster.md"]
 updated: 2026-10-28
 ---
 

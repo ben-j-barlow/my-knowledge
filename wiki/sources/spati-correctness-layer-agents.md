@@ -1,6 +1,6 @@
 ---
 tags: [data-n-ai, source, agents, etl, pipelines, testing]
-sources: [raw/data-n-ai/articles/Where AI Agents Belong in Data Engineering The Correctness Layer.md]
+sources: [raw/data-n-ai/articles/2026-07-08-where-ai-agents-belong-in-data-engineering-the-correctness-layer.md]
 updated: 2026-07-21
 ---
 

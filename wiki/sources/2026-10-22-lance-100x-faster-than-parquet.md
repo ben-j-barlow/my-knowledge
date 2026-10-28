@@ -1,6 +1,6 @@
 ---
 tags: [data-n-ai, source, etl, lakehouse, file-formats, vector-databases]
-sources: ["raw/data-n-ai/articles/A file format claims to be 100x faster than Parquet.md"]
+sources: ["raw/data-n-ai/articles/2026-10-22-a-file-format-claims-to-be-100x-faster-than-parquet.md"]
 updated: 2026-10-28
 ---
 

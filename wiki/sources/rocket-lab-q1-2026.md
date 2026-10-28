@@ -1,6 +1,6 @@
 ---
 tags: [investing, source, equities, space]
-sources: ["raw/investing/articles/Rocket Lab’s Q1 Surge Revenue Jumps 63% as Neutron Nears First Flight and Backlog Hits Record Highs - Business.md"]
+sources: ["raw/investing/articles/2026-05-13-rocket-labs-q1-surge-revenue-jumps-63-as-neutron-nears-first-flight.md"]
 updated: 2026-05-19
 ---
 

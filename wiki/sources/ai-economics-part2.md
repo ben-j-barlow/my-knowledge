@@ -1,6 +1,6 @@
 ---
 tags: [data-n-ai, source, llm, agents, ai-infra, semiconductors, hbm]
-sources: [raw/data-n-ai/articles/AI economics part 2.md]
+sources: [raw/data-n-ai/articles/2026-05-14-ai-economics-part-2.md]
 updated: 2026-05-19
 ---
 

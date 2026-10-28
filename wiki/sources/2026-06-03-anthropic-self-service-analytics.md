@@ -1,6 +1,6 @@
 ---
 tags: [data-n-ai, source, agents, etl, prompt-engineering]
-sources: ["raw/data-n-ai/articles/How Anthropic enables self-service data analytics with Claude.md"]
+sources: ["raw/data-n-ai/articles/2026-06-03-how-anthropic-enables-self-service-data-analytics-with-claude.md"]
 updated: 2026-06-09
 ---
 

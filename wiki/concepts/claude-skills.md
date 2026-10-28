@@ -1,6 +1,6 @@
 ---
 tags: [data-n-ai, concept, agents, prompt-engineering]
-sources: ["raw/data-n-ai/articles/How Anthropic enables self-service data analytics with Claude.md", "raw/data-n-ai/articles/2026-09-11-wikiskill-agent-skill-evolution.md", "wiki/sources/harness-engineering-agentic-data-engineering.md", "wiki/sources/rrsi-regularized-recursive-self-improvement.md", "raw/data-n-ai/articles/Audit your Agent files.md"]
+sources: ["raw/data-n-ai/articles/2026-06-03-how-anthropic-enables-self-service-data-analytics-with-claude.md", "raw/data-n-ai/articles/2026-09-11-wikiskill-agent-skill-evolution.md", "wiki/sources/harness-engineering-agentic-data-engineering.md", "wiki/sources/rrsi-regularized-recursive-self-improvement.md", "raw/data-n-ai/articles/2026-08-27-audit-your-agent-files.md"]
 updated: 2026-10-09
 ---
 

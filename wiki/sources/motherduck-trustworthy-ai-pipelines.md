@@ -1,6 +1,6 @@
 ---
 tags: [data-n-ai, source, pipelines, agents, prompt-engineering, testing]
-sources: [raw/data-n-ai/articles/Code that runs is not code that's correct 4 ways to trust an AI-written data pipeline.md]
+sources: [raw/data-n-ai/articles/2026-07-15-code-that-runs-is-not-code-thats-correct-4-ways-to-trust-an-ai.md]
 updated: 2026-07-21
 ---
 

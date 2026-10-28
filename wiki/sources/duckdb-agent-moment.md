@@ -1,6 +1,6 @@
 ---
 tags: [data-n-ai, source, etl, agents, analytics]
-sources: [raw/data-n-ai/articles/DuckDB's agent moment (Jordan Tigani).md]
+sources: [raw/data-n-ai/articles/2026-06-18-duckdbs-agent-moment-jordan-tigani.md]
 updated: 2026-07-23
 ---
 

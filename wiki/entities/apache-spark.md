@@ -1,6 +1,6 @@
 ---
 tags: [data-n-ai, entity, etl, pipelines]
-sources: [raw/data-n-ai/articles/Why Spark joins are expensive - and what to do about it.md]
+sources: [raw/data-n-ai/articles/2026-05-14-why-spark-joins-are-expensive-and-what-to-do-about-it.md]
 updated: 2026-05-20
 ---
 

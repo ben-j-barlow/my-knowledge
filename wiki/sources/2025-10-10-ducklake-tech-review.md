@@ -1,6 +1,6 @@
 ---
 tags: [data-n-ai, source, etl, pipelines, lakehouse]
-sources: ["raw/data-n-ai/articles/Tech Review DuckLake - From Parquet to Powerhouse.md"]
+sources: ["raw/data-n-ai/articles/2025-10-10-tech-review-ducklake-from-parquet-to-powerhouse.md"]
 updated: 2026-10-17
 ---
 

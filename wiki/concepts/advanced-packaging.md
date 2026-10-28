@@ -1,6 +1,6 @@
 ---
 tags: [investing, data-n-ai, concept, semiconductors, advanced-packaging, ai-infra]
-sources: ["raw/investing/articles/Buy TSMC stock as 'recent concerns are overdone' BofA.md", "raw/investing/articles/HANMI Semiconductor Accelerates U.S. Expansion, Establishes Hanmi USA.md"]
+sources: ["raw/investing/articles/2026-05-15-buy-tsmc-stock-as-recent-concerns-are-overdone-bofa.md", "raw/investing/articles/2026-05-15-hanmi-semiconductor-accelerates-u-s-expansion-establishes-hanmi-usa.md"]
 updated: 2026-05-19
 ---
 

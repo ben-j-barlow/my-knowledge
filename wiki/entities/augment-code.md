@@ -1,6 +1,6 @@
 ---
 tags: [data-n-ai, entity, agents]
-sources: ["raw/data-n-ai/articles/A good AGENTS.md is a model upgrade. A bad one is worse than no docs at all..md", "raw/data-n-ai/articles/How to Build Your AGENTS.md (2026) The Context File That Makes AI Coding Agents Actually Work.md"]
+sources: ["raw/data-n-ai/articles/2026-04-23-a-good-agents-md-is-a-model-upgrade-a-bad-one-is-worse-than-no-docs.md", "raw/data-n-ai/articles/2026-04-01-how-to-build-your-agents-md-2026-the-context-file-that-makes-ai.md"]
 updated: 2026-06-05
 ---
 

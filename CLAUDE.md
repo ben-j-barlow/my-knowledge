@@ -83,6 +83,8 @@ updated: 2026-05-14
 
 - Place files in `raw/<topic>/<articles|papers|assets>/`
 - **Naming**: `YYYY-MM-DD-slug.md` for dated content (articles, reports); `slug.md` for timeless reference (books, tool docs)
+  - **Dated** = the clipping's frontmatter has a valid `published:` date. Use that date, not the `created:` (clip) date. Web clippings are renamed from their original title to a lowercase hyphenated slug (≤70 chars) when ingested.
+  - If `published:` is empty or a placeholder (e.g. `2000-05-11` from a LinkedIn clip), fill in the real date from the source before renaming; until then the file keeps its original name.
 - **Immutable**: never edit a raw file after creation. It is the ground truth.
 - **Images**: downloaded to `raw/<topic>/assets/`. Reference them in the raw doc with a relative path (`../assets/image.png`). The LLM reads images by viewing them separately after reading the text.
 

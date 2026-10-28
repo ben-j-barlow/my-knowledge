@@ -1,6 +1,6 @@
 ---
 tags: [data-n-ai, concept, llm]
-sources: [raw/data-n-ai/articles/AI for the Real World A conversation with Yann LeCun.md]
+sources: [raw/data-n-ai/articles/2026-05-12-ai-for-the-real-world-a-conversation-with-yann-lecun.md]
 updated: 2026-05-14
 ---
 

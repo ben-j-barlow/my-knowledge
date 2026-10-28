@@ -1,6 +1,6 @@
 ---
 tags: [data-n-ai, source, agents, prompt-engineering, harness-engineering]
-sources: ["raw/data-n-ai/articles/Audit your Agent files.md"]
+sources: ["raw/data-n-ai/articles/2026-08-27-audit-your-agent-files.md"]
 updated: 2026-10-09
 ---
 
@@ -89,4 +89,4 @@ Step 4 is "a smoke test, not a proof": outcomes vary even at low temperature, so
 
 ## Source
 
-[raw/data-n-ai/articles/Audit your Agent files.md](../../raw/data-n-ai/articles/Audit%20your%20Agent%20files.md) — original at <https://addyosmani.com/blog/audit-your-agent-files/>
+[raw/data-n-ai/articles/2026-08-27-audit-your-agent-files.md](../../raw/data-n-ai/articles/2026-08-27-audit-your-agent-files.md) — original at <https://addyosmani.com/blog/audit-your-agent-files/>

@@ -1,6 +1,6 @@
 ---
 tags: [investing, data-n-ai, entity, equities, ev, robotics]
-sources: ["raw/investing/articles/Elon Musk Sees $15 Trillion Optimus Upside — Tesla Investors Could Get A Piece For 'Free'.md"]
+sources: ["raw/investing/articles/2026-05-16-elon-musk-sees-15-trillion-optimus-upside-tesla-investors-could-get-a.md"]
 updated: 2026-05-19
 ---
 

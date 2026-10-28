@@ -1,6 +1,6 @@
 ---
 tags: [data-n-ai, concept, agents, analytics, prompt-engineering]
-sources: ["raw/data-n-ai/articles/My DuckDB + AI Workflow.md"]
+sources: ["raw/data-n-ai/articles/2026-09-13-my-duckdb-ai-workflow.md"]
 updated: 2026-10-16
 ---
 

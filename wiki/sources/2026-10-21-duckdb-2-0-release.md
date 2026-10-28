@@ -1,6 +1,6 @@
 ---
 tags: [data-n-ai, source, etl, pipelines, agents, lakehouse]
-sources: ["raw/data-n-ai/articles/Announcing DuckDB 2.0.0 LTS “Cinnamon Teal”.md"]
+sources: ["raw/data-n-ai/articles/2026-10-21-announcing-duckdb-2-0-0-lts-cinnamon-teal.md"]
 updated: 2026-10-28
 ---
 

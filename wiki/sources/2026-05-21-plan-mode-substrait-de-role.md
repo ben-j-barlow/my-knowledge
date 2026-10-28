@@ -1,6 +1,6 @@
 ---
 tags: [data-n-ai, source, agents, etl, pipelines, prompt-engineering]
-sources: ["raw/data-n-ai/articles/Plan Mode All the Time, Substrait over SQL, and the End of the DE Role ft. Chris Riccomini.md"]
+sources: ["raw/data-n-ai/articles/2026-05-21-plan-mode-all-the-time-substrait-over-sql-and-the-end-of-the-de-role.md"]
 updated: 2026-05-28
 ---
 

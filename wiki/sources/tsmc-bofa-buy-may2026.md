@@ -1,6 +1,6 @@
 ---
 tags: [investing, source, semiconductors, foundry, advanced-packaging]
-sources: ["raw/investing/articles/Buy TSMC stock as ‘recent concerns are overdone’ BofA.md"]
+sources: ["raw/investing/articles/2026-05-15-buy-tsmc-stock-as-recent-concerns-are-overdone-bofa.md"]
 updated: 2026-05-19
 ---
 

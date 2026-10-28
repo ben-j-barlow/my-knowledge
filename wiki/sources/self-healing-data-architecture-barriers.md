@@ -1,6 +1,6 @@
 ---
 tags: [data-n-ai, source, agents, pipelines, operations]
-sources: [raw/data-n-ai/articles/7 Crucial Barriers between Data Teams and Self-Healing Data Architecture.md]
+sources: [raw/data-n-ai/articles/2026-06-18-7-crucial-barriers-between-data-teams-and-self-healing-data.md]
 updated: 2026-07-23
 ---
 

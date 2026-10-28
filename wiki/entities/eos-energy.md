@@ -1,6 +1,6 @@
 ---
 tags: [investing, entity, equities, energy-storage]
-sources: [raw/investing/articles/Why Eos Energy Stock Jumped Over 20% Today.md]
+sources: [raw/investing/articles/2026-05-14-why-eos-energy-stock-jumped-over-20-today.md]
 updated: 2026-05-19
 ---
 

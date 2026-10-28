@@ -1,6 +1,6 @@
 ---
 tags: [data-n-ai, concept, etl, pipelines, agents]
-sources: ["raw/data-n-ai/articles/How Anthropic enables self-service data analytics with Claude.md", "wiki/sources/harness-engineering-agentic-data-engineering.md"]
+sources: ["raw/data-n-ai/articles/2026-06-03-how-anthropic-enables-self-service-data-analytics-with-claude.md", "wiki/sources/harness-engineering-agentic-data-engineering.md"]
 updated: 2026-10-02
 ---
 

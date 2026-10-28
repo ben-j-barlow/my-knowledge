@@ -1,6 +1,6 @@
 ---
 tags: [data-n-ai, source, agents, security]
-sources: ["raw/data-n-ai/articles/How we engineer safer agents.md"]
+sources: ["raw/data-n-ai/articles/2026-09-29-how-we-engineer-safer-agents.md"]
 updated: 2026-10-02
 ---
 
@@ -72,4 +72,4 @@ This is the wiki's first dedicated **agent security** source — a different ang
 
 ## Source
 
-[raw/data-n-ai/articles/How we engineer safer agents.md](../../raw/data-n-ai/articles/How%20we%20engineer%20safer%20agents.md)
+[raw/data-n-ai/articles/2026-09-29-how-we-engineer-safer-agents.md](../../raw/data-n-ai/articles/2026-09-29-how-we-engineer-safer-agents.md)

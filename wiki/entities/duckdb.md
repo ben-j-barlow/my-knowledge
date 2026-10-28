@@ -1,6 +1,6 @@
 ---
 tags: [data-n-ai, entity, etl, pipelines, lakehouse]
-sources: ["raw/data-n-ai/articles/DuckDB Internals Why is DuckDB Fast?.md", "raw/data-n-ai/articles/2026-09-11-duckdb-400k-skill.md"]
+sources: ["raw/data-n-ai/articles/2026-05-04-duckdb-internals-why-is-duckdb-fast.md", "raw/data-n-ai/articles/2026-09-11-duckdb-400k-skill.md"]
 updated: 2026-10-17
 ---
 

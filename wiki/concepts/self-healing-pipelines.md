@@ -1,6 +1,6 @@
 ---
 tags: [data-n-ai, concept, pipelines, etl]
-sources: [raw/data-n-ai/articles/Building Self-Healing Data Pipelines at Halodoc.md]
+sources: [raw/data-n-ai/articles/2026-05-04-building-self-healing-data-pipelines-at-halodoc.md]
 updated: 2026-05-20
 ---
 

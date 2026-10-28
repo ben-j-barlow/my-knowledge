@@ -1,6 +1,6 @@
 ---
 tags: [data-n-ai, source, etl, pipelines]
-sources: ["raw/data-n-ai/articles/DuckDB Internals Why is DuckDB Fast?.md"]
+sources: ["raw/data-n-ai/articles/2026-05-04-duckdb-internals-why-is-duckdb-fast.md"]
 updated: 2026-05-20
 ---
 

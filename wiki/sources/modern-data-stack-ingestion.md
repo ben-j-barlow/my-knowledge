@@ -1,6 +1,6 @@
 ---
 tags: [data-n-ai, source, etl, pipelines, streaming]
-sources: [raw/data-n-ai/articles/The Modern Data Stack is Overcomplicated Data Ingestion.md]
+sources: [raw/data-n-ai/articles/2026-05-13-the-modern-data-stack-is-overcomplicated-data-ingestion.md]
 updated: 2026-05-19
 ---
 

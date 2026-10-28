@@ -1,6 +1,6 @@
 ---
 tags: [data-n-ai, source, pipelines, observability, data-quality]
-sources: [raw/data-n-ai/articles/Data quality traffic lights.md]
+sources: [raw/data-n-ai/articles/2026-06-17-data-quality-traffic-lights.md]
 updated: 2026-07-23
 ---
 

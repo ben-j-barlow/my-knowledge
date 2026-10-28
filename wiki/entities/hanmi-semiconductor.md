@@ -1,6 +1,6 @@
 ---
 tags: [investing, entity, semiconductors, advanced-packaging, hbm]
-sources: [raw/investing/articles/HANMI Semiconductor Accelerates U.S. Expansion, Establishes Hanmi USA.md]
+sources: [raw/investing/articles/2026-05-15-hanmi-semiconductor-accelerates-u-s-expansion-establishes-hanmi-usa.md]
 updated: 2026-05-19
 ---
 

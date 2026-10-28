@@ -1,6 +1,6 @@
 ---
 tags: [data-n-ai, concept, etl, pipelines, lakehouse]
-sources: ["raw/data-n-ai/articles/Tech Review DuckLake - From Parquet to Powerhouse.md", "raw/data-n-ai/articles/DuckLake in Production Maintenance Strategy.md", "raw/data-n-ai/articles/My DuckDB + AI Workflow.md", "raw/data-n-ai/articles/2026-09-11-duckdb-400k-skill.md"]
+sources: ["raw/data-n-ai/articles/2025-10-10-tech-review-ducklake-from-parquet-to-powerhouse.md", "raw/data-n-ai/articles/2026-10-06-ducklake-in-production-maintenance-strategy.md", "raw/data-n-ai/articles/2026-09-13-my-duckdb-ai-workflow.md", "raw/data-n-ai/articles/2026-09-11-duckdb-400k-skill.md"]
 updated: 2026-10-17
 ---
 

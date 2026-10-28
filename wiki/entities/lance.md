@@ -1,6 +1,6 @@
 ---
 tags: [data-n-ai, entity, etl, lakehouse, file-formats, vector-databases]
-sources: ["raw/data-n-ai/articles/A file format claims to be 100x faster than Parquet.md", "raw/data-n-ai/articles/Lance v2 A New Columnar Container Format.md"]
+sources: ["raw/data-n-ai/articles/2026-10-22-a-file-format-claims-to-be-100x-faster-than-parquet.md", "raw/data-n-ai/articles/2026-03-31-lance-v2-a-new-columnar-container-format.md"]
 updated: 2026-10-28
 ---
 

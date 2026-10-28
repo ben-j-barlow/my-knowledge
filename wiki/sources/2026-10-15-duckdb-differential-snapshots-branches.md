@@ -1,6 +1,6 @@
 ---
 tags: [data-n-ai, source, agents, pipelines, lakehouse]
-sources: ["raw/data-n-ai/articles/DuckDB Snapshots, Time Travel and Writable Branches.md"]
+sources: ["raw/data-n-ai/articles/2026-10-15-duckdb-snapshots-time-travel-and-writable-branches.md"]
 updated: 2026-10-28
 ---
 

@@ -1,6 +1,6 @@
 ---
 tags: [investing, data-n-ai, source, semiconductors, memory, hbm, equities]
-sources: ["raw/investing/articles/SK Hynix Shares Hit All-Time High as Tech Giants Offer to Co-Finance New Chip Plants.md"]
+sources: ["raw/investing/articles/2026-05-13-sk-hynix-shares-hit-all-time-high-as-tech-giants-offer-to-co-finance.md"]
 updated: 2026-05-19
 ---
 

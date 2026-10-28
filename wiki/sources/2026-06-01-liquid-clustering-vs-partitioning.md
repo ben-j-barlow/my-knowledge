@@ -1,6 +1,6 @@
 ---
 tags: [data-n-ai, source, etl, pipelines, lakehouse]
-sources: ["raw/data-n-ai/articles/Debunking 8 data layout myths why Liquid Clustering outperforms partitioning.md"]
+sources: ["raw/data-n-ai/articles/2026-06-01-debunking-8-data-layout-myths-why-liquid-clustering-outperforms.md"]
 updated: 2026-06-05
 ---
 

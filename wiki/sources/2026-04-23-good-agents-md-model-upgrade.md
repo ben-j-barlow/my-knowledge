@@ -1,6 +1,6 @@
 ---
 tags: [data-n-ai, source, agents, prompt-engineering]
-sources: ["raw/data-n-ai/articles/A good AGENTS.md is a model upgrade. A bad one is worse than no docs at all..md"]
+sources: ["raw/data-n-ai/articles/2026-04-23-a-good-agents-md-is-a-model-upgrade-a-bad-one-is-worse-than-no-docs.md"]
 updated: 2026-06-05
 ---
 

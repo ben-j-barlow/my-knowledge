@@ -1,6 +1,6 @@
 ---
 tags: [investing, data-n-ai, source, semiconductors, memory, hbm, equities]
-sources: ["raw/investing/articles/SK Hynix is about $50bn away from being a trillion-dollar company.md"]
+sources: ["raw/investing/articles/2026-05-14-sk-hynix-is-about-50bn-away-from-being-a-trillion-dollar-company.md"]
 updated: 2026-05-19
 ---
 

@@ -1,6 +1,6 @@
 ---
 tags: [data-n-ai, source, etl, pipelines, lakehouse]
-sources: ["raw/data-n-ai/articles/DuckLake in Production Maintenance Strategy.md"]
+sources: ["raw/data-n-ai/articles/2026-10-06-ducklake-in-production-maintenance-strategy.md"]
 updated: 2026-10-17
 ---
 

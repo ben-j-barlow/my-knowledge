@@ -1,6 +1,6 @@
 ---
 tags: [investing, data-n-ai, entity, semiconductors, memory, hbm]
-sources: ["raw/investing/articles/SK Hynix is about $50bn away from being a trillion-dollar company.md", "raw/investing/articles/SK Hynix Shares Hit All-Time High as Tech Giants Offer to Co-Finance New Chip Plants.md", "raw/investing/articles/Samsung Begins HBM4 Shipments as SK Hynix Lags and a 50,000-Worker Strike in Five Days Threatens the AI Chip Supply.md"]
+sources: ["raw/investing/articles/2026-05-14-sk-hynix-is-about-50bn-away-from-being-a-trillion-dollar-company.md", "raw/investing/articles/2026-05-13-sk-hynix-shares-hit-all-time-high-as-tech-giants-offer-to-co-finance.md", "raw/investing/articles/2026-05-17-samsung-begins-hbm4-shipments-as-sk-hynix-lags-and-a-50-000-worker.md"]
 updated: 2026-05-19
 ---
 

@@ -1,6 +1,6 @@
 ---
 tags: [investing, data-n-ai, source, agents, prediction-markets]
-sources: ["raw/investing/articles/KIMI 2.6 AGENT SWARM + POLYMARKET WEATHER MARKETS = THE MOST UNDERRATED MONEY PRINTER IN CRYPTO.md"]
+sources: ["raw/investing/articles/2026-05-08-kimi-2-6-agent-swarm-polymarket-weather-markets-the-most-underrated.md"]
 updated: 2026-06-05
 ---
 

@@ -1,6 +1,6 @@
 ---
 tags: [data-n-ai, concept, etl, pipelines, agents, lakehouse]
-sources: ["raw/data-n-ai/articles/Announcing DuckDB 2.0.0 LTS “Cinnamon Teal”.md", "raw/data-n-ai/articles/Why DuckDB 2.0 is faster.md"]
+sources: ["raw/data-n-ai/articles/2026-10-21-announcing-duckdb-2-0-0-lts-cinnamon-teal.md", "raw/data-n-ai/articles/2026-09-10-why-duckdb-2-0-is-faster.md"]
 updated: 2026-10-28
 ---
 

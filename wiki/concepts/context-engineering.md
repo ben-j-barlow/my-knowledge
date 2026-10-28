@@ -1,6 +1,6 @@
 ---
 tags: [data-n-ai, concept, agents, prompt-engineering, llm]
-sources: ["raw/data-n-ai/articles/How to Build Your AGENTS.md (2026) The Context File That Makes AI Coding Agents Actually Work.md", "raw/data-n-ai/articles/A good AGENTS.md is a model upgrade. A bad one is worse than no docs at all..md", "raw/data-n-ai/articles/Audit your Agent files.md"]
+sources: ["raw/data-n-ai/articles/2026-04-01-how-to-build-your-agents-md-2026-the-context-file-that-makes-ai.md", "raw/data-n-ai/articles/2026-04-23-a-good-agents-md-is-a-model-upgrade-a-bad-one-is-worse-than-no-docs.md", "raw/data-n-ai/articles/2026-08-27-audit-your-agent-files.md"]
 updated: 2026-10-09
 ---
 
