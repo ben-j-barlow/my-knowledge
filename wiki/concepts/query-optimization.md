@@ -1,6 +1,6 @@
 ---
 tags: [data-n-ai, concept, etl, pipelines]
-sources: ["raw/data-n-ai/articles/2026-05-14-why-spark-joins-are-expensive-and-what-to-do-about-it.md", "raw/data-n-ai/articles/2026-05-04-duckdb-internals-why-is-duckdb-fast.md", "raw/data-n-ai/articles/Lakehouse statistics and why query engines get lost.md"]
+sources: ["raw/data-n-ai/articles/2026-05-14-why-spark-joins-are-expensive-and-what-to-do-about-it.md", "raw/data-n-ai/articles/2026-05-04-duckdb-internals-why-is-duckdb-fast.md", "raw/data-n-ai/articles/2026-05-11-lakehouse-statistics-and-why-query-engines-get-lost.md"]
 updated: 2026-05-20
 ---
 

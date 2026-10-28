@@ -1,6 +1,6 @@
 ---
 tags: [data-n-ai, entity]
-sources: ["raw/data-n-ai/articles/Build iterative repair loops with Codex.md"]
+sources: ["raw/data-n-ai/articles/2026-05-11-build-iterative-repair-loops-with-codex.md"]
 updated: 2026-05-14
 ---
 

@@ -2,7 +2,7 @@
 title: "(1) Lakehouse statistics and why query engines get lost"
 source: "https://www.linkedin.com/pulse/lakehouse-statistics-why-query-engines-get-lost-neil-carson-agnac/"
 author:
-published: 2000-05-11
+published: 2026-05-11
 created: 2026-05-19
 description:
 tags:

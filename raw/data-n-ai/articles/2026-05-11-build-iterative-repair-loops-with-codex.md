@@ -2,7 +2,7 @@
 title: "Build iterative repair loops with Codex"
 source: "https://developers.openai.com/cookbook/examples/codex/build_iterative_repair_loops_with_codex?utm_source=tldrai"
 author:
-published:
+published: 2026-05-11
 created: 2026-05-14
 description: "This cookbook is about closed-loop agent workflows: agents that produce an output, validate it, and use the feedback to improve the next pas"
 tags:

@@ -1,6 +1,6 @@
 ---
 tags: [data-n-ai, source, etl, pipelines]
-sources: [raw/data-n-ai/articles/Lakehouse statistics and why query engines get lost.md]
+sources: [raw/data-n-ai/articles/2026-05-11-lakehouse-statistics-and-why-query-engines-get-lost.md]
 updated: 2026-05-20
 ---
 
