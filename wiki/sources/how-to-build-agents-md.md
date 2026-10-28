@@ -54,4 +54,4 @@ Vendor content with heavy "Build with Intent" CTAs throughout. The ETH Zurich ci
 - [AGENTS.md](../concepts/agents-md.md)
 - [Context Engineering](../concepts/context-engineering.md) — ETH Zurich cost/benefit numbers
 - [Augment Code](../entities/augment-code.md)
-- [Source: A Good AGENTS.md Is a Model Upgrade](2026-04-23-good-agents-md-model-upgrade.md) — companion empirical study
+- [Source: A Good AGENTS.md Is a Model Upgrade](good-agents-md-model-upgrade.md) — companion empirical study

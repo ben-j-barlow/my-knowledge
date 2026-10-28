@@ -16,5 +16,5 @@ Details: [Columnar File Formats for Random Access](../concepts/columnar-file-for
 
 ## Sources
 
-- [A File Format Claims to Be 100x Faster Than Parquet](../sources/2026-10-22-lance-100x-faster-than-parquet.md)
-- [Lance v2: A New Columnar Container Format](../sources/2026-03-31-lance-v2-columnar-container-format.md)
+- [A File Format Claims to Be 100x Faster Than Parquet](../sources/lance-100x-faster-than-parquet.md)
+- [Lance v2: A New Columnar Container Format](../sources/lance-v2-columnar-container-format.md)

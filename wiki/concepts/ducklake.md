@@ -29,7 +29,7 @@ Open lakehouse table format from the [DuckDB](../entities/duckdb.md) team: **dat
 
 ## Production Maintenance
 
-Maintenance is on you in open-source lakehouses. Design it around **ingestion pattern** (streaming/tiny inserts → flush inlined data; batch appends → compact files) and **time-travel policy** (how long to retain snapshots *and* their files). Functions: `ducklake_flush_inlined_data`, `ducklake_expire_snapshots`, `ducklake_merge_adjacent_files`, `ducklake_rewrite_data_files`, `ducklake_cleanup_old_files`, `ducklake_delete_orphaned_files`, or all via `CHECKPOINT`. Always `dry_run => true` first; keep a grace window on file cleanup so in-flight queries aren't broken. Worked 7-day-window example in [the maintenance source](../sources/2026-10-06-ducklake-maintenance-strategy.md).
+Maintenance is on you in open-source lakehouses. Design it around **ingestion pattern** (streaming/tiny inserts → flush inlined data; batch appends → compact files) and **time-travel policy** (how long to retain snapshots *and* their files). Functions: `ducklake_flush_inlined_data`, `ducklake_expire_snapshots`, `ducklake_merge_adjacent_files`, `ducklake_rewrite_data_files`, `ducklake_cleanup_old_files`, `ducklake_delete_orphaned_files`, or all via `CHECKPOINT`. Always `dry_run => true` first; keep a grace window on file cleanup so in-flight queries aren't broken. Worked 7-day-window example in [the maintenance source](../sources/ducklake-maintenance-strategy.md).
 
 ## Agent Angle
 
@@ -45,6 +45,6 @@ A Postgres-catalog DuckLake lets multiple agents/processes read concurrently, un
 - [Hive-Style Data Lake Limitations](hive-style-data-lake-limitations.md) · [Data Layout](data-layout.md) · [Lakehouse Statistics](lakehouse-statistics.md)
 - [Guide: Building a DuckLake from Scratch](../../outputs/data-n-ai/2026-10-21-building-a-ducklake-from-scratch.md) — catalog choice, setup, maintenance, dashboard read patterns
 - [Data Versioning and Branching](data-versioning-and-branching.md) — DuckLake snapshots vs Iceberg branches vs native-DuckDB `differential` branches
-- [Source: DuckLake Tech Review](../sources/2025-10-10-ducklake-tech-review.md)
-- [Source: DuckLake in Production: Maintenance Strategy](../sources/2026-10-06-ducklake-maintenance-strategy.md)
+- [Source: DuckLake Tech Review](../sources/ducklake-tech-review.md)
+- [Source: DuckLake in Production: Maintenance Strategy](../sources/ducklake-maintenance-strategy.md)
 - [DuckDB 2.0](duckdb-2-0.md) — DuckLake 1.1 (new spec + reference implementation) released alongside 2.0, 2026-10-21; not yet ingested in detail

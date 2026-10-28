@@ -1,6 +1,6 @@
 ---
 tags: [data-n-ai, synthesis, agents, analytics, prompt-engineering, harness-engineering]
-sources: [wiki/concepts/cli-tools-for-agents.md, wiki/concepts/duckdb-for-agents.md, wiki/concepts/correctness-layer.md, wiki/concepts/agentic-analytics.md, wiki/concepts/context-engineering.md, wiki/concepts/agent-security-defense-in-depth.md, wiki/sources/2026-09-13-duckdb-ai-workflow.md]
+sources: [wiki/concepts/cli-tools-for-agents.md, wiki/concepts/duckdb-for-agents.md, wiki/concepts/correctness-layer.md, wiki/concepts/agentic-analytics.md, wiki/concepts/context-engineering.md, wiki/concepts/agent-security-defense-in-depth.md, wiki/sources/duckdb-ai-workflow.md]
 updated: 2026-10-20
 ---
 

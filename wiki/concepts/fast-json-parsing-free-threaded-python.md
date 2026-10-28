@@ -6,7 +6,7 @@ updated: 2026-10-28
 
 # Fast JSON Parsing in Free-Threaded Python
 
-Pattern from [Lemire's benchmark](../sources/2026-10-12-parsing-json-gigabytes-per-second-python.md): reach tens of GB/s of NDJSON in a single Python process by combining three things.
+Pattern from [Lemire's benchmark](../sources/parsing-json-gigabytes-per-second-python.md): reach tens of GB/s of NDJSON in a single Python process by combining three things.
 
 1. **SIMD parsing** (simdjson via `fastsimdjson`) instead of the stdlib parser.
 2. **Lazy views** (`lazy=True`): parse structurally, create Python objects only for fields you touch. Avoids the dominant cost of building objects that are discarded. msgspec's typed structs give a similar skip-unneeded-fields effect but need a schema up front.

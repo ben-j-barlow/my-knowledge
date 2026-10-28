@@ -55,4 +55,4 @@ Data governance layer: centralised metadata, lineage, access control across work
 - [Query Optimization](../concepts/query-optimization.md)
 - [Lakehouse Statistics](../concepts/lakehouse-statistics.md)
 - [Source: Spark Join Strategies](../sources/spark-join-strategies.md)
-- [Source: Debunking 8 Data Layout Myths (Liquid Clustering)](../sources/2026-06-01-liquid-clustering-vs-partitioning.md)
+- [Source: Debunking 8 Data Layout Myths (Liquid Clustering)](../sources/liquid-clustering-vs-partitioning.md)

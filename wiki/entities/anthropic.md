@@ -19,7 +19,7 @@ Anthropic's Data Science & Data Engineering team published the most detailed pub
 - Headline internal numbers: **skills took accuracy from 21% → 95%+**; skill docs **drifted 95%→65% in a month** without maintenance (fixed with a CI hook + repo colocation; ~90% of data-model PRs now touch a skill); a **null-result ablation** (grep access to thousands of prior SQL files moved accuracy <1 point) proved the bottleneck is *structure, not access*; **auto-generating the semantic layer was net-negative**.
 - Practices they productionized: a **provenance footer** on every answer, an **adversarial-review sub-agent** (+6% accuracy / +32% tokens / +72% latency), **per-domain eval launch gates**, and a **scheduled correction-harvesting agent** that scans stakeholder channels and opens reference-doc PRs.
 
-See [Source: How Anthropic Enables Self-Service Data Analytics with Claude](../sources/2026-06-03-anthropic-self-service-analytics.md).
+See [Source: How Anthropic Enables Self-Service Data Analytics with Claude](../sources/anthropic-self-service-analytics.md).
 
 ---
 
@@ -52,5 +52,5 @@ See [Source: How Anthropic Enables Self-Service Data Analytics with Claude](../s
 - [Context Engineering](../concepts/context-engineering.md)
 - [Agent Configuration Audit](../concepts/agent-configuration-audit.md)
 - [OpenAI](openai.md) — the comparison point for Codex / AGENTS.md
-- [Source: How Anthropic Enables Self-Service Data Analytics with Claude](../sources/2026-06-03-anthropic-self-service-analytics.md)
-- [Source: Audit Your Agent Files](../sources/2026-08-27-audit-your-agent-files.md)
+- [Source: How Anthropic Enables Self-Service Data Analytics with Claude](../sources/anthropic-self-service-analytics.md)
+- [Source: Audit Your Agent Files](../sources/audit-your-agent-files.md)

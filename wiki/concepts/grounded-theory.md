@@ -40,4 +40,4 @@ The most effective approach identified experimentally: human input at the *direc
 
 - [Human-in-the-Loop](human-in-the-loop.md)
 - [LLM Limitations](llm-limitations.md)
-- [Source: Agent-Assisted Qualitative Analysis](../sources/2026-05-21-agent-assisted-qualitative-analysis.md)
+- [Source: Agent-Assisted Qualitative Analysis](../sources/agent-assisted-qualitative-analysis.md)

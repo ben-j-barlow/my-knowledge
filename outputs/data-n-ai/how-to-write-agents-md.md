@@ -144,5 +144,5 @@ can't be inferred from the code, and pair every "don't" with a "do".
 
 - [AGENTS.md (concept)](../../wiki/concepts/agents-md.md) — the full empirical findings
 - [Context Engineering (concept)](../../wiki/concepts/context-engineering.md) — the cost/benefit numbers and context-rot theory
-- [Source: A Good AGENTS.md Is a Model Upgrade](../../wiki/sources/2026-04-23-good-agents-md-model-upgrade.md)
-- [Source: How to Build Your AGENTS.md (2026)](../../wiki/sources/2026-04-01-how-to-build-agents-md.md)
+- [Source: A Good AGENTS.md Is a Model Upgrade](../../wiki/sources/good-agents-md-model-upgrade.md)
+- [Source: How to Build Your AGENTS.md (2026)](../../wiki/sources/how-to-build-agents-md.md)

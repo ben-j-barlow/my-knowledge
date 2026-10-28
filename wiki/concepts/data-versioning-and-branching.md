@@ -42,5 +42,5 @@ Delta Lake (DuckDB's Delta extension gains time travel and `CREATE TABLE` in 2.0
 
 ## See Also
 
-- [Source: DuckDB Snapshots, Time Travel and Writable Branches](../sources/2026-10-15-duckdb-differential-snapshots-branches.md)
+- [Source: DuckDB Snapshots, Time Travel and Writable Branches](../sources/duckdb-differential-snapshots-branches.md)
 - [Hive-Style Data Lake Limitations](hive-style-data-lake-limitations.md) — lack of snapshot isolation / time travel motivates this whole area

@@ -87,4 +87,4 @@ Full batch loads are non-deterministic when they include LLM-based processing â€
 - [Airbyte](../entities/airbyte.md)
 - [Apache Arrow](../entities/apache-arrow.md)
 - [Source: Modern Data Stack â€” Data Ingestion](../sources/modern-data-stack-ingestion.md)
-- [Source: Plan Mode All the Time](../sources/2026-05-21-plan-mode-substrait-de-role.md)
+- [Source: Plan Mode All the Time](../sources/plan-mode-substrait-de-role.md)

@@ -7,7 +7,7 @@ updated: 2026-10-28
 # Source: A File Format Claims to Be 100x Faster Than Parquet
 
 **Author**: Vu Trinh · **Published**: 2026-10-22 · **URL**: https://vutr.substack.com/p/free-a-file-format-claims-to-be-100x
-**Type**: Explainer newsletter post (stated as unsponsored). Concept page: [Columnar File Formats for Random Access](../concepts/columnar-file-formats-for-random-access.md). Companion primary source: [Lance v2: A New Columnar Container Format](2026-03-31-lance-v2-columnar-container-format.md).
+**Type**: Explainer newsletter post (stated as unsponsored). Concept page: [Columnar File Formats for Random Access](../concepts/columnar-file-formats-for-random-access.md). Companion primary source: [Lance v2: A New Columnar Container Format](lance-v2-columnar-container-format.md).
 
 ## Summary
 

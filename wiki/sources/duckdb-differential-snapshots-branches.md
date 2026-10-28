@@ -58,4 +58,4 @@ Author's positioning: DuckLake and Iceberg version a *lakehouse catalog/tables* 
 ## See Also
 
 - [DuckDB](../entities/duckdb.md) · [DuckLake](../concepts/ducklake.md) · [Apache Iceberg](../concepts/apache-iceberg.md)
-- [Source: DuckLake in Production: Maintenance Strategy](2026-10-06-ducklake-maintenance-strategy.md) — retention policy parallels
+- [Source: DuckLake in Production: Maintenance Strategy](ducklake-maintenance-strategy.md) — retention policy parallels

@@ -49,5 +49,5 @@ One-shot trajectories only (agent finishing coding tasks without human intervent
 - [AGENTS.md](../concepts/agents-md.md)
 - [Context Engineering](../concepts/context-engineering.md)
 - [Augment Code](../entities/augment-code.md)
-- [Source: How to Build Your AGENTS.md (2026)](2026-04-01-how-to-build-agents-md.md) — the companion how-to guide
+- [Source: How to Build Your AGENTS.md (2026)](how-to-build-agents-md.md) — the companion how-to guide
 - [Human-in-the-Loop](../concepts/human-in-the-loop.md)

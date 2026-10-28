@@ -60,4 +60,4 @@ The source is a promotional affiliate thread (`?via=dao` referral links, hype fr
 - [Polymarket](../entities/polymarket.md) — the venue and resolution mechanics
 - [Iterative Repair Loops](iterative-repair-loops.md) — the "ask it to upgrade the code" pattern
 - [Context Engineering](context-engineering.md) — parallel sub-agents as a context-management strategy
-- [Source: Kimi 2.6 Agent Swarm + Polymarket Weather Markets](../sources/2026-05-08-kimi-polymarket-weather-arbitrage.md)
+- [Source: Kimi 2.6 Agent Swarm + Polymarket Weather Markets](../sources/kimi-polymarket-weather-arbitrage.md)

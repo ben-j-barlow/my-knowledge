@@ -10,7 +10,7 @@ Performance-focused software author who blogs at lemire.me and is associated wit
 
 ## Posts Ingested
 
-- [Source: Parsing JSON at Tens of Gigabytes per Second… in Python](../sources/2026-10-12-parsing-json-gigabytes-per-second-python.md)
+- [Source: Parsing JSON at Tens of Gigabytes per Second… in Python](../sources/parsing-json-gigabytes-per-second-python.md)
 
 ## Related
 

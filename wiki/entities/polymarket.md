@@ -33,4 +33,4 @@ Documented here only from a single promotional/affiliate source. Thin liquidity 
 
 - [Prediction-Market Arbitrage](../concepts/prediction-market-arbitrage.md)
 - [Kimi](kimi.md)
-- [Source: Kimi 2.6 Agent Swarm + Polymarket Weather Markets](../sources/2026-05-08-kimi-polymarket-weather-arbitrage.md)
+- [Source: Kimi 2.6 Agent Swarm + Polymarket Weather Markets](../sources/kimi-polymarket-weather-arbitrage.md)

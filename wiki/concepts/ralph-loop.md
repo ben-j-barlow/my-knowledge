@@ -63,4 +63,4 @@ The Ralph Loop and [Premature Completion Declaration](premature-completion-decla
 - [Premature Completion Declaration](premature-completion-declaration.md)
 - [Human-in-the-Loop](human-in-the-loop.md)
 - [Chris Riccomini](../entities/chris-riccomini.md)
-- [Source: Plan Mode All the Time](../sources/2026-05-21-plan-mode-substrait-de-role.md)
+- [Source: Plan Mode All the Time](../sources/plan-mode-substrait-de-role.md)

@@ -44,7 +44,7 @@ See [Human-in-the-Loop](human-in-the-loop.md) and [Grounded Theory](grounded-the
 
 ## Hallucination Is Higher in Generated Python
 
-Practitioner observation (Hoyt Emerson, unmeasured): hallucinations are more prone to happen in Python files an agent writes, especially throwaway scripts for exploratory data analysis. Driving an established CLI (DuckDB) with short SQL commands produced "almost complete absence of hallucinations," even on a two-year-old Haiku, because the tool's built-in functions constrain the agent and errors surface immediately. Mitigation: prefer [CLI tools](cli-tools-for-agents.md) over generated scripts for ad hoc work. See [Source: My DuckDB + AI Workflow](../sources/2026-09-13-duckdb-ai-workflow.md).
+Practitioner observation (Hoyt Emerson, unmeasured): hallucinations are more prone to happen in Python files an agent writes, especially throwaway scripts for exploratory data analysis. Driving an established CLI (DuckDB) with short SQL commands produced "almost complete absence of hallucinations," even on a two-year-old Haiku, because the tool's built-in functions constrain the agent and errors surface immediately. Mitigation: prefer [CLI tools](cli-tools-for-agents.md) over generated scripts for ad hoc work. See [Source: My DuckDB + AI Workflow](../sources/duckdb-ai-workflow.md).
 
 ## See Also
 

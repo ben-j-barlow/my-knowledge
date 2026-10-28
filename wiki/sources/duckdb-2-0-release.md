@@ -35,7 +35,7 @@ updated: 2026-10-28
 
 ## Notes for This Wiki
 
-- Vendor primary source: benchmark/feature claims are the team's own; independent numbers in [Source: Why DuckDB 2.0 Is Faster](2026-09-10-why-duckdb-2-is-faster.md) (alpha, MotherDuck).
+- Vendor primary source: benchmark/feature claims are the team's own; independent numbers in [Source: Why DuckDB 2.0 Is Faster](why-duckdb-2-is-faster.md) (alpha, MotherDuck).
 - Updates earlier wiki statements that Quack was "in progress" (Sept 2026) — it now ships. Concurrent-writer limitations are therefore worth re-checking.
 - A follow-up post, "Gems of DuckDB 2.0.0", exists but is not ingested.
 

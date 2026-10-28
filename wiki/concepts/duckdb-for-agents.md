@@ -66,7 +66,7 @@ Contrast with: "brew install bigquery" (impossible). Distributed systems add fri
 
 ## DuckDB CLI as the Agent Interface
 
-Hoyt Emerson's workflow: Claude Code in a terminal driving the DuckDB CLI over local Parquet/CSV and a production DuckLake (Postgres catalog + S3), with no MCP and no Python scripts. Agents know DuckDB's CLI well, loop quickly on SQL and error output, and authorize via DuckDB's persistent secrets manager so they never read credentials. Parallel agents each get their own in-memory DuckDB; use Parquet/CSV or a Postgres-catalog DuckLake because a DuckDB file allows one connection. Full reasons in [CLI Tools for Agents](cli-tools-for-agents.md); see [Source: My DuckDB + AI Workflow](../sources/2026-09-13-duckdb-ai-workflow.md).
+Hoyt Emerson's workflow: Claude Code in a terminal driving the DuckDB CLI over local Parquet/CSV and a production DuckLake (Postgres catalog + S3), with no MCP and no Python scripts. Agents know DuckDB's CLI well, loop quickly on SQL and error output, and authorize via DuckDB's persistent secrets manager so they never read credentials. Parallel agents each get their own in-memory DuckDB; use Parquet/CSV or a Postgres-catalog DuckLake because a DuckDB file allows one connection. Full reasons in [CLI Tools for Agents](cli-tools-for-agents.md); see [Source: My DuckDB + AI Workflow](../sources/duckdb-ai-workflow.md).
 
 ## Branching in Practice
 

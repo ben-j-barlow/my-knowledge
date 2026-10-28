@@ -49,7 +49,7 @@ For analytics and research, the best agent setup is the terminal: a coding agent
 ## See Also
 
 - [CLI Tools for Agents](../concepts/cli-tools-for-agents.md)
-- [DuckLake](../concepts/ducklake.md) · [Source: DuckLake Maintenance Strategy](2026-10-06-ducklake-maintenance-strategy.md)
+- [DuckLake](../concepts/ducklake.md) · [Source: DuckLake Maintenance Strategy](ducklake-maintenance-strategy.md)
 - [DuckDB](../entities/duckdb.md) · [DuckDB for Agents](../concepts/duckdb-for-agents.md)
 - [LLM Limitations](../concepts/llm-limitations.md)
 - [Semantic Layer](../concepts/semantic-layer.md) · [Claude Skills](../concepts/claude-skills.md)

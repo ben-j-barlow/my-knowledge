@@ -1,6 +1,6 @@
 ---
 tags: [data-n-ai, synthesis, agents, pipelines, etl, lakehouse, analytics]
-sources: [wiki/concepts/ducklake.md, wiki/sources/2025-10-10-ducklake-tech-review.md, wiki/sources/2026-10-06-ducklake-maintenance-strategy.md, wiki/concepts/write-audit-publish.md, wiki/concepts/data-contracts.md, wiki/concepts/data-quality-traffic-lights.md, wiki/concepts/cli-tools-for-agents.md, wiki/concepts/agent-security-defense-in-depth.md, "https://ducklake.select/docs/stable/duckdb/usage/connecting", "https://ducklake.select/docs/stable/duckdb/usage/choosing_a_catalog_database", "https://ducklake.select/docs/stable/duckdb/usage/configuration", "https://ducklake.select/docs/stable/duckdb/usage/time_travel", "https://ducklake.select/docs/stable/duckdb/maintenance/recommended_maintenance"]
+sources: [wiki/concepts/ducklake.md, wiki/sources/ducklake-tech-review.md, wiki/sources/ducklake-maintenance-strategy.md, wiki/concepts/write-audit-publish.md, wiki/concepts/data-contracts.md, wiki/concepts/data-quality-traffic-lights.md, wiki/concepts/cli-tools-for-agents.md, wiki/concepts/agent-security-defense-in-depth.md, "https://ducklake.select/docs/stable/duckdb/usage/connecting", "https://ducklake.select/docs/stable/duckdb/usage/choosing_a_catalog_database", "https://ducklake.select/docs/stable/duckdb/usage/configuration", "https://ducklake.select/docs/stable/duckdb/usage/time_travel", "https://ducklake.select/docs/stable/duckdb/maintenance/recommended_maintenance"]
 updated: 2026-10-21
 ---
 
@@ -425,4 +425,4 @@ An agent building a dashboard should [synthesis]:
 - [DuckLake docs: Configuration](https://ducklake.select/docs/stable/duckdb/usage/configuration)
 - [DuckLake docs: Time Travel](https://ducklake.select/docs/stable/duckdb/usage/time_travel)
 - [DuckLake docs: Recommended Maintenance](https://ducklake.select/docs/stable/duckdb/maintenance/recommended_maintenance)
-- Wiki: [DuckLake](../../wiki/concepts/ducklake.md), [Tech Review](../../wiki/sources/2025-10-10-ducklake-tech-review.md), [Maintenance Strategy](../../wiki/sources/2026-10-06-ducklake-maintenance-strategy.md), [Write-Audit-Publish](../../wiki/concepts/write-audit-publish.md), [Data Contracts](../../wiki/concepts/data-contracts.md)
+- Wiki: [DuckLake](../../wiki/concepts/ducklake.md), [Tech Review](../../wiki/sources/ducklake-tech-review.md), [Maintenance Strategy](../../wiki/sources/ducklake-maintenance-strategy.md), [Write-Audit-Publish](../../wiki/concepts/write-audit-publish.md), [Data Contracts](../../wiki/concepts/data-contracts.md)

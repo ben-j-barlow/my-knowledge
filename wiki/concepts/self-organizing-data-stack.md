@@ -6,7 +6,7 @@ updated: 2026-10-28
 
 # Self-Organizing Data Stack
 
-A proposed architecture (Ananth Packkildurai, 2026-10) in which an **orchestration engine maintains the dependency graph and physical tables**, while humans own only **meaning** — definitions, policies, judgments. The DAG flips from a hand-drawn input to a runtime output. See [source summary](../sources/2026-10-14-the-self-organizing-data-stack.md).
+A proposed architecture (Ananth Packkildurai, 2026-10) in which an **orchestration engine maintains the dependency graph and physical tables**, while humans own only **meaning** — definitions, policies, judgments. The DAG flips from a hand-drawn input to a runtime output. See [source summary](../sources/the-self-organizing-data-stack.md).
 
 ## Why it is proposed
 

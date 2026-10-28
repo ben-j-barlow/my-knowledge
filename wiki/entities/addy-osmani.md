@@ -21,4 +21,4 @@ Software engineer and writer who blogs at addyosmani.com on AI-assisted developm
 - [Agent Configuration Audit](../concepts/agent-configuration-audit.md)
 - [Claude Skills](../concepts/claude-skills.md)
 - [AGENTS.md](../concepts/agents-md.md)
-- [Source: Audit Your Agent Files](../sources/2026-08-27-audit-your-agent-files.md)
+- [Source: Audit Your Agent Files](../sources/audit-your-agent-files.md)

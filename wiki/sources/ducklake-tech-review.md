@@ -35,7 +35,7 @@ updated: 2026-10-17
 ## Caveats
 
 - Vendor-adjacent enthusiasm ("AMAZING!", "magical"); the dataset is "clean and perfect on purpose".
-- Single-user local demo: no concurrency, scale, or cost evidence. Maintenance (compaction, snapshot expiry) is not covered — see [DuckLake in Production: Maintenance Strategy](2026-10-06-ducklake-maintenance-strategy.md).
+- Single-user local demo: no concurrency, scale, or cost evidence. Maintenance (compaction, snapshot expiry) is not covered — see [DuckLake in Production: Maintenance Strategy](ducklake-maintenance-strategy.md).
 - Dated 2025-10, so earlier than the DuckLake dates cited elsewhere in the wiki (see note on [DuckLake](../concepts/ducklake.md)).
 
 ## See Also

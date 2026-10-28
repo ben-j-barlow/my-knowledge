@@ -19,7 +19,7 @@ Only one post is ingested. Biographical detail (employer, other projects) is not
 
 ## Posts Ingested
 
-- [Source: DuckDB Snapshots, Time Travel and Writable Branches](../sources/2026-10-15-duckdb-differential-snapshots-branches.md)
+- [Source: DuckDB Snapshots, Time Travel and Writable Branches](../sources/duckdb-differential-snapshots-branches.md)
 
 ## Related Pages
 

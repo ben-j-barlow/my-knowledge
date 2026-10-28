@@ -33,4 +33,4 @@ Sole source is a promotional X thread with affiliate links. The capability numbe
 - [Polymarket](polymarket.md)
 - [Context Engineering](../concepts/context-engineering.md)
 - [Augment Code](augment-code.md) — comparable coordinator/implementor/verifier swarm
-- [Source: Kimi 2.6 Agent Swarm + Polymarket Weather Markets](../sources/2026-05-08-kimi-polymarket-weather-arbitrage.md)
+- [Source: Kimi 2.6 Agent Swarm + Polymarket Weather Markets](../sources/kimi-polymarket-weather-arbitrage.md)

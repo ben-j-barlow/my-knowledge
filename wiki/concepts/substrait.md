@@ -33,4 +33,4 @@ Substrait is an emerging standard. It is not yet the default interface for any m
 - [Query Optimization](query-optimization.md)
 - [Apache Arrow](../entities/apache-arrow.md)
 - [Chris Riccomini](../entities/chris-riccomini.md)
-- [Source: Plan Mode All the Time](../sources/2026-05-21-plan-mode-substrait-de-role.md)
+- [Source: Plan Mode All the Time](../sources/plan-mode-substrait-de-role.md)

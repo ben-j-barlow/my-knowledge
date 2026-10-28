@@ -106,4 +106,4 @@ Not thousands of tokens per prompt. Only skill **names and descriptions** are al
 - [Session Continuity](session-continuity.md)
 - [Addy Osmani](../entities/addy-osmani.md)
 - [Anthropic](../entities/anthropic.md)
-- [Source: Audit Your Agent Files](../sources/2026-08-27-audit-your-agent-files.md)
+- [Source: Audit Your Agent Files](../sources/audit-your-agent-files.md)

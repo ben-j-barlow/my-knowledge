@@ -49,4 +49,4 @@ Shredding pulls consistently-typed fields into real columns and leaves rare/mixe
 
 ## See Also
 
-- [DuckDB 2.0](../concepts/duckdb-2-0.md) · [Source: DuckDB 2.0 Release](2026-10-21-duckdb-2-0-release.md) · [MotherDuck](../entities/motherduck.md)
+- [DuckDB 2.0](../concepts/duckdb-2-0.md) · [Source: DuckDB 2.0 Release](duckdb-2-0-release.md) · [MotherDuck](../entities/motherduck.md)

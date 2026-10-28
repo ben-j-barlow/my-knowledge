@@ -7,7 +7,7 @@ updated: 2026-10-28
 # Source: Lance v2 — A New Columnar Container Format
 
 **Author**: LanceDB Engineering (post written by Lance's lead file-format developer) · **Clip date**: 2026-03-31 · **URL**: https://www.lancedb.com/blog/lance-v2
-**Type**: Vendor design post (primary source for the format). Note: the clip's date is a republish date; the Vu Trinh post cites it as a 2024 article and describes v2 as an early-stage implementation ("initial implementation… simple encodings"), so specifics may be stale. Concept page: [Columnar File Formats for Random Access](../concepts/columnar-file-formats-for-random-access.md). Entity: [Lance](../entities/lance.md). Secondary explainer: [A File Format Claims to Be 100x Faster Than Parquet](2026-10-22-lance-100x-faster-than-parquet.md).
+**Type**: Vendor design post (primary source for the format). Note: the clip's date is a republish date; the Vu Trinh post cites it as a 2024 article and describes v2 as an early-stage implementation ("initial implementation… simple encodings"), so specifics may be stale. Concept page: [Columnar File Formats for Random Access](../concepts/columnar-file-formats-for-random-access.md). Entity: [Lance](../entities/lance.md). Secondary explainer: [A File Format Claims to Be 100x Faster Than Parquet](lance-100x-faster-than-parquet.md).
 
 ## Why a new format
 

@@ -45,5 +45,5 @@ All functions take `dry_run => true` — run it first. The author's "production-
 ## See Also
 
 - [DuckLake](../concepts/ducklake.md) · [DuckDB](../entities/duckdb.md)
-- [Source: DuckLake Tech Review](2025-10-10-ducklake-tech-review.md)
-- [Source: My DuckDB + AI Workflow](2026-09-13-duckdb-ai-workflow.md) — same author; production DuckLake = Postgres catalog + S3
+- [Source: DuckLake Tech Review](ducklake-tech-review.md)
+- [Source: My DuckDB + AI Workflow](duckdb-ai-workflow.md) — same author; production DuckLake = Postgres catalog + S3

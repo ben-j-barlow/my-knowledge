@@ -144,6 +144,6 @@ This is one instance of the broader [Ralph Loop](ralph-loop.md) / [Human-in-the-
 - [Session Continuity](session-continuity.md) — the clock-in/clock-out routine and PROGRESS.md/DECISIONS.md pattern for tasks that span sessions
 - [Human-in-the-Loop](human-in-the-loop.md)
 - [AI Org Operating Model](ai-org-operating-model.md)
-- [Source: A Good AGENTS.md Is a Model Upgrade](../sources/2026-04-23-good-agents-md-model-upgrade.md)
-- [Source: How to Build Your AGENTS.md (2026)](../sources/2026-04-01-how-to-build-agents-md.md)
-- [Source: Audit Your Agent Files](../sources/2026-08-27-audit-your-agent-files.md)
+- [Source: A Good AGENTS.md Is a Model Upgrade](../sources/good-agents-md-model-upgrade.md)
+- [Source: How to Build Your AGENTS.md (2026)](../sources/how-to-build-agents-md.md)
+- [Source: Audit Your Agent Files](../sources/audit-your-agent-files.md)

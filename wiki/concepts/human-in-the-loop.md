@@ -58,4 +58,4 @@ One productive pattern: two independent agents process the same corpus separatel
 - [Ralph Loop](ralph-loop.md)
 - [Premature Completion Declaration](premature-completion-declaration.md)
 - [LLM Limitations](llm-limitations.md)
-- [Source: Agent-Assisted Qualitative Analysis](../sources/2026-05-21-agent-assisted-qualitative-analysis.md)
+- [Source: Agent-Assisted Qualitative Analysis](../sources/agent-assisted-qualitative-analysis.md)

@@ -32,5 +32,5 @@ Both source pieces are vendor content with a clear funnel to Augment's Intent pr
 
 - [AGENTS.md](../concepts/agents-md.md)
 - [Context Engineering](../concepts/context-engineering.md)
-- [Source: A Good AGENTS.md Is a Model Upgrade](../sources/2026-04-23-good-agents-md-model-upgrade.md)
-- [Source: How to Build Your AGENTS.md (2026)](../sources/2026-04-01-how-to-build-agents-md.md)
+- [Source: A Good AGENTS.md Is a Model Upgrade](../sources/good-agents-md-model-upgrade.md)
+- [Source: How to Build Your AGENTS.md (2026)](../sources/how-to-build-agents-md.md)

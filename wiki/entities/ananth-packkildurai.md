@@ -10,7 +10,7 @@ Author of the **Data Engineering Weekly** newsletter (dataengineeringweekly.com)
 
 ## Posts Ingested
 
-- [Source: The Self-Organizing Data Stack](../sources/2026-10-14-the-self-organizing-data-stack.md) — agents as consumers let the orchestration engine own the graph; humans own meaning.
+- [Source: The Self-Organizing Data Stack](../sources/the-self-organizing-data-stack.md) — agents as consumers let the orchestration engine own the graph; humans own meaning.
 
 ## Ideas Associated
 

@@ -6,7 +6,7 @@ updated: 2026-10-28
 
 # DuckDB 2.0 ("Cinnamon Teal")
 
-LTS release of [DuckDB](../entities/duckdb.md), 2026-10-21 (alpha earlier; support to ≥ Oct 2027). Feature-led, unlike 1.0. Official: [release announcement](../sources/2026-10-21-duckdb-2-0-release.md); independent-ish benchmarks on the alpha: [MotherDuck](../sources/2026-09-10-why-duckdb-2-is-faster.md).
+LTS release of [DuckDB](../entities/duckdb.md), 2026-10-21 (alpha earlier; support to ≥ Oct 2027). Feature-led, unlike 1.0. Official: [release announcement](../sources/duckdb-2-0-release.md); independent-ish benchmarks on the alpha: [MotherDuck](../sources/why-duckdb-2-is-faster.md).
 
 ## What Matters, by Reader
 

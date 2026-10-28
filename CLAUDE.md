@@ -97,6 +97,7 @@ updated: 2026-05-14
 - Before creating a new page, check `wiki/index.md` to avoid duplicates
 - When updating an existing cross-topic page with a new source from a different topic, add that topic tag to its frontmatter
 - The `updated` field in frontmatter should reflect the date of the last substantive change
+- **Filenames in `wiki/`** (concepts, entities, sources) are plain lowercase slugs with no date prefix. Only `raw/` files are dated.
 
 ---
 
@@ -107,6 +108,7 @@ Run when a new source is added to `raw/`. Work through one source at a time; sta
 1. **Read** the source in full
 2. **Discuss** key takeaways with the user — what to emphasize, what depth to go into, what to skip
 3. **Create** `wiki/sources/<slug>.md` — summary, key claims, notable quotes, metadata, correct tags
+   - Source pages use plain slugs with **no date prefix**; the date lives in the raw filename and the page's metadata
 4. **Update or create** relevant `wiki/concepts/` and `wiki/entities/` pages
    - Check `wiki/index.md` first — never create a duplicate page
    - When updating an existing page, add the new topic tag if not already present

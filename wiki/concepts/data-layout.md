@@ -64,6 +64,6 @@ This is Databricks vendor content advocating its own feature; benchmarks are sel
 - [Lakehouse Statistics](lakehouse-statistics.md) — the per-file stats that drive pruning
 - [Databricks](../entities/databricks.md) — Liquid Clustering, Photon, Predictive Optimization
 - [Apache Spark](../entities/apache-spark.md) · [DuckDB](../entities/duckdb.md) — readers that benefit
-- [Source: Debunking 8 Data Layout Myths (Liquid Clustering)](../sources/2026-06-01-liquid-clustering-vs-partitioning.md)
+- [Source: Debunking 8 Data Layout Myths (Liquid Clustering)](../sources/liquid-clustering-vs-partitioning.md)
 
 - See also: [Columnar File Formats for Random Access](columnar-file-formats-for-random-access.md) — file-level layout (Lance vs Parquet row groups/pages).

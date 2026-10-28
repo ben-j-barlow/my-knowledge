@@ -90,5 +90,5 @@ Context engineering is the connective tissue under several patterns already in t
 - [Human-in-the-Loop](human-in-the-loop.md)
 - [Agentic Inference](agentic-inference.md)
 - [Augment Code](../entities/augment-code.md)
-- [Source: How to Build Your AGENTS.md (2026)](../sources/2026-04-01-how-to-build-agents-md.md)
-- [Source: Audit Your Agent Files](../sources/2026-08-27-audit-your-agent-files.md)
+- [Source: How to Build Your AGENTS.md (2026)](../sources/how-to-build-agents-md.md)
+- [Source: Audit Your Agent Files](../sources/audit-your-agent-files.md)

@@ -10,7 +10,7 @@ Command-line tools as the preferred interface between a coding agent and data/sy
 
 ## Why Agents Work Well with CLI Tools
 
-All reasons given in [Source: My DuckDB + AI Workflow](../sources/2026-09-13-duckdb-ai-workflow.md):
+All reasons given in [Source: My DuckDB + AI Workflow](../sources/duckdb-ai-workflow.md):
 
 1. **Built-in functions keep the agent focused.** The tool already ships the operations; the agent picks among them instead of inventing code.
 2. **Faster iteration than whole scripts.** The agent writes small SQL/commands and loops, rather than writing a full script that must then be debugged.
@@ -45,4 +45,4 @@ DuckDB 2.0's CLI detects agent callers and switches to compact Markdown tables, 
 - [DuckDB](../entities/duckdb.md) · [DuckDB for Agents](duckdb-for-agents.md)
 - [Harness Engineering](harness-engineering.md) — CLI as a thin controlled tool surface
 - [Context Engineering](context-engineering.md)
-- [Source: My DuckDB + AI Workflow](../sources/2026-09-13-duckdb-ai-workflow.md)
+- [Source: My DuckDB + AI Workflow](../sources/duckdb-ai-workflow.md)

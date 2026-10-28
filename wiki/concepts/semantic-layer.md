@@ -51,7 +51,7 @@ Agents reliably invent excuses to skip the semantic layer and drop to raw SQL �
 
 ## Counterpoint: Small Scale
 
-Hoyt Emerson reports semantic layers add only marginal gains when agents query clean gold-layer tables via the DuckDB CLI ([source](../sources/2026-09-13-duckdb-ai-workflow.md)); the value shows at enterprise scale with many ambiguous entities.
+Hoyt Emerson reports semantic layers add only marginal gains when agents query clean gold-layer tables via the DuckDB CLI ([source](../sources/duckdb-ai-workflow.md)); the value shows at enterprise scale with many ambiguous entities.
 
 ## Related Pages
 
@@ -60,6 +60,6 @@ Hoyt Emerson reports semantic layers add only marginal gains when agents query c
 - [Context Engineering](context-engineering.md) — curate, don't auto-generate
 - [Substrait](substrait.md) — a complementary lower-level query representation for LLMs
 - [Harness Engineering](harness-engineering.md) — generalizes this as the L3 Semantic & Knowledge layer
-- [Source: How Anthropic Enables Self-Service Data Analytics with Claude](../sources/2026-06-03-anthropic-self-service-analytics.md)
+- [Source: How Anthropic Enables Self-Service Data Analytics with Claude](../sources/anthropic-self-service-analytics.md)
 - [Source: Rebuilding Data Engineering with Harness Engineering](../sources/harness-engineering-agentic-data-engineering.md)
 - [Self-Organizing Data Stack](self-organizing-data-stack.md) — the semantic layer is a prerequisite for an engine that reorganises the graph itself; missing meaning escalates to a human rather than being guessed

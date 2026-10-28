@@ -110,9 +110,9 @@ The design rule that most directly echoes this knowledge base's own architecture
 - [Harness Engineering](harness-engineering.md) — Skill vs Prompt vs Tool API, and Skills as the Harness's unit of controlled capability
 - [Harness Evolution](harness-evolution.md) — the general, regularized account of why unconstrained skill/harness self-evolution overfits
 - [Agent Configuration Audit](agent-configuration-audit.md) — pruning installed skills; what an unused skill actually costs
-- [Source: My DuckDB + AI Workflow](../sources/2026-09-13-duckdb-ai-workflow.md) — counterpoint: skill files "not all that useful" for solo analytics over clean gold tables; a short CLAUDE.md sufficed
-- [Source: How Anthropic Enables Self-Service Data Analytics with Claude](../sources/2026-06-03-anthropic-self-service-analytics.md)
+- [Source: My DuckDB + AI Workflow](../sources/duckdb-ai-workflow.md) — counterpoint: skill files "not all that useful" for solo analytics over clean gold tables; a short CLAUDE.md sufficed
+- [Source: How Anthropic Enables Self-Service Data Analytics with Claude](../sources/anthropic-self-service-analytics.md)
 - [Source: WikiSkill — Compiling Agent Experience into Persistent Knowledge for Skill Evolution](../sources/wikiskill-agent-skill-evolution.md)
 - [Source: Rebuilding Data Engineering with Harness Engineering](../sources/harness-engineering-agentic-data-engineering.md)
 - [Source: RRSI — Regularized Recursive Self-Improvement of Agent Harnesses](../sources/rrsi-regularized-recursive-self-improvement.md)
-- [Source: Audit Your Agent Files](../sources/2026-08-27-audit-your-agent-files.md)
+- [Source: Audit Your Agent Files](../sources/audit-your-agent-files.md)

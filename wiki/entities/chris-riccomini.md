@@ -37,7 +37,7 @@ Previously at WePay (data engineering and financial data), LinkedIn, and PayPal.
 
 ## Related Pages
 
-- [Source: Plan Mode All the Time](../sources/2026-05-21-plan-mode-substrait-de-role.md)
+- [Source: Plan Mode All the Time](../sources/plan-mode-substrait-de-role.md)
 - [Substrait](../concepts/substrait.md)
 - [Ralph Loop](../concepts/ralph-loop.md)
 - [AI Org Operating Model](../concepts/ai-org-operating-model.md)

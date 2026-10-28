@@ -8,7 +8,7 @@ updated: 2026-06-09
 
 **Agentic analytics** is using an LLM agent to answer business analytics questions against a data warehouse on behalf of non-expert stakeholders — self-service analytics where the agent, not the analyst, maps a question to data and writes the SQL.
 
-The defining insight (from Anthropic's internal system — see [source](../sources/2026-06-03-anthropic-self-service-analytics.md)): **accuracy is a context and verification problem, not a code-generation one.** The hard part is mapping a user's question to the correct, current entity in the data model; once that mapping is right, the SQL is trivial. This is the inverse of coding agents, where the solution space is open-ended and tests/docs are natural guardrails. Analytics usually has **one correct answer from one correct source, with no deterministic way to prove it.**
+The defining insight (from Anthropic's internal system — see [source](../sources/anthropic-self-service-analytics.md)): **accuracy is a context and verification problem, not a code-generation one.** The hard part is mapping a user's question to the correct, current entity in the data model; once that mapping is right, the SQL is trivial. This is the inverse of coding agents, where the solution space is open-ended and tests/docs are natural guardrails. Analytics usually has **one correct answer from one correct source, with no deterministic way to prove it.**
 
 Anthropic reports **95% of business analytics queries automated at ~95% aggregate accuracy** (≈99% in mature domains) — but warns that naïvely pointing an agent at a warehouse "creates a false sense of precision" and cuts stakeholders off from the curated datasets and expertise that used to steer them.
 
@@ -106,4 +106,4 @@ Calibrate the rest by asking: how important is a correct answer *now* vs once mo
 - [Iterative Repair Loops](iterative-repair-loops.md) — adversarial review as a closed loop
 - [Human-in-the-Loop](human-in-the-loop.md) — humans own definitions, curation, sign-off
 - [Anthropic](../entities/anthropic.md)
-- [Source: How Anthropic Enables Self-Service Data Analytics with Claude](../sources/2026-06-03-anthropic-self-service-analytics.md)
+- [Source: How Anthropic Enables Self-Service Data Analytics with Claude](../sources/anthropic-self-service-analytics.md)
