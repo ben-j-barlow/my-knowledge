@@ -160,6 +160,10 @@ To filter by topic in Obsidian, use a Dataview query (see bottom of this file).
 | [Lance (and LanceDB)](entities/lance.md) | Open columnar format for ML/multimodal data from LanceDB; v2 "container format"; claims 100x faster random access (vendor claim) | data-n-ai, entity, etl, lakehouse, file-formats, vector-databases |
 | [Source: A File Format Claims to Be 100x Faster Than Parquet](sources/lance-100x-faster-than-parquet.md) | Vu Trinh: three Parquet random-access problems and Lance's fixes (transparent encodings, no row groups, O(1) column metadata); no benchmarks | data-n-ai, source, etl, lakehouse, file-formats, vector-databases |
 | [Source: Lance v2 — A New Columnar Container Format](sources/lance-v2-columnar-container-format.md) | LanceDB design post: use cases, encodings-as-extensions, abolishing row groups, stats as encoding metadata; early implementation, vendor claims | data-n-ai, source, etl, lakehouse, file-formats, vector-databases |
+| [Point-Query Optimization](concepts/point-query-optimization.md) | Fast single-row lookups on Parquet/DataFusion: sort by key (6000x), no dictionary/bloom for unique keys, small row groups/pages, plan reuse, mimalloc; ~8x cumulative | data-n-ai, concept, etl, performance, file-formats, lakehouse |
+| [Apache DataFusion](entities/apache-datafusion.md) | Rust query engine toolkit on Arrow; scan-oriented defaults, tunable for sub-ms point reads | data-n-ai, entity, etl, performance |
+| [Nuno Faria](entities/nuno-faria.md) | INESC TEC researcher and DataFusion committer; author of the point-query post | data-n-ai, entity, performance |
+| [Source: Best Practices for Single Row Lookups in DataFusion](sources/datafusion-point-queries.md) | Nuno Faria: 698 → 5,433 reads/s via sorting, Parquet settings, partitions, plan reuse, allocator, per-client runtimes; author-run benchmarks | data-n-ai, source, etl, performance, file-formats, lakehouse |
 
 ---
 

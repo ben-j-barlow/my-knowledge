@@ -1,7 +1,7 @@
 ---
 tags: [data-n-ai, concept, etl, lakehouse, file-formats, vector-databases]
 sources: ["raw/data-n-ai/articles/2026-10-22-a-file-format-claims-to-be-100x-faster-than-parquet.md", "raw/data-n-ai/articles/2026-03-31-lance-v2-a-new-columnar-container-format.md"]
-updated: 2026-10-28
+updated: 2026-11-05
 ---
 
 # Columnar File Formats for Random Access
@@ -30,6 +30,10 @@ Parquet is built for sequential scans of tabular data. AI workloads (embedding/s
 - Per-encoding zone maps echo the structural-vs-statistical metadata split in [Lakehouse Statistics](lakehouse-statistics.md), but push stats into the file's encoding layer.
 - Lance's reference implementation uses [Apache Arrow](../entities/apache-arrow.md) types; DuckDB's Parquet-centred stack ([DuckDB](../entities/duckdb.md), [DuckDB 2.0](duckdb-2-0.md)) is the contrasting analytical path.
 
+## Counterpoint: tuned Parquet
+
+A DataFusion benchmark series ([Point-Query Optimization](point-query-optimization.md)) shows Parquet can serve sub-millisecond point lookups without a new format: sort by the key (6000x vs unsorted), disable dictionary/bloom filters for unique keys, and shrink row groups/pages (~128k / ~1k rows). This addresses the page-size problem but not the metadata-for-all-columns or row-group-buffering limits above. It is an author-run benchmark on a two-column table, not a head-to-head with Lance.
+
 ## Open questions / caveats
 
 - The "100x faster random access" headline is a vendor claim; neither ingested source reports benchmarks. Lance v2 post itself says parity with the best Parquet readers held only on poorly compressible data (early implementation).
@@ -40,3 +44,4 @@ Parquet is built for sequential scans of tabular data. AI workloads (embedding/s
 
 - [A File Format Claims to Be 100x Faster Than Parquet](../sources/lance-100x-faster-than-parquet.md)
 - [Lance v2: A New Columnar Container Format](../sources/lance-v2-columnar-container-format.md)
+- [Best Practices for Single Row Lookups in DataFusion](../sources/datafusion-point-queries.md)

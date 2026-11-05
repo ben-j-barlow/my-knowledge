@@ -78,6 +78,7 @@ The DuckDB CLI is a favored agent tool: agents understand it well, iterate quick
 - [duckdb-differential](duckdb-differential.md) — community extension for snapshots, branches and clones of native DuckDB files
 - [Tobias Müller](tobias-mueller.md) — blogs extensively on DuckDB (tobilg.com)
 - [Data Versioning and Branching](../concepts/data-versioning-and-branching.md)
+- [Apache DataFusion](apache-datafusion.md) — comparable embeddable engine; [Point-Query Optimization](../concepts/point-query-optimization.md) notes Spark/DuckDB write Parquet with `snappy` by default, which was no better than `lz4`/`zstd` in its test
 - [DuckDB 2.0](../concepts/duckdb-2-0.md) · [MotherDuck](motherduck.md)
 - [Source: DuckDB 2.0 Release](../sources/duckdb-2-0-release.md)
 - [Source: Why DuckDB 2.0 Is Faster](../sources/why-duckdb-2-is-faster.md)

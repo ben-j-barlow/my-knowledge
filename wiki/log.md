@@ -82,3 +82,5 @@ grep "^## \[" wiki/log.md | grep "ingest"       # all ingests
 ## [2026-10-28] ingest | data-n-ai | A File Format Claims to Be 100x Faster Than Parquet (Vu Trinh)
 
 ## [2026-10-28] ingest | data-n-ai | Lance v2: A New Columnar Container Format (LanceDB)
+
+## [2026-11-05] ingest | data-n-ai | Best Practices for Single Row Lookups (Point Queries) - Apache DataFusion Blog (Nuno Faria)

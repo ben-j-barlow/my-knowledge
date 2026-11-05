@@ -67,3 +67,4 @@ This is Databricks vendor content advocating its own feature; benchmarks are sel
 - [Source: Debunking 8 Data Layout Myths (Liquid Clustering)](../sources/liquid-clustering-vs-partitioning.md)
 
 - See also: [Columnar File Formats for Random Access](columnar-file-formats-for-random-access.md) — file-level layout (Lance vs Parquet row groups/pages).
+- See also: [Point-Query Optimization](point-query-optimization.md) — sorting by the lookup key and right-sizing row groups/pages make min/max pruning effective for single-row reads.

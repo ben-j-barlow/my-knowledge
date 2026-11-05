@@ -57,3 +57,4 @@ DuckDB's integration is the most complete: it can query a Python Arrow or Pandas
 - [Source: DuckDB Internals Part 1](../sources/duckdb-internals-part1.md)
 
 - See also: [Lance](lance.md) — uses the Arrow type system for its reference readers/writers.
+- See also: [Apache DataFusion](apache-datafusion.md) — Rust query engine toolkit built on Arrow as its in-memory format.

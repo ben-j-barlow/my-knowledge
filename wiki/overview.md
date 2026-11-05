@@ -79,6 +79,8 @@ Current coverage spans two threads:
 
 **DuckDB 2.0 (Oct 2026):** the engine under most of the above gets async I/O, VARIANT shredding, Quack client-server, triggers and a CLI **agent mode** that bakes in the output-bounding principles from [CLI Tools for Agents](concepts/cli-tools-for-agents.md) ([DuckDB 2.0](concepts/duckdb-2-0.md)). Operational catch: the storage format changed, so pin versions across tools (DuckLake 1.1 shipped alongside). Official claims plus an alpha-stage vendor benchmark; final numbers unverified.
 
+**Point reads on Parquet — tune before changing formats:** A DataFusion benchmark series ([Point-Query Optimization](concepts/point-query-optimization.md)) lifts single-row lookups ~8x (698 → 5,433 reads/s, 1.43 → 0.18 ms) with mostly layout choices: sort by the key (6000x), drop dictionary/bloom filters for unique keys, shrink row groups and pages, then cut planning overhead (~60% of CPU) via prepared statements. It is the tuned-Parquet counterpoint to the Lance random-access claims in [Columnar File Formats for Random Access](concepts/columnar-file-formats-for-random-access.md); the two sources are not like-for-like. Author-run, single dataset.
+
 Subtopics being tracked: `llm`, `world-models`, `robotics`, `agents`, `ai-infra`, `etl`, `pipelines`, `streaming`, `query-optimization`, `lakehouse`, `prompt-engineering`, `prediction-markets`, `correctness`, `data-contracts`, `testing`, `harness-engineering`, `security`
 
 ---
