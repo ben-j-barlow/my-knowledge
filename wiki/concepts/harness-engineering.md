@@ -1,7 +1,7 @@
 ---
 tags: [data-n-ai, concept, agents, etl, pipelines, harness-engineering]
-sources: ["wiki/sources/harness-engineering-agentic-data-engineering.md", "wiki/sources/rrsi-regularized-recursive-self-improvement.md"]
-updated: 2026-10-02
+sources: ["wiki/sources/harness-engineering-agentic-data-engineering.md", "wiki/sources/rrsi-regularized-recursive-self-improvement.md", "raw/data-n-ai/articles/2026-09-19-the-inference-gap.md"]
+updated: 2026-11-09
 ---
 
 # Harness Engineering (for Data Engineering)
@@ -99,3 +99,5 @@ Three stages: **Collaborative Assistance → Controlled Execution → Governed A
 - [Agent Security: Defense-in-Depth](agent-security-defense-in-depth.md) — the same "deterministic layer below the agent" structure, applied to containing unauthorized actions rather than guaranteeing correct output
 - [Source: Rebuilding Data Engineering with Harness Engineering](../sources/harness-engineering-agentic-data-engineering.md)
 - [Source: RRSI — Regularized Recursive Self-Improvement of Agent Harnesses](../sources/rrsi-regularized-recursive-self-improvement.md)
+- [Inference Regime Observability](inference-regime-observability.md) — harness-side telemetry for delivered reasoning depth (inferred practice)
+- [Agentic Engineering Under Variable Inference](agentic-engineering-under-variable-inference.md)

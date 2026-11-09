@@ -1,7 +1,7 @@
 ---
 tags: [data-n-ai, concept, agents, prompt-engineering, harness-engineering]
-sources: ["raw/data-n-ai/articles/2026-08-27-audit-your-agent-files.md"]
-updated: 2026-10-09
+sources: ["raw/data-n-ai/articles/2026-08-27-audit-your-agent-files.md", "raw/data-n-ai/articles/2026-09-19-the-inference-gap.md"]
+updated: 2026-11-09
 ---
 
 # Agent Configuration Audit
@@ -69,6 +69,10 @@ Cut generic clean-code advice, summaries of code that exists, and anything the R
 
 For skills, prefer a strong generic/community skill and add personal rules gradually, only when a preference has recurred across similar tasks. Skills earn their keep with concrete, task-specific examples — not formatting preferences.
 
+## Additional pressure: instructions compete for reasoning
+
+If [reasoning dilution](reasoning-dilution.md) holds, a long instruction file does not only cost tokens; it may reduce how carefully each rule is applied. That strengthens the case for pruning and for moving critical rules into hooks and tests. The evidence ([The Inference Gap](../sources/the-inference-gap.md)) is anecdotal and single-user.
+
 ## Hard constraints belong below the prose
 
 If a rule must *always* hold, a markdown sentence is the wrong place for it: encode it as a **test, hook, or permission**. Of everything in the agent environment, permissions and settings are "the only rules that actually bind the agent." This is the single-developer version of [Agent Security: Defense-in-Depth](agent-security-defense-in-depth.md)'s "enforcement below the agent," and of the [Harness Engineering](harness-engineering.md) claim that a deterministic layer, not an instruction, is what makes behaviour reliable.
@@ -107,3 +111,5 @@ Not thousands of tokens per prompt. Only skill **names and descriptions** are al
 - [Addy Osmani](../entities/addy-osmani.md)
 - [Anthropic](../entities/anthropic.md)
 - [Source: Audit Your Agent Files](../sources/audit-your-agent-files.md)
+- [Reasoning Dilution](reasoning-dilution.md)
+- [The Inference Gap](inference-gap.md)

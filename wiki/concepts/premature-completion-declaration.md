@@ -1,7 +1,7 @@
 ---
 tags: [data-n-ai, concept, agents, prompt-engineering, testing]
-sources: [wiki/sources/lecture-09-premature-completion.md]
-updated: 2026-08-04
+sources: [wiki/sources/lecture-09-premature-completion.md, "raw/data-n-ai/articles/2026-09-19-the-inference-gap.md"]
+updated: 2026-11-09
 ---
 
 # Premature Completion Declaration
@@ -87,3 +87,5 @@ The only variable was harness structure, not model capability.
 - [Human-in-the-Loop](human-in-the-loop.md)
 - [Session Continuity](session-continuity.md)
 - [Source: Lecture 9 — Preventing Agents from Declaring Victory Too Early](../sources/lecture-09-premature-completion.md)
+- [Reasoning Dilution](reasoning-dilution.md) — shallow, diluted reasoning on long tasks is a candidate contributor to unfaithful completion claims
+- [Agentic Engineering Under Variable Inference](agentic-engineering-under-variable-inference.md)

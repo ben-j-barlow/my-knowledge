@@ -1,7 +1,7 @@
 ---
 tags: [data-n-ai, entity, agents, llm]
-sources: ["raw/data-n-ai/articles/2026-06-03-how-anthropic-enables-self-service-data-analytics-with-claude.md", "raw/data-n-ai/articles/2026-08-27-audit-your-agent-files.md"]
-updated: 2026-10-09
+sources: ["raw/data-n-ai/articles/2026-06-03-how-anthropic-enables-self-service-data-analytics-with-claude.md", "raw/data-n-ai/articles/2026-08-27-audit-your-agent-files.md", "raw/data-n-ai/articles/2026-09-19-the-inference-gap.md"]
+updated: 2026-11-09
 ---
 
 # Anthropic
@@ -33,6 +33,12 @@ See [Source: How Anthropic Enables Self-Service Data Analytics with Claude](../s
 
 ---
 
+## Delivered inference vs. advertised effort (single-user evidence)
+
+[The Inference Gap](../sources/the-inference-gap.md) (@Lon, Sept 2026) analysed ~43K Fable 5 invocations in Claude Code at xhigh/max effort: median **123** thinking tokens per invocation, **39%** with none, and delivered thinking **22–51% lower in August than July**, against Anthropic's documentation that xhigh "always thinks deeply" and max "always thinks". The author's source archaeology says Claude Code moved from user-set fixed thinking budgets (4K/10K/31,999) to **adaptive-only** thinking by Opus 4.7 (April 2026), removing direct user control. Also reported: Fable 5 (Anthropic's first "Mythos class" model) was briefly blocked by the U.S. government over safety concerns and restored July 1, 2026; subscription availability was extended in steps before being made permanent from July 20. Mechanism of the drift is unproven (capacity, routing, policy or adaptive effort). This is one user's data; see [The Inference Gap](../concepts/inference-gap.md) for the concept and caveats.
+
+---
+
 ## Models (referenced across the wiki)
 
 - **Claude Opus** — flagship; the "Haiku→Opus" jump is the benchmark of quality used in the AGENTS.md studies.
@@ -54,3 +60,5 @@ See [Source: How Anthropic Enables Self-Service Data Analytics with Claude](../s
 - [OpenAI](openai.md) — the comparison point for Codex / AGENTS.md
 - [Source: How Anthropic Enables Self-Service Data Analytics with Claude](../sources/anthropic-self-service-analytics.md)
 - [Source: Audit Your Agent Files](../sources/audit-your-agent-files.md)
+- [The Inference Gap](../concepts/inference-gap.md)
+- [Source: The Inference Gap](../sources/the-inference-gap.md)

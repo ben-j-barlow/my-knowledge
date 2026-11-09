@@ -1,7 +1,7 @@
 ---
 tags: [data-n-ai, concept, llm]
-sources: [raw/data-n-ai/articles/2026-05-12-ai-for-the-real-world-a-conversation-with-yann-lecun.md]
-updated: 2026-05-14
+sources: [raw/data-n-ai/articles/2026-05-12-ai-for-the-real-world-a-conversation-with-yann-lecun.md, "raw/data-n-ai/articles/2026-09-19-the-inference-gap.md"]
+updated: 2026-11-09
 ---
 
 # LLM Limitations
@@ -53,3 +53,4 @@ Practitioner observation (Hoyt Emerson, unmeasured): hallucinations are more pro
 - [Human-in-the-Loop](human-in-the-loop.md)
 - [Grounded Theory](grounded-theory.md)
 - [Yann LeCun](../entities/yann-lecun.md)
+- [The Inference Gap](inference-gap.md) — chain-of-thought depth, the workaround for LLM limits, varies with the delivered inference regime

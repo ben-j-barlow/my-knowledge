@@ -84,3 +84,5 @@ grep "^## \[" wiki/log.md | grep "ingest"       # all ingests
 ## [2026-10-28] ingest | data-n-ai | Lance v2: A New Columnar Container Format (LanceDB)
 
 ## [2026-11-05] ingest | data-n-ai | Best Practices for Single Row Lookups (Point Queries) - Apache DataFusion Blog (Nuno Faria)
+
+## [2026-11-09] ingest | data-n-ai | The Inference Gap (@Lon) — incl. inferred implications for agentic software engineering

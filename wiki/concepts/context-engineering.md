@@ -1,7 +1,7 @@
 ---
 tags: [data-n-ai, concept, agents, prompt-engineering, llm]
-sources: ["raw/data-n-ai/articles/2026-04-01-how-to-build-your-agents-md-2026-the-context-file-that-makes-ai.md", "raw/data-n-ai/articles/2026-04-23-a-good-agents-md-is-a-model-upgrade-a-bad-one-is-worse-than-no-docs.md", "raw/data-n-ai/articles/2026-08-27-audit-your-agent-files.md"]
-updated: 2026-10-09
+sources: ["raw/data-n-ai/articles/2026-04-01-how-to-build-your-agents-md-2026-the-context-file-that-makes-ai.md", "raw/data-n-ai/articles/2026-04-23-a-good-agents-md-is-a-model-upgrade-a-bad-one-is-worse-than-no-docs.md", "raw/data-n-ai/articles/2026-08-27-audit-your-agent-files.md", "raw/data-n-ai/articles/2026-09-19-the-inference-gap.md"]
+updated: 2026-11-09
 ---
 
 # Context Engineering
@@ -21,6 +21,10 @@ As the context window fills, model performance degrades — even on content that
 - **Graceful degradation under pressure:** Anthropic's guidance notes that as context grows, well-behaved agents preserve architectural decisions while discarding redundant tool outputs.
 
 ---
+
+## A possible mechanism: reasoning dilution
+
+[The Inference Gap](../sources/the-inference-gap.md) measured one user's Fable 5 sessions and found thinking scaling far more slowly than input: 32× more incoming text gave ~3.5× more median thinking, and the author linked longer guideline additions to *lower* adherence. This is a candidate mechanism for context rot and the finding below — more material competes for a roughly fixed reasoning allotment — but it is single-user and not causally tested. See [Reasoning Dilution](reasoning-dilution.md).
 
 ## The ETH Zurich finding: context files have a measurable cost
 
@@ -92,3 +96,7 @@ Context engineering is the connective tissue under several patterns already in t
 - [Augment Code](../entities/augment-code.md)
 - [Source: How to Build Your AGENTS.md (2026)](../sources/how-to-build-agents-md.md)
 - [Source: Audit Your Agent Files](../sources/audit-your-agent-files.md)
+- [Reasoning Dilution](reasoning-dilution.md)
+- [The Inference Gap](inference-gap.md)
+- [Agentic Engineering Under Variable Inference](agentic-engineering-under-variable-inference.md)
+- [Source: The Inference Gap](../sources/the-inference-gap.md)

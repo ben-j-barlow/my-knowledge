@@ -1,7 +1,7 @@
 ---
 tags: [data-n-ai, concept, agents, ai-infra, llm]
-sources: [raw/data-n-ai/articles/2026-05-14-ai-economics-part-2.md]
-updated: 2026-05-19
+sources: [raw/data-n-ai/articles/2026-05-14-ai-economics-part-2.md, "raw/data-n-ai/articles/2026-09-19-the-inference-gap.md"]
+updated: 2026-11-09
 ---
 
 # Agentic Inference
@@ -52,6 +52,10 @@ Agentic inference: sustained but interrupted `──╌──╌──╌──`
 
 The human inference pattern creates significant idle GPU capacity (off-peak hours), which cloud providers are trying to fill with spot pricing and reallocation.
 
+## Delivered reasoning is not constant
+
+The workload profile above assumes agents consume long contexts and sustained compute. [The Inference Gap](inference-gap.md) adds the user-side view: realized reasoning per call can be far below benchmark regimes and can drift over weeks, which is a plausible symptom of capacity being rationed on the supply side (mechanism unproven).
+
 ## Connection to HBM Supercycles
 
 Training caused the **first HBM supercycle** in 2023–2024. Agentic inference, with its appetite for long context that overflows HBM into DRAM, is driving the **second** — independent of training scaling.
@@ -62,3 +66,4 @@ Training caused the **first HBM supercycle** in 2023–2024. Agentic inference, 
 - [AI Semiconductor Supply Chain](ai-semiconductor-supply-chain.md)
 - [Iterative Repair Loops](iterative-repair-loops.md)
 - [Source: AI Economics Part 2](../sources/ai-economics-part2.md)
+- [The Inference Gap](inference-gap.md)
