@@ -1,7 +1,7 @@
 ---
 tags: [data-n-ai, concept, agents, prompt-engineering]
-sources: ["raw/data-n-ai/articles/2026-05-21-plan-mode-all-the-time-substrait-over-sql-and-the-end-of-the-de-role.md"]
-updated: 2026-05-28
+sources: ["raw/data-n-ai/articles/2026-05-21-plan-mode-all-the-time-substrait-over-sql-and-the-end-of-the-de-role.md", "raw/data-n-ai/articles/2026-10-13-the-expensive-loop-problem.md"]
+updated: 2026-11-09
 ---
 
 # Ralph Loop
@@ -56,8 +56,14 @@ The loop is only as good as its exit criterion. Three steps:
 
 The Ralph Loop and [Premature Completion Declaration](premature-completion-declaration.md) attack the same root cause — agents are systematically overconfident about their own completion state — from different angles. The Ralph Loop removes the agent's ability to *stop*: only external test results end the loop. Premature-completion-declaration prevention removes the agent's ability to *claim*: a layered termination check (syntax → runtime → system-level) and an independent evaluator must both sign off before "done" is accepted, whether or not the agent is still iterating.
 
+## Precondition: The Loop Must Be Cheap
+
+The Ralph Loop is a **cheap-loop** tool. "Re-prompt until the tests pass" works because each iteration costs seconds and the exit criterion is unambiguous. [The Expensive-Loop Problem](expensive-loop-problem.md) names what happens when the same pattern meets a task whose iteration costs hours or dollars (long training runs, migrations, slow CI, anything needing real users or traffic): the agent has no model of information gain versus cost, treats a 15-hour run like a 30-minute one, and "hill-climbs within a committed strategy" rather than questioning it. Before pointing a Ralph Loop at a task, check that feedback is fast and automatic; if not, add a run budget, a proxy ladder (cheap stand-ins first), and a strategy-level checkpoint after repeated failures. See [Agentic Engineering: A General How-To Guide](../../outputs/data-n-ai/2026-11-09-agentic-engineering-how-to-guide.md#step-0--classify-the-task-before-delegating).
+
 ## Related Pages
 
+- [The Expensive-Loop Problem](expensive-loop-problem.md)
+- [Agentic Engineering: A General How-To Guide](../../outputs/data-n-ai/2026-11-09-agentic-engineering-how-to-guide.md)
 - [Iterative Repair Loops](iterative-repair-loops.md)
 - [Feature Lists](feature-lists.md)
 - [Premature Completion Declaration](premature-completion-declaration.md)

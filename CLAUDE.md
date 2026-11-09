@@ -119,6 +119,7 @@ Run when a new source is added to `raw/`. Work through one source at a time; sta
    ## [YYYY-MM-DD] ingest | <topic> | <Source Title>
    ```
 8. One source routinely touches 10–15 wiki pages. That is expected and correct.
+9. **Living guides**: if the source bears on agentic engineering practice, also update `outputs/data-n-ai/2026-11-09-agentic-engineering-how-to-guide.md` (add/revise the relevant step, add an evidence tag for the new source) and add a backlink to the guide from each concept page you touch. Mark practices inferred rather than claimed by a source as inference.
 
 ---
 

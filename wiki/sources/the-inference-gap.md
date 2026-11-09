@@ -63,6 +63,8 @@ The article gives almost no user-level advice. The operational implications draw
 - [Reasoning Dilution](../concepts/reasoning-dilution.md)
 - [Inference Regime Observability](../concepts/inference-regime-observability.md)
 - [Agentic Engineering Under Variable Inference](../concepts/agentic-engineering-under-variable-inference.md)
+- [Agentic Engineering: A General How-To Guide](../../outputs/data-n-ai/2026-11-09-agentic-engineering-how-to-guide.md)
+- [Source: The Expensive-Loop Problem](the-expensive-loop-problem.md) — companion article on loop cost
 - [Anthropic](../entities/anthropic.md)
 - [Context Engineering](../concepts/context-engineering.md)
 - [Agent Configuration Audit](../concepts/agent-configuration-audit.md)

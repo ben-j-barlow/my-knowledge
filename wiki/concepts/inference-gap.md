@@ -54,6 +54,8 @@ The reframe: stop asking "was the model nerfed?"; ask **"under what inference re
 - [Reasoning Dilution](reasoning-dilution.md) — thinking fails to scale with input size; fragmentation across invocations
 - [Inference Regime Observability](inference-regime-observability.md) — what to measure and what providers should disclose
 - [Agentic Engineering Under Variable Inference](agentic-engineering-under-variable-inference.md) — inferred operating practice
+- [Agentic Engineering: A General How-To Guide](../../outputs/data-n-ai/2026-11-09-agentic-engineering-how-to-guide.md) — stage-by-stage guide combining this with loop-cost practice
+- [The Expensive-Loop Problem](expensive-loop-problem.md) — companion axis: this page is about *depth of reasoning delivered*; that one about *cost of feedback*
 - [Agentic Inference](agentic-inference.md) — the *hardware* workload profile of the same long-horizon usage
 - [LLM Limitations](llm-limitations.md) — chain-of-thought as workaround; here, the depth of that chain varies by regime
 - [Context Engineering](context-engineering.md)

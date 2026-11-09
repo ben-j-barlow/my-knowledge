@@ -1,7 +1,7 @@
 ---
 tags: [data-n-ai, concept, agents, prompt-engineering]
-sources: ["raw/data-n-ai/articles/2026-05-21-exploring-agent-assisted-qualitative-analysis.md"]
-updated: 2026-05-28
+sources: ["raw/data-n-ai/articles/2026-05-21-exploring-agent-assisted-qualitative-analysis.md", "raw/data-n-ai/articles/2026-10-13-the-expensive-loop-problem.md"]
+updated: 2026-11-09
 ---
 
 # Human-in-the-Loop (HITL)
@@ -38,6 +38,10 @@ HITL at the wrong time (after the agent has converged) is expensive because the 
 
 Early-stage direction feedback during open coding is more leveraged than late-stage review after selective coding.
 
+## Independent Evidence: Strategy Nudges and Human-Owned Theory
+
+[The Expensive-Loop Problem](expensive-loop-problem.md) reports a result from AI-research agents that matches the direction-over-artifact finding: in PostTrainBench, agents "lock into a default strategy before any experimental evidence arrives," and **a single mid-run instruction to change strategy outperformed the agent's own continuation by up to 17.44%** — extra tokens bought denser refinement inside the committed strategy, not a better one. The same article argues that in expensive-loop work humans should keep ownership of the *theory* (the causal model, which experiments are worth running, how to read ambiguous results), because models read noise as signal and rarely try to falsify their beliefs. Practical reading for software work: schedule human (or evaluator) checkpoints at the strategy/premise level after repeated failures, not only at artifact review. See [Agentic Engineering: A General How-To Guide](../../outputs/data-n-ai/2026-11-09-agentic-engineering-how-to-guide.md#step-6--where-humans-spend-attention).
+
 ## Multi-Agent HITL
 
 One productive pattern: two independent agents process the same corpus separately, then a reconciliation step compares where they disagree. Human feedback is applied once to the disagreement surface. This produces:
@@ -59,3 +63,5 @@ One productive pattern: two independent agents process the same corpus separatel
 - [Premature Completion Declaration](premature-completion-declaration.md)
 - [LLM Limitations](llm-limitations.md)
 - [Source: Agent-Assisted Qualitative Analysis](../sources/agent-assisted-qualitative-analysis.md)
+- [The Expensive-Loop Problem](expensive-loop-problem.md)
+- [Agentic Engineering: A General How-To Guide](../../outputs/data-n-ai/2026-11-09-agentic-engineering-how-to-guide.md)

@@ -101,3 +101,5 @@ Three stages: **Collaborative Assistance → Controlled Execution → Governed A
 - [Source: RRSI — Regularized Recursive Self-Improvement of Agent Harnesses](../sources/rrsi-regularized-recursive-self-improvement.md)
 - [Inference Regime Observability](inference-regime-observability.md) — harness-side telemetry for delivered reasoning depth (inferred practice)
 - [Agentic Engineering Under Variable Inference](agentic-engineering-under-variable-inference.md)
+- [The Expensive-Loop Problem](expensive-loop-problem.md) — budgets, proxy ladders and strategy checkpoints as harness features for slow-feedback tasks
+- [Agentic Engineering: A General How-To Guide](../../outputs/data-n-ai/2026-11-09-agentic-engineering-how-to-guide.md) — how the harness pieces fit a day-to-day coding workflow

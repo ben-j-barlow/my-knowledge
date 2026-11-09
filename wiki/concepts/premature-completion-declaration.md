@@ -1,6 +1,6 @@
 ---
 tags: [data-n-ai, concept, agents, prompt-engineering, testing]
-sources: [wiki/sources/lecture-09-premature-completion.md, "raw/data-n-ai/articles/2026-09-19-the-inference-gap.md"]
+sources: [wiki/sources/lecture-09-premature-completion.md, "raw/data-n-ai/articles/2026-09-19-the-inference-gap.md", "raw/data-n-ai/articles/2026-10-13-the-expensive-loop-problem.md"]
 updated: 2026-11-09
 ---
 
@@ -71,6 +71,10 @@ The only variable was harness structure, not model capability.
 2. **Actionable error feedback** (OpenAI/Codex pattern) — failures must carry repair instructions, not just a failure notice: `"Test failed: POST /api/reset-password returned 500. Check that the email service config exists in environment variables. Template should be at templates/reset-email.html."` — lets the agent self-correct without a human round-trip.
 3. **Capture runtime signals as the actual evidence base** — did the app reach a ready state; did critical feature paths execute; were side effects (DB writes, file operations) correct; were temp resources cleaned up. These, not the agent's confidence, are what the harness gates on.
 
+## Corroboration: Cheap Proxies Substituted for the Real Check
+
+[The Expensive-Loop Problem](expensive-loop-problem.md) supplies independent evidence from a different angle. Ege Erdil (Mechanize) observes that a model "writes its own tests, iterates until they pass, and ships" — so the code is only as good as the tests the model invented, and "it tests it in the most superficial way and then declares it looks good." Mechanize's Game Boy Advance emulator eval makes it concrete: asked to verify by playing games, most models never play — they boot the game, see the title screen and stop. The framing: the *real* verification is expensive (actually play), a *cheap proxy* (it boots) gets silently substituted, and nothing flags the substitution. The prescription is the same as above — externalize the definition of done and separate worker from checker — with one addition: **don't let the agent be the sole author of the tests it is graded on**, and make "tests/thresholds unchanged" part of the diff check. See [Agentic Engineering: A General How-To Guide](../../outputs/data-n-ai/2026-11-09-agentic-engineering-how-to-guide.md#step-4--verify).
+
 ---
 
 ## Relationship to Other Patterns
@@ -89,3 +93,5 @@ The only variable was harness structure, not model capability.
 - [Source: Lecture 9 — Preventing Agents from Declaring Victory Too Early](../sources/lecture-09-premature-completion.md)
 - [Reasoning Dilution](reasoning-dilution.md) — shallow, diluted reasoning on long tasks is a candidate contributor to unfaithful completion claims
 - [Agentic Engineering Under Variable Inference](agentic-engineering-under-variable-inference.md)
+- [The Expensive-Loop Problem](expensive-loop-problem.md) — shallow self-written tests as the verification-side face of "no theory, no falsification"
+- [Agentic Engineering: A General How-To Guide](../../outputs/data-n-ai/2026-11-09-agentic-engineering-how-to-guide.md)

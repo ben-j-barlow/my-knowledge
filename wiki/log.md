@@ -86,3 +86,7 @@ grep "^## \[" wiki/log.md | grep "ingest"       # all ingests
 ## [2026-11-05] ingest | data-n-ai | Best Practices for Single Row Lookups (Point Queries) - Apache DataFusion Blog (Nuno Faria)
 
 ## [2026-11-09] ingest | data-n-ai | The Inference Gap (@Lon) — incl. inferred implications for agentic software engineering
+
+## [2026-11-09] ingest | data-n-ai | The Expensive-Loop Problem (frmsaul) — raw renamed to 2026-10-13-the-expensive-loop-problem.md; incl. inferred SWE implications; backlinks added to ralph-loop, iterative-repair-loops, premature-completion-declaration, human-in-the-loop, harness-evolution, harness-engineering, inference-gap
+
+## [2026-11-09] query | data-n-ai | Guide: general agentic engineering how-to (merges Expensive-Loop + Inference Gap + established wiki practices) → outputs/data-n-ai/2026-11-09-agentic-engineering-how-to-guide.md

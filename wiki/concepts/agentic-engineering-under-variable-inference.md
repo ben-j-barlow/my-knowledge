@@ -8,6 +8,8 @@ updated: 2026-11-09
 
 > **Status: inference, not source claim.** [The Inference Gap](../sources/the-inference-gap.md) offers almost no user-level advice (its recommendations target providers and regulators). Everything below was drawn in a Q&A discussion on 2026-11-09 by combining the article's findings with other wiki pages. Each point is a hypothesis; the source is a single user's data and the mechanism is unproven. Points marked **(wiki-supported)** are independently backed by other sources here.
 
+> **Part of a larger guide.** This page is the Inference-Gap-specific subset. The full, stage-by-stage guide — which merges these points with the [Expensive-Loop Problem](expensive-loop-problem.md) (loop cost) and the wiki's other established practices — is [Agentic Engineering: A General How-To Guide](../../outputs/data-n-ai/2026-11-09-agentic-engineering-how-to-guide.md). Update the guide when changing this page.
+
 **Premise:** if delivered reasoning is shallow, fragmented and drifts over time ([The Inference Gap](inference-gap.md), [Reasoning Dilution](reasoning-dilution.md)), then agentic engineering practice should (a) not depend on deep serial reasoning at every step, (b) not trust configured effort, and (c) be robust to bad days.
 
 ## General AI use
@@ -50,3 +52,5 @@ Measurement (item 6 and the observability page) pays off whether or not the arti
 - [Harness Engineering](harness-engineering.md)
 - [Iterative Repair Loops](iterative-repair-loops.md)
 - [Source: The Inference Gap](../sources/the-inference-gap.md)
+- [Agentic Engineering: A General How-To Guide](../../outputs/data-n-ai/2026-11-09-agentic-engineering-how-to-guide.md) — the full guide this page feeds into
+- [The Expensive-Loop Problem](expensive-loop-problem.md) — orthogonal axis: cost of feedback, not depth of reasoning

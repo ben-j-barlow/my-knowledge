@@ -46,5 +46,7 @@ This is the sharpest instance yet of a pattern that recurs across several *unrel
 - [AGENTS.md](agents-md.md) / [Context Engineering](context-engineering.md) — the coding-agent-context instance of the same auto-generation overfitting risk
 - [Semantic Layer](semantic-layer.md) — the analytics instance (auto-generated definitions net-negative)
 - [Agent Configuration Audit](agent-configuration-audit.md) — the by-hand version of structural pruning: remove a skill or rule, rerun a real task, keep it only if it still earns a gain
+- [The Expensive-Loop Problem](expensive-loop-problem.md) — evolve-set overfitting is Goodhart's law on a proxy; RRSI's noise floor, leakage screen and holdout are proxy-management tools
+- [Agentic Engineering: A General How-To Guide](../../outputs/data-n-ai/2026-11-09-agentic-engineering-how-to-guide.md)
 - [Feature Lists](feature-lists.md) / [Premature Completion Declaration](premature-completion-declaration.md) — external, non-self-granted gates deciding "done"/"accepted," the same shape as RRSI's noise floor and leakage critic deciding "accepted"
 - [Source: RRSI — Regularized Recursive Self-Improvement of Agent Harnesses](../sources/rrsi-regularized-recursive-self-improvement.md)
